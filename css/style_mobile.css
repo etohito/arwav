@@ -1,0 +1,256 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  margin: 0px;
+}
+#menulist {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0;
+  transition: 1000ms;
+  -webkit-transition: 1000ms;
+}
+#menulist.show {
+  display: block;
+  opacity: 1;
+}
+#menulist ul {
+  list-style-type: none;
+  padding-top: 7.8vw;
+}
+#menulist li {
+  line-height: 2.5;
+  padding-left: 2vw;
+}
+#menulist li a {
+  text-decoration: none;
+}
+#content {
+}
+#home {
+  height: 520vw;
+  background-size: 100%;
+  background-image: url("../svg/home_mobile.svg");
+}
+#home div {
+  position: absolute;
+  width: 100vw;
+}
+#home a {
+  text-decoration: none;
+}
+#home p {
+  text-align: center;
+  font-size: 4.8vw;
+}
+#home input {
+  font-size: 4.8vw;
+  height: 13vw;
+  width: 70%;
+}
+#home .language {
+  top: 6.2vw;
+}
+#home .login {
+  top: 61vw;
+  color: rgb(158, 188, 190);
+}
+#home .login_id {
+  text-align: center;
+  top: 79vw;
+}
+#home .login_pw {
+  text-align: center;
+  top: 98vw;
+}
+#home .login_btn {
+  top: 113vw;
+  color: #ffffff;
+}
+#home .signup {
+  top: 143vw;
+  color: rgb(244, 233, 178);
+}
+#home .signup_id {
+  text-align: center;
+  top: 163vw;
+}
+#home .signup_pw {
+  text-align: center;
+  top: 182vw;
+}
+#home .signup_btn {
+  top: 197vw;
+  color: #ffffff;
+}
+#home .curatorial {
+  top: 224vw;
+  color: rgb(245, 218, 213);
+}
+#home .curatorial_text {
+  top: 250vw;
+  margin-left: 5%;
+  color: #ffffff;
+}
+#home .curatorial_text p {
+  width: 90%;
+}
+#home .aboutus {
+  top: 362vw;
+  color: rgb(171, 213, 175);
+}
+#home .aboutus_text {
+  top: 388vw;
+  margin-left: 5%;
+  color: #ffffff;
+}
+#home .aboutus_text p {
+  width: 90%;
+}
+#home .aboutus_text p {
+  width: 90%;
+}
+#works {
+  top: 3.8vw;
+  height: 43vw;
+  width: 80vw;
+  padding-left: 10vw;
+}
+#works .column {
+  float: left;
+}
+#works .column ul{
+  padding: 0;
+}
+#works img,
+#works svg {
+  padding-bottom: 0.7vw;
+  max-width: 85%;
+}
+#constellation .header,
+#archives .header {
+  top: 0%;
+  width: 100%;
+}
+#constellation .header img,
+#archives .header img {
+  height: 25vw;
+}
+#constellation .header p,
+#archives .header p {
+  margin-top: 4vw;
+  margin-left: 8vw;
+  margin-bottom: 0;
+  font-size: 6vw;
+  text-align: left;
+}
+#archives table {
+  position: absolute;
+  top: 35vw;
+  left: 5vw;
+  padding: 0;
+  width: 90vw;
+  position: absolute;
+  table-layout: fixed;
+}
+#archives tr {
+  width: 100%;
+  height: 47vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#archives td.text {
+  text-align: left;
+  font-size: 3vw;
+}
+#archives td.text span {
+  font-size: 4vw;
+}
+#archives tr img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#work .main {
+  height: 82vh;
+  overflow: scroll;
+}
+#work .main video,
+#work .main audio,
+#work .main img {
+  object-fit: contain;
+  width: 100vw;
+  max-height: 80vh;
+}
+#work .main audio {
+  margin-top: 10vh;
+}
+#work .main p{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+#work .title {
+  font-size: 5vw;
+}
+#work .author {
+  font-size: 4vw;
+}
+#work p {
+  width: 90vw;
+  margin-left: 5vw;
+  font-size: 3vw;
+}
+#footer {
+  position: fixed;
+  top: 82vh;
+}
+#footer .left {
+  position: absolute;
+  left: 4.5vw;
+  width: 10vw;
+  padding-top: 9vh;
+}
+#footer .right {
+  position: absolute;
+  left: 85vw;
+  width: 10vw;
+  padding-top: 9vh;
+}
+#footer .menu {
+  position: absolute;
+  margin-top: 6vh;
+  width: 25vw;
+}
+#work .menu {
+  left: 20vw;
+}
+#constellation .menu,
+#archives .menu {
+  left: 7vw;
+}
+#footer .escape {
+  position: absolute;
+  margin-top: 5.4vh;
+  left: 51vw;
+  width: 25vw;
+}
+#footer .menu p {
+  position: fixed;
+  top: 83vh;
+  font-size: 5vw;
+  color: white;
+}
+#footer .escape p {
+  position: fixed;
+  top: 81.5vh;
+  font-size: 5vw;
+  color: black;
+}

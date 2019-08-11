@@ -1,0 +1,42 @@
+<div id="constellation">
+</div>
+<script type="text/template" id="constellation_template">
+<!-- original file: svg/menu.svg-->
+<svg class="menu" width="4.5vw" height="8.7vw" style="margin:0.8vw" version="1.1" viewBox="0 0 15.512944 29.638581" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(.39707 .39605)">
+    <path d="m13.838 7.8421c-0.32123 10.675 1.8457 11.561 6e-3 15.875-1.2171 2.8546-7.6283 5.7811-9.152 4.7827-2.1379-1.4009-0.9659-3.4206-1.806-7.9303-0.77276-4.1482-2.7539-9.4725-2.7539-13.156 0-5.332 3.108-7.2811 7.6023-7.2811 4.4943 1e-6 6.7457 1.6279 6.1033 7.7094z" fill="#fff" stroke="none" stroke-width="1.0583"/>
+    <text transform="rotate(-90)" x="-6.9871035" y="9.5944767" fill="#abd5af" font-size="5.6444px" font-weight="500" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-14.144577" y="9.5944767" font-size="5px" font-weight="500" stroke-width=".26458" text-align="center" text-anchor="middle"><%= MENU %></tspan></text>
+  </g>
+</svg>
+<img class="title" src="svg/title_vertical.svg">
+<!-- original file: svg/statement.svg-->
+<svg class="curatorial" width="11vw" height="7vw" version="1.1" viewBox="0 0 37.463846 23.69915" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(46.593 -70.124)">
+    <path d="m-23.349 74.24c4.7275 1.9372 11.062 1.3846 12.72 4.7311 2.994 6.0447-1.5966 12.799-4.7848 13.495-7.7046 1.6804-21.364 0.5644-24.959-1.2425-3.257-1.6366-8.1431-8.3359-4.273-13.717 7.4307-10.332 14.083-6.853 21.298-3.2666z" fill="none" stroke="#60b767" stroke-width="1.0583"/>
+    <text x="-40.666168" y="82.308823" fill="#000000" font-size="4.6px" font-weight="bold" letter-spacing=".26458px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-40.666168" y="82.308823" dx="0">Curatorial</tspan><tspan x="-40.666168" y="88.482445">Statement</tspan></text>
+  </g>
+</svg>
+<ul id="works">
+  <li class="column"><ul></ul></li>
+  <li class="column"><ul></ul></li>
+  <li class="column"><ul></ul></li>
+  <li class="column"><ul></ul></li>
+  <li class="column"><ul></ul></li>
+</ul>
+<div class="archives_background"></div>
+<div class="archives"><a href="#archives"><%= PREVIOUS_CONSTELLATION %></a></div>
+</script>
+<script type="text/template" id="thumbnail_template">
+  <a href="#work/<%= id %>"><img src="<%= thumbnail.uri %>"></a>
+</script>
+<script type="text/template" id="svg_template">
+  <svg width="11.6vw" height="8.8vw" style="text-align:center" version="1.1" viewBox="0 0 36.38852 27.75054" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-12.091 -91.721)">
+      <path d="m46.264 96.276c4.0456 9.0182 1.2382 22.932-3.3496 22.579-11.901-0.91705-20.473 1.0669-24.153 0.0472-3.2723-0.90665-8.8324-16.028-5.2403-19.681 2.769-2.816 6.9149-0.46443 11.575-2.7199 11.924-5.771 18.493-6.1879 21.168-0.22435z" fill="none" stroke="#9ebcbe" stroke-width=".52917"/>
+      <g fill="#000000" letter-spacing="0px" word-spacing="0px">
+        <text x="20" y="106" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1" xml:space="preserve"><tspan x="20" y="106" font-size="6px" style="line-height:5px"><%= title %></tspan></text>
+        <text x="20" y="112" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="20" y="112" font-size="5px" style="line-height:13px"><%= author %></tspan></text>
+      </g>
+    </g>
+  </svg>
+</script>

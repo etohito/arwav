@@ -1,0 +1,172 @@
+[{
+  "id":           "0001",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title1",
+  "author":       "Someone",
+  "resource":     "./resources/0001/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0001/img.png",
+    "height":     "508",
+    "width":      "387"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0002",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title14",
+  "author":       "Someone",
+  "resource":     "./resources/0002/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0002/img.png",
+    "height":     "714",
+    "width":      "570"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0003",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title3",
+  "author":       "Someone",
+  "resource":     "./resources/0003/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0003/img.png",
+    "height":     "237",
+    "width":      "237"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0004",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title4",
+  "author":       "Someone",
+  "resource":     "./resources/0004/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0004/img.png",
+    "height":     "234",
+    "width":      "386"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0005",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title5",
+  "author":       "Someone",
+  "resource":     "./resources/0005/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0005/img.png",
+    "height":     "562",
+    "width":      "388"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0006",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title6",
+  "author":       "Someone",
+  "resource":     "./resources/0006/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0006/img.png",
+    "height":     "569",
+    "width":      "379"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0007",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title7",
+  "author":       "Someone",
+  "resource":     "./resources/0007/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0007/img.png",
+    "height":     "387",
+    "width":      "379"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0008",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title8",
+  "author":       "Someone",
+  "resource":     "./resources/0008/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0008/img.png",
+    "height":     "339",
+    "width":      "241"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0009",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title9",
+  "author":       "Someone",
+  "resource":     "./resources/0009/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0009/img.png",
+    "height":     "500",
+    "width":      "297"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0010",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title10",
+  "author":       "Someone",
+  "resource":     "./resources/0010/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0010/img.png",
+    "height":     "686",
+    "width":      "500"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0011",
+  "type":         "image",
+  "date":         "2018/12/21",
+  "title":        "Title11",
+  "author":       "Someone",
+  "resource":     "./resources/0011/img.png",
+  "thumbnail": {
+    "uri":        "./resources/0011/img.png",
+    "height":     "306",
+    "width":      "528"
+  },
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0012",
+  "type":         "audio",
+  "date":         "2018/12/21",
+  "title":        "Title12",
+  "author":       "Someone",
+  "resource":     "./resources/0012/audio.mp3",
+  "description":  "Description Description Description Description "
+},
+{
+  "id":           "0013",
+  "type":         "video",
+  "date":         "2018/12/22",
+  "title":        "Title13",
+  "author":       "Someone",
+  "resource":     "./resources/0013/video.mp4",
+  "description":  "Description Description Description Description "
+}]

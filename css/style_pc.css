@@ -1,0 +1,224 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  margin: 0px;
+}
+.escape {
+  position: absolute;
+  top: 0.8vw;
+  left: 87.5vw;
+}
+img.title {
+  position: absolute;
+  left: 0.8vw;
+  top: 10vw;
+  height: 30vw;
+}
+#home {
+  background-color: #ffffff;
+}
+#statement {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 100%;
+  min-height: 100%;
+  display: none;
+}
+#statement .text_area {
+  position: absolute;
+  overflow: scroll;
+  top: 3.9vw;
+  left: 19.9vw;
+  width: 60.1vw;
+  height: 46vw;
+}
+#statement .title {
+  font-size: 2.3vw;
+}
+#statement .summary,
+#statement .description {
+  font-size: 1.4vw;
+  margin-bottom: 2.8vw;
+}
+#statement .left_side {
+  position: absolute;
+  top: 300px;
+  left: -200px;
+  transform: rotate(-90deg);
+}
+#statement .left_title {
+  height: 23.4vw;
+}
+#constellation .curatorial {
+  position: absolute;
+  top: 0.8vw;
+  left: 82vw;
+}
+#constellation .archives_background{
+  position: absolute;
+  background: #000;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 5vw;
+}
+#constellation .archives {
+  position: absolute;
+  transform: rotate(-90deg) translate(-20vh, 89.5vw);
+}
+#constellation .archives>a {
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: #fff;
+}
+#works {
+  position: absolute;
+  top: 7.8vw;
+  left: 3vw;
+  height: 43vw;
+  width: 74vw;
+}
+#works .column {
+  float: left;
+}
+#works .column ul{
+  padding: 15%;
+}
+#works img,
+#works svg {
+  padding-bottom: 0.7vw;
+  max-width: 85%;
+}
+#menulist{
+  top: 0px;
+  left: -31vw;
+  width: 31vw;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background-color: #abd5af;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+}
+#menulist.show {
+  display: block;
+  transform: translateX(31vw);
+}
+#menulist ul {
+  list-style-type: none;
+  padding-top: 7.8vw;
+}
+#menulist li {
+  line-height: 2.5;
+  padding-left: 2vw;
+}
+#menulist li a {
+  font-size: 1.4vw;
+  text-decoration: none;
+}
+#work .main {
+  position: absolute;
+  top: 2.3vw;
+  left: 18.7vw;
+  width: 62.5vw;
+  height: 53.9vw;
+  text-align: center;
+}
+#work .main img,
+#work .main video,
+#work .main audio {
+  max-width: 100%;
+  max-height: 80%;
+}
+#work .main audio {
+  margin-top: 11.7vw;
+  width: 100%;
+}
+#work .main p {
+  text-align: center;
+}
+#work .prev {
+  position: absolute;
+  top: 41.4vw;
+  left: 7.8vw;
+}
+#work .next {
+  position: absolute;
+  top: 41.4vw;
+  left: 84.4vw;
+}
+#work .prev div,
+#work .next div {
+  position: relative;
+  width: 7.8vw;
+  height: 10.3vw;
+}
+#work .thumb,
+#work .thumb {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  max-width: 7.8vw;
+  max-height: 10.3vw;
+}
+#work .arrow {
+  width: 3.1vw;
+  margin-top: 0.78vw;
+  display: block;
+}
+#work .right {
+  margin-left: 5.5vw;
+}
+#work .left{
+  margin-left: 0.8vw;
+}
+#archives table {
+  top: 5vh;
+  left: 10vw;
+  width: 80vw;
+  position: absolute;
+  table-layout: fixed;
+}
+#archives table {
+  align: right;
+}
+#archives td {
+  width: 15vw; 
+  height: 15vw; 
+  padding: 2vw;
+}
+#archives td.text {
+  text-align: left;
+  font-size: 1.8vw;
+}
+#archives td.text span {
+  font-size: 2vw;
+}
+#archives td img {
+  max-width: 14vw;
+  max-height: 14vw;
+}
+
+.top {
+  vertical-align: top;
+}
+.bottom {
+  vertical-align: bottom;
+}
+.v_center {
+  vertical-align: bottom;
+}
+.left {
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.h_center{
+  text-align: center;
+}
