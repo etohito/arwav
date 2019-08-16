@@ -11,50 +11,66 @@ define([
   HoverView,
   MenuView
 ) {
+
+  // Text item like title, author, etc
   var TextItem = Backbone.View.extend({
-    el: 'li',
     initialize: function(options) {
       TextItem.__super__.initialize.call(this, options);
-      this.template= _.template($('#text_template').html());
       var style = '';
       if (options.randomPos) {
-        style = ' align=' + options.align +
-                ' valign=' + options.valign + ' class="text"';
+        style = ' align=' + options.align + ' valign=' + options.valign + ' class="text"';
       } else {
         style = ' class="text"';
       }
       this.$el = $('<td' + style + '></td>');
     },
     render: function() {
-      this.$el.append(this.template(this.model.toJSON()));
+      var template= _.template($('#text_template').html());
+      this.$el.append(template(this.model.toJSON()));
       return this;
     },
     createItems: function() {
     }
   });
+
+  // Thumbnail item
   var ThumbnailItem = Backbone.View.extend({
     initialize: function(options) {
       ThumbnailItem.__super__.initialize.call(this, options);
-      this.template= _.template($('#thumbnail_template').html());
       var style = '';
       if (options.randomPos) {
         style = ' align=' + options.align + ' valign=' + options.valign;
       }
       this.$el = $('<td' + style + '></td>');
+      this.addListener();
+    },
+    addListener: function() {
+      this.$el.on('click', this.click.bind(this));
+    },
+    removeListener: function() {
+      this.$el.off('click');
     },
     render: function() {
-      this.$el.append(this.template(this.model.toJSON()));
+      var template= _.template($('#thumbnail_template').html());
+      this.$el.append(template(this.model.toJSON()));
       return this;
     },
     createItems: function() {
+    },
+    click: function() {
+      this.trigger('close', "#work/" + this.model.get('id'));
+    },
+    remove: function() {
+      this.removeListener();
+      ThumbnailItem.__super__.remove.call(this);
     }
   });
+
+  // Svg item which does not have thumbnail
   var SvgItem = Backbone.View.extend({
-    el: 'li',
     items: [],
     initialize: function(options) {
       SvgItem.__super__.initialize.call(this, options);
-      this.template = _.template($('#svg_template').html());
       this.themeColor = options.themeColor
       var style = '';
       if (options.randomPos) {
@@ -63,32 +79,36 @@ define([
       this.$el = $('<td' + style + '></td>');
     },
     render: function() {
-      this.$el.append(this.template(this.model.toJSON()));
+      var template = _.template($('#svg_template').html());
+      this.$el.append(template(this.model.toJSON()));
       return this;
     },
     createItems: function() {
+      // Enable svg hover
+      var color = {
+        hover: {path: {fill: this.themeColor, stroke: this.themeColor}, text: {fill: Color.WHITE, stroke: 'none'}},
+        out:   {path: {fill: 'none', stroke: this.themeColor}, text: {fill:  Color.BLACK, stroke: 'none'}}
+      };
       var hoverView = new HoverView({
         el: this.$el.find('svg'),
-        model: new HoverModel({
-          hover: {
-            path: {fill: this.themeColor, stroke: this.themeColor},
-            text: {fill: '#fff', stroke: 'none'},
-          },
-          out: {
-            path: {fill: 'none', stroke: this.themeColor},
-            text: {fill:  '#000', stroke: 'none'},
-          }
-        })
+        model: new HoverModel(color)
       });
-      var id = this.model.get('id');
-      hoverView.__proto__.select = function() {
-        Backbone.history.navigate("#work/" + id, true);
-        this.trigger('close');
-      };
       hoverView.out();
       this.items.push(hoverView);
+      this.listenTo(hoverView, 'close', this.close);
     },
+    close: function() {
+      this.trigger('close', "#work/" + this.model.get('id'));
+    },
+    remove: function() {
+      _.each(this.items, function(item) {
+        item.remove();
+      });
+      this.items = [];
+      SvgItem.__super__.remove.call(this);
+    }
   });
+  // Previous constellation works
   var TableView = Backbone.View.extend({
     el: 'table',
     items: [],
@@ -110,23 +130,27 @@ define([
           if (!model) {
             break;
           }
+          // Add title
           style = {randomPos: this.randomPos, align: aligns[1],
                   valign: valigns[(i + 1) % valigns.length]};
           item = new TextItem(_.extend({model: model}, style));
           this.items.push(item);
           $tr.append(item.render().$el);
 
+          // Add thumbnail or svg
           style = {randomPos: this.randomPos, align: aligns[i % valigns.length],
                   valign: valigns[i % valigns.length]};
           if (model.get('thumbnail').uri) {
             item = new ThumbnailItem(_.extend({model: model}, style));
           } else {
-            var values = _.values(Color);
-            var colorIndex = parseInt(model.get('id'), 10) % _.values(Color).length;
+            // Set svg color depeneds on its id
+            var colors = [Color.SKY, Color.PINK, Color.LIME, Color.CREAM]
+            var colorIndex = parseInt(model.get('id'), 10) % colors.length;
             item = new SvgItem(_.extend({
-              model: model, themeColor: values[colorIndex]}, style));
+              model: model, themeColor: colors[colorIndex]}, style));
           }
           this.items.push(item);
+          this.listenTo(item, 'close', this.close);
           $tr.append(item.render().$el);
           i++;
         }
@@ -138,44 +162,45 @@ define([
       _.each(this.items, function(item) {
         item.createItems();
       });
-    }
+    },
+    close: function(hash) {
+      this.trigger('close', hash);
+    },
   });
+  // Archives screen
   var ArchivesView = Backbone.View.extend({
     el: '#archives',
     items: [],
     initialize: function(options) {
       ArchivesView.__super__.initialize.call(this, options);
-      this.template = _.template($('#archives_template').html());
       this.columnNum = options.columnNum;
       this.randomPos = options.randomPos;
     },
     render: function() {
-      this.$el.html(this.template(dic))
-      this.items.push(new TableView({
-        columnNum: this.columnNum,
-        collection: this.collection,
-        randomPos: this.randomPos
-      }).render());
+      var template = _.template($('#archives_template').html());
+      this.$el.html(template(dic))
       return this;
     },
     createItems: function() {
-      var menuView = new MenuView({
-        hover: {
-          path: {fill: '#ffffff', stroke: Color.GREEN},
-          text: {fill: Color.GREEN, stroke: 'none'},
-        },
-        out: {
-          path: {fill: Color.GREEN, stroke: Color.GREEN},
-          text: {fill: '#ffffff', stroke: 'none'},
-        }
-      });
+      // Menu link
+      var options = {
+        hover: {path: {fill: Color.WHITE, stroke: Color.LIME}, text: {fill: Color.LIME, stroke: 'none'}},
+        out:   {path: {fill: Color.LIME, stroke: Color.LIME}, text: {fill: Color.WHITE, stroke: 'none'}}
+      };
+      var menuView = new MenuView(options);
       this.items.push(menuView);
       this.listenTo(menuView, 'close', this.close);
-      _.each(this.items, function(item) {
-        if (_.isFunction(item.createItems)) {
-          item.createItems();
-        }
-      });
+
+      // Works
+      var tableView = new TableView({
+        columnNum: this.columnNum,
+        collection: this.collection,
+        randomPos: this.randomPos
+      }).render();
+
+      tableView.createItems();
+      this.items.push(tableView);
+      this.listenTo(tableView, 'close', this.close);
     },
     close: function(hash) {
       _.each(this.items, function(item) {

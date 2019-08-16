@@ -16,9 +16,6 @@ define([
 
   // Thumbnail item
   var ThumbnailItem = Backbone.View.extend({
-    events : {
-      'click': 'click'
-    },
     initialize: function(options) {
       ThumbnailItem.__super__.initialize.call(this, options);
       this.$el = $('<li></li>');
@@ -39,6 +36,10 @@ define([
     },
     click: function() {
       this.trigger('close', "#work/" + this.model.get('id'));
+    },
+    remove: function() {
+      this.removeListener();
+      ThumbnailItem.__super__.remove.call(this);
     }
   });
 
@@ -147,7 +148,8 @@ define([
       ColumnView.__super__.remove.call(this);
     }
   });
-  // View for current constellation works
+
+  // Current constellation works
   var TableView = Backbone.View.extend({
     el: '#works',
     items: [],
@@ -223,6 +225,7 @@ define([
       TableView.__super__.remove.call(this);
     }
   });
+
   // View for current constellation screen
   var ConstellationView = Backbone.View.extend({
     el: '#constellation',

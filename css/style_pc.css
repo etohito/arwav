@@ -180,11 +180,15 @@ img.title {
 #work .left{
   margin-left: 0.8vw;
 }
-#archives table {
+#archives .table_container {
   top: 5vh;
   left: 10vw;
-  width: 80vw;
+  width: 90vw;
+  height: 95vh;
   position: absolute;
+  overflow: auto;
+}
+#archives table {
   table-layout: fixed;
 }
 #archives table {
