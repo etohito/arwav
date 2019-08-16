@@ -13,10 +13,22 @@ define([
   EscapeView,
   MenuView
 ) {
+
+  // Thumbnail item
   var ThumbnailItem = Backbone.View.extend({
+    events : {
+      'click': 'click'
+    },
     initialize: function(options) {
       ThumbnailItem.__super__.initialize.call(this, options);
       this.$el = $('<li></li>');
+      this.addListener();
+    },
+    addListener: function() {
+      this.$el.on('click', this.click.bind(this));
+    },
+    removeListener: function() {
+      this.$el.off('click');
     },
     render: function() {
       var template= _.template($('#thumbnail_template').html());
@@ -24,8 +36,13 @@ define([
       return this;
     },
     createItems: function() {
+    },
+    click: function() {
+      this.trigger('close', "#work/" + this.model.get('id'));
     }
   });
+
+  // Svg item which does not have thumbnail
   var SvgItem = Backbone.View.extend({
     items: [],
     initialize: function(options) {
@@ -40,29 +57,22 @@ define([
     },
     createItems: function() {
       this.items = [];
+
+      // Enable svg hover
+      var color = {
+        hover: {path: {fill: this.themeColor, stroke: this.themeColor}, text: {fill: Color.WHITE, stroke: 'none'}},
+        out:   {path: {fill: 'none', stroke: this.themeColor}, text: {fill:  Color.BLACK, stroke: 'none'}}
+      };
       var hoverView = new HoverView({
         el: this.$el.find('svg'),
-        model: this.getHoverModel()
+        model: new HoverModel(color)
       });
-      var id = this.model.get(id);
-      hoverView.__proto__.select = function() {
-        Backbone.history.navigate("#work/" + id, true);
-        this.trigger('close');
-      };
       hoverView.out();
       this.items.push(hoverView);
+      this.listenTo(hoverView, 'close', this.close);
     },
-    getHoverModel: function() {
-      return new HoverModel({
-        hover: {
-          path: {fill: this.themeColor, stroke: this.themeColor},
-          text: {fill: '#fff', stroke: 'none'},
-        },
-        out: {
-          path: {fill: 'none', stroke: this.themeColor},
-          text: {fill:  '#000', stroke: 'none'},
-        }
-      });
+    close: function() {
+      this.trigger('close', "#work/" + this.model.get('id'));
     },
     remove: function() {
       _.each(this.items, function(item) {
@@ -72,6 +82,8 @@ define([
       SvgItem.__super__.remove.call(this);
     }
   });
+
+  // Column
   var ColumnView = Backbone.View.extend({
     items: [],
     events : {
@@ -85,29 +97,35 @@ define([
       var item;
       if (model.get('thumbnail').uri) {
         item = new ThumbnailItem({model: model});
+        console.warn('add : thumbnail')
       } else {
-        var values = _.values(Color);
-        var colorIndex = parseInt(model.get('id'), 10) % _.values(Color).length;
-        item = new SvgItem({model: model, themeColor: values[colorIndex]});
+        // Set svg color depeneds on its id
+        var colors = [Color.SKY, Color.PINK, Color.LIME, Color.CREAM]
+        var colorIndex = parseInt(model.get('id'), 10) % colors.length;
+        item = new SvgItem({model: model, themeColor: colors[colorIndex]});
+        console.warn('add : svg')
       }
       this.items.push(item);
+      this.listenTo(item, 'close', this.close);
+
       this.$el.append(item.render().$el);
       item.createItems();
     },
     resetTopPos: function() {
-      this.$el.fadeOut(500, function() {
+      this.$el.fadeOut(1000, function() {
         this.$el.css({
           transitionDuration: '0s',
           transitionTimingFunction: 'linear',
           transform: 'none',
         });
-        this.$el.fadeIn();
+        this.$el.fadeIn(1000);
       }.bind(this));
     },
     setScroll: function() {
+      var baseSpeed = 40; // speed = px / sec
       var scrollHeight = parseFloat(this.$el.css('height'), 10) - this.parentHeight;
       this.$el.css({
-        transitionDuration: 10 + this.random(10) + 's',
+        transitionDuration: scrollHeight / baseSpeed + this.random(5) + 's',
         transitionTimingFunction: 'linear',
         transform: 'translateY(-' + scrollHeight+ 'px)'
       });
@@ -118,6 +136,9 @@ define([
     random(max) {
       return Math.floor(Math.random() * max + 1);
     },
+    close: function(hash) {
+      this.trigger('close', hash);
+    },
     remove: function() {
       _.each(this.items, function(item) {
         item.remove();
@@ -126,6 +147,7 @@ define([
       ColumnView.__super__.remove.call(this);
     }
   });
+  // View for current constellation works
   var TableView = Backbone.View.extend({
     el: '#works',
     items: [],
@@ -135,21 +157,24 @@ define([
       this.createItems();
     },
     createItems: function() {
-      this.items = [];
       var $columns = this.$el.find('.column>ul');
+
+      // Adjust column width depends on the device width
       $columns.css({width: parseInt(this.$el.css('width'), 10) / $columns.length});
       var parentHeight = parseFloat(this.$el.css('height'), 10);
 
-      _.each($columns, function(column) {
-        this.items.push(new ColumnView({
-          el: column, parentHeight: parentHeight}));
+      // Create each culumn
+      this.items = [];
+      _.each($columns, function(column, index) {
+        this.items.push(new ColumnView({el: column, parentHeight: parentHeight}));
+        this.listenTo(this.items[index], 'close', this.close);
       }, this);
-      var columnIndex = 0;
-      var minHeight = 0;
-      var itemHeight = 0;
 
-      // create each culumn
-      var repeatCount = 3;
+      var columnIndex, minHeight, itemHeight = 0;
+      var repeatCount = 3; // @todo Please delete if there are enough items to scroll.
+
+      // @todo confirm requirement about how to create columns
+      /*
       for (var cnt = 0; cnt < repeatCount; cnt++) {
         this.collection.each(function(model) {
           minHeight = parseFloat(this.items[0].$el.css('height'), 10);
@@ -165,7 +190,20 @@ define([
           this.items[columnIndex].add(model);
         }, this);
       }
+      */
+      var model;
+      var i = 0;
+      for (var cnt = 0; cnt < repeatCount;) {
+        for (var j = 0; j < this.items.length; j++) {
+          if (this.collection.length <= i) {
+            cnt++;
+            i = 0;
+          }
+          this.items[j].add(this.collection.at(i++));
+        }
+      }
 
+      // @todo improve
       if (this.autoScroll) {
         this.scrollTimerId = setTimeout(function() {
           _.each(this.items, function(item) {
@@ -173,6 +211,9 @@ define([
           });
         }.bind(this), 1500);
       }
+    },
+    close: function(hash) {
+      this.trigger('close', hash);
     },
     remove: function() {
       _.each(this.items, function(item) {
@@ -182,6 +223,7 @@ define([
       TableView.__super__.remove.call(this);
     }
   });
+  // View for current constellation screen
   var ConstellationView = Backbone.View.extend({
     el: '#constellation',
     items: [],
@@ -195,33 +237,31 @@ define([
       return this;
     },
     createItems: function() {
-      var menuView = new MenuView({
-        hover: {
-          path: {fill: '#ffffff', stroke: Color.GREEN},
-          text: {fill: Color.GREEN, stroke: 'none'},
-        },
-        out: {
-          path: {fill: Color.GREEN, stroke: Color.GREEN},
-          text: {fill: '#ffffff', stroke: 'none'},
-        }
-      });
+      // Menu link
+      var options = {
+        hover: {path: {fill: Color.WHITE, stroke: Color.LIME}, text: {fill: Color.LIME, stroke: 'none'}},
+        out:   {path: {fill: Color.LIME, stroke: Color.LIME}, text: {fill: Color.WHITE, stroke: 'none'}}
+      };
+      var menuView = new MenuView(options);
       this.items.push(menuView);
       this.listenTo(menuView, 'close', this.close);
 
-      var escapeColor = '#60b767'; // @todo get color from style
-      var escapeView = new EscapeView({el: '.curatorial', color: {
-        hover: {
-          path: {fill: escapeColor, stroke: escapeColor},
-          text: {fill: '#ffffff', stroke: 'none'}
-        },
-        out: {
-          path: {fill: 'none', stroke: escapeColor},
-          text: {fill: '#000000', stroke: 'none'}
+      // Curatorial statement link
+      var options = {
+        el: '.curatorial',
+        color: {
+          hover: {path: {fill: escapeColor, stroke: escapeColor}, text: {fill: Color.WHITE, stroke: 'none'}},
+          out:   {path: {fill: 'none', stroke: escapeColor}, text: {fill: Color.BLACK, stroke: 'none'}}
         }
-      }});
+      };
+      var escapeColor = Color.GREEN;
+      var escapeView = new EscapeView(options);
       this.items.push(escapeView);
-      this.listenTo(escapeView, 'close', this.close);
+      this.listenTo(escapeView, 'close', function() {
+        this.close('curatorial');
+      });
 
+      // Works
       var tableView = new TableView({
         autoScroll: this.autoScroll, collection: this.collection});
       this.items.push(tableView);
@@ -236,8 +276,6 @@ define([
       this.items = [];
       if (hash) {
         Backbone.history.navigate(hash, {trigger: true});
-      } else {
-        Backbone.history.navigate('curatorial', true);
       }
     }
   });

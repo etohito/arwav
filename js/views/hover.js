@@ -43,10 +43,11 @@ define([
       });
     },
     select: function() {
+      this.trigger('close');
     },
     remove: function() {
-      HoverView.__super__.remove.call(this);
       this.removeListener();
+      HoverView.__super__.remove.call(this);
     }
   });
   return HoverView;
