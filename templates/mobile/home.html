@@ -1,12 +1,10 @@
 <div id="home">
 </div>
 <script type="text/template" id="home_template">
-  <script src=https://apis.google.com/js/platform.js" async defer></script>
   <div class="language"><p><a href="#language"><%= LANGUAGE %></a></p></div>
-  <div class="g-signin2" data-onsuccess="onSignIn"></div>
   <div class="login"><p><%= LOGIN %></p></div>
-  <div class="login_id"><input type="text" placeholder="<%= ACCOUNT %>"></div>
-  <div class="login_pw"><input type="text" placeholder="<%= PASSWORD %>"></div>
+  <div id="google_signin"></div>
+
   <div class="login_btn"><p><a href="#signup"><%= SUBMIT %></a></p></div>
   <div class="signup"><p><%= SIGNUP %></p></div>
   <div class="signup_id"><input type="text" placeholder="<%= ACCOUNT %>"></div>

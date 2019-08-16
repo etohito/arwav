@@ -29,9 +29,10 @@ body {
 }
 #menulist li {
   line-height: 2.5;
-  padding-left: 2vw;
+  padding-left: 10vw;
 }
 #menulist li a {
+  font-size: 5vw;
   text-decoration: none;
 }
 #content {
@@ -61,12 +62,14 @@ body {
   top: 6.2vw;
 }
 #home .login {
-  top: 61vw;
+  top: 55vw;
   color: rgb(158, 188, 190);
 }
-#home .login_id {
+#google_signin {
   text-align: center;
   top: 79vw;
+  left: 35vw;
+  width: 30vw;
 }
 #home .login_pw {
   text-align: center;
@@ -77,7 +80,7 @@ body {
   color: #ffffff;
 }
 #home .signup {
-  top: 143vw;
+  top: 136vw;
   color: rgb(244, 233, 178);
 }
 #home .signup_id {
@@ -181,7 +184,7 @@ body {
 }
 #work .main {
   height: 82vh;
-  overflow: scroll;
+  overflow: auto;
 }
 #work .main video,
 #work .main audio,
@@ -236,7 +239,7 @@ body {
 #archives .menu {
   left: 7vw;
 }
-#footer .escape {
+#footer .back {
   position: absolute;
   margin-top: 5.4vh;
   left: 51vw;
@@ -248,7 +251,7 @@ body {
   font-size: 5vw;
   color: white;
 }
-#footer .escape p {
+#footer .back p {
   position: fixed;
   top: 81.5vh;
   font-size: 5vw;

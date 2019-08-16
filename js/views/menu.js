@@ -9,12 +9,12 @@ define([
 ) {
   var MenuItem = Backbone.View.extend({
     events: {
-      'click': 'onclick'
+      'click': 'click'
     },
     initialize: function(options) {
       MenuItem.__super__.initialize.call(this, options);
     },
-    onclick: function(event) {
+    click: function(event) {
       event.preventDefault();
       if (location.hash != event.target.hash) {
         this.stopListening();
@@ -55,7 +55,7 @@ define([
     },
     close: function(hash) {
       this.hide();
-      if (location.hash != hash) {
+      if (hash && location.hash != hash) {
         this.stopListening();
         this.trigger('close', hash);
       }

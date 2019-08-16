@@ -165,7 +165,7 @@ define([
       this.listenTo(item, 'close', this.close);
 
       // Menu link
-      var options = {
+      options = {
         hover: {path: {fill: Color.WHITE, stroke: Color.LIME}, text: {fill: Color.LIME, stroke: 'none'}},
         out:   {path: {fill: Color.LIME, stroke: Color.LIME}, text: {fill: Color.WHITE, stroke: 'none'}}
       };
@@ -173,19 +173,37 @@ define([
       this.items.push(menuView);
       this.listenTo(menuView, 'close', this.close);
 
-      // Curatorial statement link
-      var options = {
-        el: '.curatorial',
-        color: {
-          hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
-          out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
-        }
-      };
-      var escapeView = new EscapeView(options);
-      this.items.push(escapeView);
-      this.listenTo(escapeView, 'close', function() {
-        this.close('curatorial');
-      });
+      // Curatorial statement link for pc
+      if (this.$el.find('.curatorial')) {
+        options = {
+          el: '.curatorial',
+          color: {
+            hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
+            out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
+          }
+        };
+        var escapeView = new EscapeView(options);
+        this.items.push(escapeView);
+        this.listenTo(escapeView, 'close', function() {
+          this.close('curatorial');
+        });
+      }
+      // Back link for mobile
+      if (this.$el.find('.back')) {
+        options = {
+          el: '.back',
+          color: {
+            hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
+            out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
+          }
+        };
+        var escapeView = new EscapeView(options);
+        this.items.push(escapeView);
+        this.listenTo(escapeView, 'close', function() {
+          this.close(null);
+          history.back();
+        });
+      }
     },
     close: function(hash) {
       _.each(this.items, function(item) {

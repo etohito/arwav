@@ -78,7 +78,7 @@ img.title {
   height: 100vh;
   width: 80vw;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 #works .column {
   float: left;

@@ -4,12 +4,14 @@ define([
   'views/hover',
   'views/escape',
   'views/menu',
+  'views/signin',
 ], function(
   Backbone,
   HoverModel,
   HoverView,
   EscapeView,
-  MenuView
+  MenuView,
+  SigninView
 ) {
   var HomeItem = HoverView.extend({
     initialize: function(options) {
@@ -45,7 +47,8 @@ define([
     render: function() {
       var template = _.template($('#home_template').html());
       this.$el.html(template(dic));
-      return this; 
+      new SigninView().render();
+      return this;
     },
     scrollTop: function(focus) {
       var $focus = $('.' + focus);
@@ -64,7 +67,7 @@ define([
       _.each(itemsInfo, function(itemInfo) {
         new HomeItem(itemInfo);
       }, this);
-    }
+    },
   });
   return HomeView;
 });
