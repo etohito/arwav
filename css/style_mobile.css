@@ -43,8 +43,6 @@ body {
   background-image: url("../svg/home_mobile.svg");
 }
 #home div {
-  position: absolute;
-  width: 100vw;
 }
 #home a {
   text-decoration: none;
@@ -62,44 +60,58 @@ body {
   top: 6.2vw;
 }
 #home .login {
+  position: absolute;
+  width: 100vw;
   top: 55vw;
   color: rgb(158, 188, 190);
 }
 #google_signin {
+  position: absolute;
   text-align: center;
   top: 79vw;
   left: 35vw;
   width: 30vw;
 }
-#home .login_pw {
-  text-align: center;
-  top: 98vw;
-}
-#home .login_btn {
-  top: 113vw;
-  color: #ffffff;
-}
 #home .signup {
+  position: absolute;
+  width: 100vw;
   top: 136vw;
   color: rgb(244, 233, 178);
 }
+#google_signup {
+  position: absolute;
+  text-align: center;
+  top: 163vw;
+  left: 35vw;
+  width: 30vw;
+}
 #home .signup_id {
+  position: absolute;
+  width: 100vw;
   text-align: center;
   top: 163vw;
 }
 #home .signup_pw {
+  position: absolute;
+  width: 100vw;
   text-align: center;
   top: 182vw;
 }
 #home .signup_btn {
+  position: absolute;
+  width: 100vw;
   top: 197vw;
   color: #ffffff;
 }
 #home .curatorial {
+  position: absolute;
+  width: 100vw;
   top: 224vw;
   color: rgb(245, 218, 213);
 }
 #home .curatorial_text {
+  position: absolute;
+  width: 100vw;
   top: 250vw;
   margin-left: 5%;
   color: #ffffff;
@@ -108,10 +120,14 @@ body {
   width: 90%;
 }
 #home .aboutus {
+  position: absolute;
+  width: 100vw;
   top: 362vw;
   color: rgb(171, 213, 175);
 }
 #home .aboutus_text {
+  position: absolute;
+  width: 100vw;
   top: 388vw;
   margin-left: 5%;
   color: #ffffff;

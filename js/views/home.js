@@ -47,7 +47,7 @@ define([
     render: function() {
       var template = _.template($('#home_template').html());
       this.$el.html(template(dic));
-      new SigninView().render();
+      new SigninView();
       return this;
     },
     scrollTop: function(focus) {

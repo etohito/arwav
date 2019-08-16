@@ -12,12 +12,13 @@ define([
   MenuView
 ) {
   var Google = Backbone.View.extend({
-    focus: null,
     initialize: function(options) {
       Google.__super__.initialize.call(this, options);
+      this.id = options.id;
+      this.render();
     },
     render: function() {
-      gapi.signin2.render('google_signin', {
+      gapi.signin2.render(this.id, {
         'longtitle': true,
         'theme': 'dark',
         'onsuccess': this.success,
@@ -32,5 +33,23 @@ define([
       console.warn('failure');
     }
   });
-  return Google;
+  var Signin = Backbone.View.extend({
+    initialize: function(options) {
+      Signin.__super__.initialize.call(this, options);
+      this.render();
+    },
+    render: function() {
+      var googleSignin = new Google({id: 'google_signin'});
+      var googleSignup = new Google({id: 'google_signup'});
+      return this;
+    },
+    success: function() {
+      console.warn('success');
+    },
+    failure: function() {
+      console.warn('failure');
+    }
+  });
+
+  return Signin;
 });
