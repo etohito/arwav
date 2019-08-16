@@ -45,7 +45,7 @@ define([
       this.addListener();
     },
     addListener: function() {
-      this.$el.on('click', this.click.bind(this));
+      this.$el.on('click', this.close.bind(this));
     },
     removeListener: function() {
       this.$el.off('click');
@@ -57,7 +57,7 @@ define([
     },
     createItems: function() {
     },
-    click: function() {
+    close: function() {
       this.trigger('close', "#work/" + this.model.get('id'));
     },
     remove: function() {
@@ -205,9 +205,9 @@ define([
     close: function(hash) {
       _.each(this.items, function(item) {
         item.remove();
-        this.stopListening(item);
       }, this);
       this.$el.html('');
+      this.stopListening();
       this.items = [];
       if (hash) {
         Backbone.history.navigate(hash, {trigger: true});

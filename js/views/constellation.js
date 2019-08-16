@@ -253,11 +253,10 @@ define([
       var options = {
         el: '.curatorial',
         color: {
-          hover: {path: {fill: escapeColor, stroke: escapeColor}, text: {fill: Color.WHITE, stroke: 'none'}},
-          out:   {path: {fill: 'none', stroke: escapeColor}, text: {fill: Color.BLACK, stroke: 'none'}}
+          hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
+          out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
         }
       };
-      var escapeColor = Color.GREEN;
       var escapeView = new EscapeView(options);
       this.items.push(escapeView);
       this.listenTo(escapeView, 'close', function() {
@@ -273,10 +272,10 @@ define([
     close: function(hash) {
       _.each(this.items, function(item) {
         item.remove();
-        this.stopListening(item);
       }, this);
       this.$el.html('');
       this.items = [];
+      this.stopListening();
       if (hash) {
         Backbone.history.navigate(hash, {trigger: true});
       }

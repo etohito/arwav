@@ -7,10 +7,11 @@ ul {
 body {
   margin: 0px;
 }
-.escape {
+.escape,
+.curatorial {
   position: absolute;
-  top: 0.8vw;
-  left: 87.5vw;
+  top: 3vh;
+  left: 88vw;
 }
 img.title {
   position: absolute;
@@ -53,11 +54,6 @@ img.title {
 }
 #statement .left_title {
   height: 23.4vw;
-}
-#constellation .curatorial {
-  position: absolute;
-  top: 3vh;
-  left: 88vw;
 }
 #constellation .archives_background{
   position: absolute;
@@ -126,10 +122,10 @@ img.title {
 }
 #work .main {
   position: absolute;
-  top: 2.3vw;
+  top: 5vh;
   left: 18.7vw;
   width: 62.5vw;
-  height: 53.9vw;
+  height: 95vh;
   text-align: center;
 }
 #work .main img,
@@ -147,12 +143,12 @@ img.title {
 }
 #work .prev {
   position: absolute;
-  top: 41.4vw;
+  bottom: 0;
   left: 7.8vw;
 }
 #work .next {
   position: absolute;
-  top: 41.4vw;
+  bottom: 0;
   left: 84.4vw;
 }
 #work .prev div,
