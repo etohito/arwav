@@ -54,10 +54,11 @@ define([
     render: function() {
       var googleSignin = new Google({id: 'google_signin'});
       var googleSignup = new Google({id: 'google_signup'});
-      var facebook = new Facebook();
+      //var facebook = new Facebook();
       return this;
     },
     success: function() {
+      Backbone.history.navigate('constellation', {trigger: true});
       console.warn('success');
     },
     failure: function() {
