@@ -20,6 +20,7 @@ define([], function() {
     LOGIN: 'ログイン',
     LOGIN_LOGOUT: 'ログイン/ログアウト',
     MENU: 'メニュー',
+    NAME: 'jp',
     PASSWORD: 'パスワード',
     PREVIOUS_CONSTELLATION: '過去の展示',
     SIGNUP: 'サインアップ',

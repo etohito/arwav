@@ -16,12 +16,13 @@ define([], function() {
     ESCAPE: 'Escape',
     HOME: 'Home',
     LANGUAGE: 'English/日本語',
-    LOGIN: 'Login',
+    LOGIN: 'Log in',
     LOGIN_LOGOUT: 'Log in/out',
     MENU: 'Menu',
+    NAME: 'en',
     PASSWORD: 'password',
     PREVIOUS_CONSTELLATION: 'Previous Constellation',
-    SIGNUP: 'Signup',
+    SIGNUP: 'Sign up',
     SUBMIT: 'Submit',
   };
   return En;

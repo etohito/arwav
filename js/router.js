@@ -51,16 +51,15 @@ define([
       this.$content = $('#content');
     },
     home: function(focus) {
-      var homeView;
       if (this.device == 'mobile') {
         this.$content.hide().load('templates/mobile/home.html', function() {
-          homeView = new HomeView().render();
+          var homeView = new HomeView().render();
           this.$content.fadeIn(this.FADE_MS, function() {
             homeView.scrollTop(focus);
           });
         }.bind(this));
       } else {
-        this.$content.hide().load('templates/pc/home.html', function() {
+        this.$content.hide().load('templates/pc/home_' + dic.NAME + '.html', function() {
           new HomeView();
           this.$content.fadeIn(this.FADE_MS);
         }.bind(this));

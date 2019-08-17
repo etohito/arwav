@@ -21,6 +21,8 @@ img.title {
 }
 #home {
   background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
 }
 #statement {
   position: absolute;
