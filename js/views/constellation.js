@@ -98,13 +98,11 @@ define([
       var item;
       if (model.get('thumbnail').uri) {
         item = new ThumbnailItem({model: model});
-        console.warn('add : thumbnail')
       } else {
         // Set svg color depeneds on its id
         var colors = [Color.SKY, Color.PINK, Color.LIME, Color.CREAM]
         var colorIndex = parseInt(model.get('id'), 10) % colors.length;
         item = new SvgItem({model: model, themeColor: colors[colorIndex]});
-        console.warn('add : svg')
       }
       this.items.push(item);
       this.listenTo(item, 'close', this.close);

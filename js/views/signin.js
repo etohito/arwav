@@ -33,6 +33,19 @@ define([
       console.warn('failure');
     }
   });
+  var Facebook = Backbone.View.extend({
+    initialize: function(options) {
+      Facebook.__super__.initialize.call(this, options);
+      this.render();
+    },
+    render: function() {
+      FB.login(this.success.bind(this));
+      return this;
+    },
+    success: function(response) {
+      console.warn('success');
+    },
+  });
   var Signin = Backbone.View.extend({
     initialize: function(options) {
       Signin.__super__.initialize.call(this, options);
@@ -41,6 +54,7 @@ define([
     render: function() {
       var googleSignin = new Google({id: 'google_signin'});
       var googleSignup = new Google({id: 'google_signup'});
+      var facebook = new Facebook();
       return this;
     },
     success: function() {
