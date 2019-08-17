@@ -38,8 +38,9 @@ body {
 #content {
 }
 #home {
-  height: 520vw;
+  height: 930vw;
   background-size: 100%;
+  background-repeat: no-repeat;
   background-image: url("../svg/home_mobile.svg");
 }
 #home div {
@@ -47,9 +48,12 @@ body {
 #home a {
   text-decoration: none;
 }
-#home p {
+#home .title {
   text-align: center;
   font-size: 4.8vw;
+}
+#home .statement {
+  font-size: 3.5vw;
 }
 #home input {
   font-size: 4.8vw;
@@ -111,32 +115,23 @@ body {
 }
 #home .curatorial_text {
   position: absolute;
-  width: 100vw;
+  width: 90%;
   top: 250vw;
   margin-left: 5%;
   color: #ffffff;
 }
-#home .curatorial_text p {
-  width: 90%;
-}
 #home .aboutus {
   position: absolute;
   width: 100vw;
-  top: 362vw;
+  top: 765vw;
   color: rgb(171, 213, 175);
 }
 #home .aboutus_text {
   position: absolute;
-  width: 100vw;
-  top: 388vw;
+  width: 90%;
+  top: 790vw;
   margin-left: 5%;
   color: #ffffff;
-}
-#home .aboutus_text p {
-  width: 90%;
-}
-#home .aboutus_text p {
-  width: 90%;
 }
 #works {
   top: 3.8vw;
