@@ -121,10 +121,10 @@ define([
       }.bind(this));
     },
     setScroll: function() {
-      var baseSpeed = 40; // speed = px / sec
+      var baseSpeed = 60; // speed = px / sec
       var scrollHeight = parseFloat(this.$el.css('height'), 10) - this.parentHeight;
       this.$el.css({
-        transitionDuration: scrollHeight / baseSpeed + this.random(5) + 's',
+        transitionDuration: scrollHeight / baseSpeed + this.random(10) + 's',
         transitionTimingFunction: 'linear',
         transform: 'translateY(-' + scrollHeight+ 'px)'
       });
