@@ -134,7 +134,7 @@ define([
       // previous work
       model = this.collection.shift();
       options = {el: this.$el.find('.prev'), model: model}
-      if (model.get('thumbnail').uri) {
+      if (model.get('thumbnail')) {
         options.selector = '#prev_template';
         item = new PrevNextItem(options);
       } else {
@@ -154,7 +154,7 @@ define([
       // next work
       model = this.collection.shift();
       options = {el: this.$el.find('.next'), model: model};
-      if (model.get('thumbnail').uri) {
+      if (model.get('thumbnail')) {
         options.selector = '#next_template';
         item = new PrevNextItem(options);
       } else {

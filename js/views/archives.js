@@ -140,7 +140,7 @@ define([
           // Add thumbnail or svg
           style = {randomPos: this.randomPos, align: aligns[i % valigns.length],
                   valign: valigns[i % valigns.length]};
-          if (model.get('thumbnail').uri) {
+          if (model.get('thumbnail')) {
             item = new ThumbnailItem(_.extend({model: model}, style));
           } else {
             // Set svg color depeneds on its id

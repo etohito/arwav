@@ -5,20 +5,32 @@ define(['backbone'], function(Backbone) {
         id:           null,
         type:         null,
         date:         null,
-        title:        null,
-        author:       null,
-        resource:     null,
-        thumbnail: {
-          uri:        null,
-          height:     0,
-          width:      0,
+        title: {
+          en: null,
+          jp: null
         },
-        description:  null,
+        author: {
+          en: null,
+          jp: null
+        },
+        resource:     null,
+        thumbnail:    null,
+        description:  {
+          en: null,
+          jp: null
+        },
       };
     },
     parse: function(response, options) {
       return JSON.parse(response);
     },
+    toJSON: function() {
+      var json = WorkModel.__super__.toJSON.call(this);
+      json.title = json.title[dic.NAME];
+      json.author = json.author[dic.NAME];
+      json.description = json.description[dic.NAME];
+      return json;
+    }
   });
   return WorkModel;
 });

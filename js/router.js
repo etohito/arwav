@@ -28,7 +28,8 @@ define([
       'aboutus':        'aboutus',
       'curatorial':     'curatorial',
       'constellation':  'constellation',
-      '*default':       'constellation',
+      'signup':         'signup',
+      'login':          'login',
     },
     initialize: function(options) {
       // Load css

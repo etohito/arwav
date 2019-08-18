@@ -96,7 +96,7 @@ define([
     },
     add: function(model) {
       var item;
-      if (model.get('thumbnail').uri) {
+      if (model.get('thumbnail')) {
         item = new ThumbnailItem({model: model});
       } else {
         // Set svg color depeneds on its id

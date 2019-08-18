@@ -2,171 +2,244 @@
   "id":           "0001",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title1",
-  "author":       "Someone",
-  "resource":     "./resources/0001/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0001/img.png",
-    "height":     "508",
-    "width":      "387"
+  "title": {
+    "en":         "Title1",
+    "jp":         "タイトル1"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author1",
+    "jp":         "作者1"
+  },
+  "resource":     "./resources/0001/img.png",
+  "thumbnail":    "./resources/0001/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0002",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title14",
-  "author":       "Someone",
-  "resource":     "./resources/0002/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0002/img.png",
-    "height":     "714",
-    "width":      "570"
+  "title": {
+    "en":         "Title2",
+    "jp":         "タイトル2"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author2",
+    "jp":         "作者2"
+  },
+  "resource":     "./resources/0002/img.png",
+  "thumbnail":    "./resources/0002/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0003",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title3",
-  "author":       "Someone",
-  "resource":     "./resources/0003/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0003/img.png",
-    "height":     "237",
-    "width":      "237"
+  "title": {
+    "en":         "Title3",
+    "jp":         "タイトル3"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author3",
+    "jp":         "作者3"
+  },
+  "resource":     "./resources/0003/img.png",
+  "thumbnail":    "./resources/0003/img.png",
+  "description":  {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0004",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title4",
-  "author":       "Someone",
-  "resource":     "./resources/0004/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0004/img.png",
-    "height":     "234",
-    "width":      "386"
+  "title": {
+    "en":         "Title4",
+    "jp":         "タイトル4"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author4",
+    "jp":         "作者4"
+  },
+  "resource":     "./resources/0004/img.png",
+  "thumbnail":    "./resources/0004/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0005",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title5",
-  "author":       "Someone",
-  "resource":     "./resources/0005/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0005/img.png",
-    "height":     "562",
-    "width":      "388"
+  "title": {
+    "en":         "Title5",
+    "jp":         "タイトル5"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author5",
+    "jp":         "作者5"
+  },
+  "resource":     "./resources/0005/img.png",
+  "thumbnail":    "./resources/0005/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0006",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title6",
-  "author":       "Someone",
-  "resource":     "./resources/0006/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0006/img.png",
-    "height":     "569",
-    "width":      "379"
+  "title": {
+    "en":         "Title6",
+    "jp":         "タイトル6"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author6",
+    "jp":         "作者6"
+  },
+  "resource":     "./resources/0006/img.png",
+  "thumbnail":    "./resources/0006/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0007",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title7",
-  "author":       "Someone",
-  "resource":     "./resources/0007/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0007/img.png",
-    "height":     "387",
-    "width":      "379"
+  "title": {
+    "en":         "Title7",
+    "jp":         "タイトル7"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author7",
+    "jp":         "作者7"
+  },
+  "resource":     "./resources/0007/img.png",
+  "thumbnail":    "./resources/0007/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0008",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title8",
-  "author":       "Someone",
-  "resource":     "./resources/0008/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0008/img.png",
-    "height":     "339",
-    "width":      "241"
+  "title": {
+    "en":         "Title8",
+    "jp":         "タイトル8"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author8",
+    "jp":         "作者8"
+  },
+  "resource":     "./resources/0008/img.png",
+  "thumbnail":    "./resources/0008/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0009",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title9",
-  "author":       "Someone",
-  "resource":     "./resources/0009/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0009/img.png",
-    "height":     "500",
-    "width":      "297"
+  "title": {
+    "en":         "Title9",
+    "jp":         "タイトル9"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author9",
+    "jp":         "作者9"
+  },
+  "resource":     "./resources/0009/img.png",
+  "thumbnail":    "./resources/0009/img.png",
+  "description":{
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0010",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title10",
-  "author":       "Someone",
-  "resource":     "./resources/0010/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0010/img.png",
-    "height":     "686",
-    "width":      "500"
+  "title": {
+    "en":         "Title10",
+    "jp":         "タイトル10"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author10",
+    "jp":         "作者10"
+  },
+  "resource":     "./resources/0010/img.png",
+  "thumbnail":    "./resources/0010/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0011",
   "type":         "image",
   "date":         "2018/12/21",
-  "title":        "Title11",
-  "author":       "Someone",
-  "resource":     "./resources/0011/img.png",
-  "thumbnail": {
-    "uri":        "./resources/0011/img.png",
-    "height":     "306",
-    "width":      "528"
+  "title": {
+    "en":         "Title11",
+    "jp":         "タイトル11"
   },
-  "description":  "Description Description Description Description "
+  "author": {
+    "en":         "Author11",
+    "jp":         "作者11"
+  },
+  "resource":     "./resources/0011/img.png",
+  "thumbnail":    "./resources/0011/img.png",
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0012",
   "type":         "audio",
   "date":         "2018/12/21",
-  "title":        "Title12",
-  "author":       "Someone",
+  "title": {
+    "en":         "Title12",
+    "jp":         "タイトル12"
+  },
+  "author": {
+    "en":         "Author12",
+    "jp":         "作者12"
+  },
   "resource":     "./resources/0012/audio.mp3",
-  "description":  "Description Description Description Description "
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 },
 {
   "id":           "0013",
   "type":         "video",
   "date":         "2018/12/22",
-  "title":        "Title13",
-  "author":       "Someone",
+  "title": {
+    "en":         "Title13",
+    "jp":         "タイトル13"
+  },
+  "author": {
+    "en":         "Author13",
+    "jp":         "作者13"
+  },
   "resource":     "./resources/0013/video.mp4",
-  "description":  "Description Description Description Description "
+  "description": {
+    "en":         "Description ...",
+    "jp":         "作品詳細 ..."
+  }  
 }]
