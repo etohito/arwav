@@ -4,21 +4,20 @@ define([
   'views/hover',
   'views/escape',
   'views/menu',
-  'views/signin',
 ], function(
   Backbone,
   HoverModel,
   HoverView,
   EscapeView,
-  MenuView,
-  SigninView
+  MenuView
 ) {
   var HomeItem = HoverView.extend({
     initialize: function(options) {
       HomeItem.__super__.initialize.call(this, options);
 
       this.dic = options.dic;
-      this.link = options.link;
+      this.hash = options.hash;
+      this.url = options.url;
       this.themeColor = this.$path.css('stroke');
 
       this.model = new HoverModel({
@@ -33,7 +32,11 @@ define([
       });
     },
     select: function() {
-      Backbone.history.navigate(this.link, true);
+      if (this.hash) {
+        Backbone.history.navigate(this.hash, true);
+      } else if (this.url) {
+        location.href = this.url;
+      }
     },
   });
   var HomeView = Backbone.View.extend({
@@ -47,7 +50,6 @@ define([
     render: function() {
       var template = _.template($('#home_template').html());
       this.$el.html(template(dic));
-      new SigninView();
       return this;
     },
     scrollTop: function(focus) {
@@ -58,11 +60,10 @@ define([
     },
     createItems: function() {
       var itemsInfo = [
-        {el: '.login', link: '#login'},
-        {el: '.signup', link: '#signup'},
-        {el: '.aboutus', link: '#aboutus'},
-        {el: '.language', link: '#language'},
-        {el: '.constellation', link: '#constellation'},
+        {el: '.instagram', url: dic.INSTAGRAM_URL},
+        {el: '.aboutus', hash: '#aboutus'},
+        {el: '.language', hash: '#language'},
+        {el: '.constellation', hash: '#constellation'},
       ];
       _.each(itemsInfo, function(itemInfo) {
         new HomeItem(itemInfo);

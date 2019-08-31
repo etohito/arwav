@@ -38,7 +38,7 @@ body {
 #content {
 }
 #home {
-  height: 930vw;
+  height: 810vw;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../svg/home_mobile.svg");
@@ -63,73 +63,49 @@ body {
 #home .language {
   top: 6.2vw;
 }
-#home .login {
+#home .instagram {
   position: absolute;
   width: 100vw;
   top: 55vw;
   color: rgb(158, 188, 190);
 }
-#google_signin {
-  position: absolute;
-  text-align: center;
-  top: 79vw;
-  left: 35vw;
-  width: 30vw;
-}
-#home .signup {
+#home .instagram {
   position: absolute;
   width: 100vw;
-  top: 136vw;
-  color: rgb(244, 233, 178);
+  top: 55vw;
+  color: rgb(158, 188, 190);
 }
-#google_signup {
+#home .instagram_link {
   position: absolute;
-  text-align: center;
-  top: 163vw;
-  left: 35vw;
-  width: 30vw;
-}
-#home .signup_id {
-  position: absolute;
-  width: 100vw;
-  text-align: center;
-  top: 163vw;
-}
-#home .signup_pw {
-  position: absolute;
-  width: 100vw;
-  text-align: center;
-  top: 182vw;
-}
-#home .signup_btn {
-  position: absolute;
-  width: 100vw;
-  top: 197vw;
+  width: 90%;
+  top: 80vw;
+  margin-left: 5%;
   color: #ffffff;
+  text-align: center;
 }
 #home .curatorial {
   position: absolute;
   width: 100vw;
-  top: 224vw;
+  top: 114vw;
   color: rgb(245, 218, 213);
 }
 #home .curatorial_text {
   position: absolute;
   width: 90%;
-  top: 250vw;
+  top: 140vw;
   margin-left: 5%;
   color: #ffffff;
 }
 #home .aboutus {
   position: absolute;
   width: 100vw;
-  top: 765vw;
+  top: 654vw;
   color: rgb(171, 213, 175);
 }
 #home .aboutus_text {
   position: absolute;
   width: 90%;
-  top: 790vw;
+  top: 684vw;
   margin-left: 5%;
   color: #ffffff;
 }

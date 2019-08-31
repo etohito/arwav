@@ -16,10 +16,18 @@ define([
     },
     click: function(event) {
       event.preventDefault();
-      if (location.hash != event.target.hash) {
-        this.stopListening();
+      if (this.isSamePage(event.target.href)) {
+        if (location.hash != event.target.hash) {
+          this.stopListening();
+        }
+        this.trigger('close', event.target.hash);
+      } else {
+        location.href = event.target.href;
       }
-      this.trigger('close', event.target.hash);
+    },
+    isSamePage: function(url) {
+      var baseUrl = location.href.substring(0, location.href.indexOf('#'));
+      return _.isString(url) && (url.indexOf(baseUrl) == 0);
     }
   });
   var MenuList = Backbone.View.extend({

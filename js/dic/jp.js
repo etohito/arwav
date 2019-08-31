@@ -16,15 +16,14 @@ define([], function() {
     ARCHIVES: '過去の展示',
     ESCAPE: ' 戻る',
     HOME: 'ホーム',
+    INSTAGRAM: 'インスタグラム',
+    INSTAGRAM_URL: 'https://www.instagram.com/etohitomi',
     LANGUAGE: 'English/日本語',
-    LOGIN: 'ログイン',
-    LOGIN_LOGOUT: 'ログイン/ログアウト',
     MENU: 'メニュー',
     NAME: 'jp',
+    OPEN_PAGE: 'ARWAV ページを開く',
     PASSWORD: 'パスワード',
     PREVIOUS_CONSTELLATION: '過去の展示',
-    SIGNUP: 'サインアップ',
-    SUBMIT: '決定',
   };
   return Jp;
 });
