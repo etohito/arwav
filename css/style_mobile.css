@@ -43,8 +43,6 @@ body {
   background-repeat: no-repeat;
   background-image: url("../svg/home_mobile.svg");
 }
-#home div {
-}
 #home a {
   text-decoration: none;
 }
@@ -63,6 +61,9 @@ body {
 #home .language {
   top: 6.2vw;
 }
+#home .language a:visited {
+  color: #000000;
+}
 #home .instagram {
   position: absolute;
   width: 100vw;
@@ -78,10 +79,14 @@ body {
 #home .instagram_link {
   position: absolute;
   width: 90%;
-  top: 80vw;
+  top: 83vw;
+  font-size: 3.8vw;
   margin-left: 5%;
   color: #ffffff;
   text-align: center;
+}
+#home .instagram_link a:visited {
+  color: #ffffff;
 }
 #home .curatorial {
   position: absolute;
@@ -96,16 +101,23 @@ body {
   margin-left: 5%;
   color: #ffffff;
 }
+#home .curatorial_link {
+  font-size: 3.6vw;
+  text-align: center;
+}
+#home .curatorial_link a:visited {
+  color: #ffffff;
+}
 #home .aboutus {
   position: absolute;
   width: 100vw;
-  top: 654vw;
+  top: 674vw;
   color: rgb(171, 213, 175);
 }
 #home .aboutus_text {
   position: absolute;
   width: 90%;
-  top: 684vw;
+  top: 700vw;
   margin-left: 5%;
   color: #ffffff;
 }

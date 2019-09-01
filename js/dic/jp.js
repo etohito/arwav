@@ -8,6 +8,7 @@ define([], function() {
     ARCHIVE_TITLE: '過去の展示',
     BACK: '戻る',
     CONSTELLATION: 'コンスタレーション',
+    CONSTELLATION_LINK: 'コンスタレーションを見る',
     CURATORIAL: '展示について',
     CURATORIAL_SVG_TEXT: '<tspan x="-41" y="85">展示について</tspan>',
     CURATORIAL_TITLE: '‘MAKING AN ORIGINAL OUT OF A COPY | 複製からオリジナルを’へようこそ。',
@@ -21,7 +22,7 @@ define([], function() {
     LANGUAGE: 'English/日本語',
     MENU: 'メニュー',
     NAME: 'jp',
-    OPEN_PAGE: 'ARWAV ページを開く',
+    OPEN_PAGE: 'インスタグラムを見る',
     PASSWORD: 'パスワード',
     PREVIOUS_CONSTELLATION: '過去の展示',
   };

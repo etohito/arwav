@@ -47,6 +47,14 @@ img.title {
   font-size: 1.4vw;
   margin-bottom: 2.8vw;
 }
+#statement .link a {
+  font-size: 1.8vw;
+  color: #ffffff;
+  text-decoration: none;
+}
+#statement .link a:visited {
+  color: #ffffff;
+}
 #statement .left_side {
   position: absolute;
   top: 300px;

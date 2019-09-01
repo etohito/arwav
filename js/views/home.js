@@ -63,7 +63,7 @@ define([
         {el: '.instagram', url: dic.INSTAGRAM_URL},
         {el: '.aboutus', hash: '#aboutus'},
         {el: '.language', hash: '#language'},
-        {el: '.constellation', hash: '#constellation'},
+        {el: '.constellation', hash: '#curatorial'},
       ];
       _.each(itemsInfo, function(itemInfo) {
         new HomeItem(itemInfo);

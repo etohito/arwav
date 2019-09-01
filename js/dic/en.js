@@ -8,6 +8,7 @@ define([], function() {
     ARCHIVE_TITLE: 'Archive of</br>Constellations',
     BACK: 'Back',
     CONSTELLATION: 'Constellation',
+    CONSTELLATION_LINK: 'Go to Constellation',
     CURATORIAL: 'Curatorial Statement',
     CURATORIAL_SVG_TEXT: '<tspan x="-40" y="82">Curatorial</tspan><tspan x="-40" y="88">Statement</tspan>',
     CURATORIAL_TITLE: 'Welcome to our first constellation, ‘MAKING AN ORIGINAL OUT OF A COPY | 複製からオリジナルを’. ',
@@ -20,7 +21,7 @@ define([], function() {
     LANGUAGE: 'English/日本語',
     MENU: 'Menu',
     NAME: 'en',
-    OPEN_PAGE: 'Open ARWAV link',
+    OPEN_PAGE: 'Go to instagram',
     PASSWORD: 'password',
     PREVIOUS_CONSTELLATION: 'Previous Constellation',
   };

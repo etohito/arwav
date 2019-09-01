@@ -28,6 +28,7 @@ define([
       'aboutus':        'aboutus',
       'curatorial':     'curatorial',
       'constellation':  'constellation',
+      '*path':          'home',
     },
     initialize: function(options) {
       // Load css
@@ -77,11 +78,14 @@ define([
           statement: {
             title: dic.ABOUTUS_TITLE,
             summary: dic.ABOUTUS_SUMMARY,
-            description: ''
+            description: '',
+            href: '',
+            link: ''
           },
           themeColor: '#abd5af'
         };
         $('#statement').load('templates/pc/statement.html', function() {
+          $('#content').html('');
           new StatementView(options).render().createItems();
           this.$content.fadeIn(this.FADE_MS);
         }.bind(this));
@@ -95,11 +99,14 @@ define([
           statement: {
             title: dic.CURATORIAL_TITLE,
             summary: dic.CURATORIAL_SUMMARY,
-            description: dic.CURATORIAL_DESCRIPTION
+            description: dic.CURATORIAL_DESCRIPTION,
+            href: '#constellation',
+            link: dic.CONSTELLATION_LINK
           },
           themeColor: '#f5dad5'
         };
         $('#statement').load('templates/pc/statement.html', function() {
+          $('#content').html('');
           new StatementView(options).render().createItems();
           this.$content.fadeIn(this.FADE_MS);
         }.bind(this));

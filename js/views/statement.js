@@ -11,6 +11,9 @@ define([
 ) {
   var StatementView = Backbone.View.extend({
     el: '#statement',
+    events: {
+      'click .link': 'click'
+    },
     items: [],
     initialize: function(options) {
       StatementView.__super__.initialize.call(this, options);
@@ -49,6 +52,10 @@ define([
       this.items.push(escapeView);
       this.listenTo(menuView, 'close', this.close);
       this.listenTo(escapeView, 'close', this.close);
+    },
+    click: function(event) {
+      event.preventDefault();
+      this.close(event.target.hash);
     },
     close: function(hash) {
       this.$el.fadeOut(500, function() {
