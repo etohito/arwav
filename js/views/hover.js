@@ -31,6 +31,7 @@ define([
         fill:   this.model.get('hover').text.fill,
         stroke: this.model.get('hover').text.stroke
       });
+      this.trigger('hover');
     },
     out: function() {
       this.$path.css({
@@ -41,6 +42,7 @@ define([
         fill:   this.model.get('out').text.fill,
         stroke: this.model.get('out').text.stroke
       });
+      this.trigger('out');
     },
     select: function() {
       this.trigger('close');

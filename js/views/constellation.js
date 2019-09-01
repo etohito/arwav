@@ -22,9 +22,13 @@ define([
       this.addListener();
     },
     addListener: function() {
+      this.$el.on('pointerover', this.hover.bind(this));
+      this.$el.on('pointerout', this.out.bind(this));
       this.$el.on('click', this.click.bind(this));
     },
     removeListener: function() {
+      this.$el.off('pointerover');
+      this.$el.off('pointerout');
       this.$el.off('click');
     },
     render: function() {
@@ -36,6 +40,12 @@ define([
     },
     click: function() {
       this.trigger('close', "#work/" + this.model.get('id'));
+    },
+    hover: function() {
+      this.trigger('hover');
+    },
+    out: function() {
+      this.trigger('out');
     },
     remove: function() {
       this.removeListener();
@@ -68,9 +78,16 @@ define([
         el: this.$el.find('svg'),
         model: new HoverModel(color)
       });
-      hoverView.out();
       this.items.push(hoverView);
+      this.listenTo(hoverView, 'hover', this.hover);
+      this.listenTo(hoverView, 'out', this.out);
       this.listenTo(hoverView, 'close', this.close);
+    },
+    hover: function() {
+      this.trigger('hover');
+    },
+    out: function() {
+      this.trigger('out');
     },
     close: function() {
       this.trigger('close', "#work/" + this.model.get('id'));
@@ -87,12 +104,11 @@ define([
   // Column
   var ColumnView = Backbone.View.extend({
     items: [],
-    events : {
-      'transitionend': 'transitionEnd'
-    },
+    isScrolling: false,
     initialize: function(options) {
       ColumnView.__super__.initialize.call(this, options);
       this.parentHeight = options.parentHeight;
+      this.$el.css(options.style);
     },
     add: function(model) {
       var item;
@@ -105,29 +121,37 @@ define([
         item = new SvgItem({model: model, themeColor: colors[colorIndex]});
       }
       this.items.push(item);
+      this.listenTo(item, 'hover', this.pause);
+      this.listenTo(item, 'out', this.resume);
       this.listenTo(item, 'close', this.close);
 
-      this.$el.append(item.render().$el);
+      this.$el.find('ul').append(item.render().$el);
       item.createItems();
     },
     resetTopPos: function() {
+      this.isScrolling = false;
       this.$el.fadeOut(1000, function() {
-        this.$el.css({
-          transitionDuration: '0s',
-          transitionTimingFunction: 'linear',
-          transform: 'none',
-        });
-        this.$el.fadeIn(1000);
+        this.$el.css({top: 0}).fadeIn(1000);
       }.bind(this));
     },
+    pause: function() {
+      if (this.isScrolling) {
+        this.$el.pause();
+      }
+    },
+    resume: function() {
+      if (this.isScrolling) {
+        this.$el.resume();
+      }
+    },
     setScroll: function() {
-      var baseSpeed = 60; // speed = px / sec
+      var baseSpeed = 80; // speed = px / sec
       var scrollHeight = parseFloat(this.$el.css('height'), 10) - this.parentHeight;
-      this.$el.css({
-        transitionDuration: scrollHeight / baseSpeed + this.random(10) + 's',
-        transitionTimingFunction: 'linear',
-        transform: 'translateY(-' + scrollHeight+ 'px)'
-      });
+      this.$el.animate(
+        {top: -scrollHeight + 'px'},
+        Math.round(scrollHeight / baseSpeed + this.random(10)) * 1000,
+        'linear', this.transitionEnd.bind(this));
+      this.isScrolling = true;
     },
     transitionEnd: function() {
       this.resetTopPos();
@@ -157,40 +181,23 @@ define([
       this.createItems();
     },
     createItems: function() {
-      var $columns = this.$el.find('.column>ul');
-
-      // Adjust column width depends on the device width
-      $columns.css({width: parseInt(this.$el.css('width'), 10) / $columns.length});
+      var $columns = this.$el.find('.column');
       var parentHeight = parseFloat(this.$el.css('height'), 10);
+      var columnWidth= parseInt(this.$el.css('width'), 10) / $columns.length;
+      var leftBase = parseInt(this.$el.css('left'), 10);
 
       // Create each culumn
       this.items = [];
       _.each($columns, function(column, index) {
-        this.items.push(new ColumnView({el: column, parentHeight: parentHeight}));
+        this.items.push(new ColumnView({
+          el: column, parentHeight: parentHeight,
+          style: {width: columnWidth, left: leftBase + columnWidth * index}
+        }));
         this.listenTo(this.items[index], 'close', this.close);
       }, this);
 
       var columnIndex, minHeight, itemHeight = 0;
       var repeatCount = 3; // @todo Please delete if there are enough items to scroll.
-
-      // @todo confirm requirement about how to create columns
-      /*
-      for (var cnt = 0; cnt < repeatCount; cnt++) {
-        this.collection.each(function(model) {
-          minHeight = parseFloat(this.items[0].$el.css('height'), 10);
-          columnIndex = 0;
-          _.each(this.items, function(item, i) {
-            itemHeight = parseFloat(item.$el.css('height'), 10);
-            if (itemHeight < minHeight) {
-              minHeight = itemHeight;
-              columnIndex = i;
-            }
-          }, this);
-
-          this.items[columnIndex].add(model);
-        }, this);
-      }
-      */
       var model;
       var i = 0;
       for (var cnt = 0; cnt < repeatCount;) {

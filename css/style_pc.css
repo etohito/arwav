@@ -83,7 +83,7 @@ img.title {
   overflow: auto;
 }
 #works .column {
-  float: left;
+  position: absolute;
 }
 #works .column ul{
   padding-left: 15%;
