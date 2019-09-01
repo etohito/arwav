@@ -153,6 +153,7 @@ body {
   margin-left: 8vw;
   margin-bottom: 0;
   font-size: 6vw;
+  font-weight: bold;
   text-align: left;
 }
 #archives table {
@@ -169,10 +170,10 @@ body {
 }
 #archives td.text {
   text-align: left;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 #archives td.text span {
-  font-size: 4vw;
+  font-size: 5vw;
 }
 #archives tr img {
   max-width: 90%;
