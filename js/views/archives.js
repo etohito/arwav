@@ -45,9 +45,13 @@ define([
       this.addListener();
     },
     addListener: function() {
+      this.$el.on('pointerover', this.hover.bind(this));
+      this.$el.on('pointerout', this.out.bind(this));
       this.$el.on('click', this.close.bind(this));
     },
     removeListener: function() {
+      this.$el.off('pointerover');
+      this.$el.off('pointerout');
       this.$el.off('click');
     },
     render: function() {
@@ -56,6 +60,12 @@ define([
       return this;
     },
     createItems: function() {
+    },
+    hover: function() {
+      this.$el.find('img').addClass('focus');
+    },
+    out: function() {
+      this.$el.find('img').removeClass('focus');
     },
     close: function() {
       this.trigger('close', "#work/" + this.model.get('id'));

@@ -43,9 +43,11 @@ define([
     },
     hover: function() {
       this.trigger('hover');
+      this.$el.find('img').addClass('focus');
     },
     out: function() {
       this.trigger('out');
+      this.$el.find('img').removeClass('focus');
     },
     remove: function() {
       this.removeListener();

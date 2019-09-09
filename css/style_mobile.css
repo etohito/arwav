@@ -135,7 +135,7 @@ body {
 }
 #works img,
 #works svg {
-  padding-bottom: 0.7vw;
+  padding-bottom: 3vw;
   max-width: 85%;
 }
 #constellation .header,
@@ -254,4 +254,10 @@ body {
   top: 81.5vh;
   font-size: 5vw;
   color: black;
+}
+.shadow {
+  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.4));
+}
+.focus {
+  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.7));
 }

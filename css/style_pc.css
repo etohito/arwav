@@ -35,7 +35,9 @@ img.title {
 #statement .text_area {
   overflow: auto;
   margin-top: 10vh;
-  margin-left: 15vw;
+  margin-left: 11vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
   width: 70vw;
   height: 90vh;
 }
@@ -95,7 +97,8 @@ img.title {
   position: absolute;
 }
 #works .column ul{
-  padding-left: 15%;
+  padding-left: 10%;
+  padding-right: 5%;
   padding-top: 30%;
 }
 #works img,
@@ -112,7 +115,6 @@ img.title {
   position: absolute;
   background-color: #abd5af;
   transition: 500ms;
-  -webkit-transition: 500ms;
 }
 #menulist.show {
   display: block;
@@ -137,6 +139,7 @@ img.title {
   width: 62.5vw;
   height: 95vh;
   text-align: center;
+  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.6));
 }
 #work .main img,
 #work .main video,
@@ -216,7 +219,6 @@ img.title {
   max-width: 14vw;
   max-height: 14vw;
 }
-
 .top {
   vertical-align: top;
 }
@@ -234,4 +236,10 @@ img.title {
 }
 .h_center{
   text-align: center;
+}
+.shadow {
+  filter: drop-shadow(0.7vw 0.7vw 0.7vw rgba(0,0,0,0.4));
+}
+.focus {
+  filter: drop-shadow(0.7vw 0.7vw 0.7vw rgba(0,0,0,0.7));
 }
