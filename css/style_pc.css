@@ -59,15 +59,6 @@ img.title {
 #statement .link a:visited {
   color: #ffffff;
 }
-#statement .left_side {
-  position: absolute;
-  top: 300px;
-  left: -200px;
-  transform: rotate(-90deg);
-}
-#statement .left_title {
-  height: 23.4vw;
-}
 #constellation .archives_background{
   position: absolute;
   background: #000;

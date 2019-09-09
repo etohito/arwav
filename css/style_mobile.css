@@ -52,11 +52,6 @@ body {
 #home .statement {
   font-size: 3.5vw;
 }
-#home input {
-  font-size: 4.8vw;
-  height: 13vw;
-  width: 70%;
-}
 #home .language {
   top: 6.2vw;
 }
@@ -243,18 +238,6 @@ body {
   margin-top: 5.4vh;
   left: 51vw;
   width: 25vw;
-}
-#footer .menu p {
-  position: fixed;
-  top: 83vh;
-  font-size: 5vw;
-  color: white;
-}
-#footer .back p {
-  position: fixed;
-  top: 81.5vh;
-  font-size: 5vw;
-  color: black;
 }
 .shadow {
   filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.4));
