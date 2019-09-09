@@ -30,11 +30,9 @@ body {
   padding-left: 10vw;
 }
 #menulist li a {
-  font-size: 4.8vw;
+  font-size: 5vw;
   text-decoration: none;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
-#content {
 }
 #home {
   height: 810vw;
@@ -47,7 +45,7 @@ body {
 }
 #home .title {
   text-align: center;
-  font-size: 4.8vw;
+  font-size: 5vw;
 }
 #home .statement {
   font-size: 3.5vw;
@@ -74,7 +72,7 @@ body {
   position: absolute;
   width: 90%;
   top: 83vw;
-  font-size: 3.8vw;
+  font-size: 3.5vw;
   margin-left: 5%;
   color: #ffffff;
   text-align: center;
@@ -97,7 +95,7 @@ body {
   color: #ffffff;
 }
 #home .curatorial_link {
-  font-size: 3.6vw;
+  font-size: 3.5vw;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }

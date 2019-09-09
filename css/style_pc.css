@@ -42,12 +42,12 @@ img.title {
   height: 90vh;
 }
 #statement .title {
-  font-size: 2.3vw;
+  font-size: 2.4vw;
   font-weight: bold;
 }
 #statement .summary,
 #statement .description {
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   margin-bottom: 2.8vw;
 }
 #statement .link a {
@@ -70,11 +70,12 @@ img.title {
 #constellation .archives {
   position: absolute;
   transform-origin: top left;
-  transform: rotate(-90deg) translate(-45vh, 98vw);
+  transform: rotate(-90deg) translate(-60vh, 98vw);
 }
 #constellation .archives>a {
+  line-height: 1;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.6vw;
   color: #fff;
 }
 #works {
@@ -117,11 +118,11 @@ img.title {
   padding-top: 7.8vw;
 }
 #menulist li {
-  line-height: 2.5;
+  line-height: 2;
   padding-left: 2vw;
 }
 #menulist li a {
-  font-size: 2vw;
+  font-size: 1.6vw;
   text-decoration: none;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
@@ -146,6 +147,10 @@ img.title {
 }
 #work .main p {
   text-align: center;
+  font-size: 1.6vw;
+}
+#work .main p span {
+  font-size: 2vw;
 }
 #work .prev {
   position: absolute;
