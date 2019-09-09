@@ -8,20 +8,18 @@ body {
   margin: 0px;
 }
 #menulist {
-  display: none;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: -100vw;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
   opacity: 0;
-  transition: 1000ms;
-  -webkit-transition: 1000ms;
+  transition: opacity 1s;
 }
 #menulist.show {
-  display: block;
+  left: 0px;
   opacity: 1;
+  z-index: 1;
 }
 #menulist ul {
   list-style-type: none;

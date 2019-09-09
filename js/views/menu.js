@@ -16,12 +16,12 @@ define([
     },
     click: function(event) {
       event.preventDefault();
-      if (this.isSamePage(event.target.href)) {
+      if (this.isSamePage(event.target.href) || !event.target.href) {
         if (location.hash != event.target.hash) {
           this.stopListening();
         }
         this.trigger('close', event.target.hash);
-      } else {
+      } else  {
         location.href = event.target.href;
       }
     },

@@ -129,7 +129,7 @@ define([
             list.push(_.findWhere(this.workList, workId));
           }, this);
 
-          this.$content.html(html[0]);
+          this.$content.hide().html(html[0]);
           new ConstellationView(
               _.extend(options, {collection: new WorkCollection(list)}))
               .render().createItems();
@@ -152,7 +152,7 @@ define([
             list.push(_.findWhere(this.workList, archive));
           }, this);
 
-          this.$content.html(html[0]);
+          this.$content.hide().html(html[0]);
           new ArchivesView(_.extend(options, {
             collection: new WorkCollection(list)
           })).render().createItems();
@@ -167,10 +167,11 @@ define([
       var prev = (0 < index) ? (index - 1) : last;
       var next = (index < last) ? (index + 1) : 0;
 
-      this.$content.load(html, function() {
+      this.$content.hide().load(html, function() {
         new WorkView({collection: new WorkCollection(
           [this.workList[prev], this.workList[index], this.workList[next]]
         )}).render().createItems();
+        this.$content.fadeIn(this.FADE_MS);
       }.bind(this));
     },
   });
