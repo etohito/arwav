@@ -30,8 +30,9 @@ body {
   padding-left: 10vw;
 }
 #menulist li a {
-  font-size: 4vw;
+  font-size: 4.8vw;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #content {
 }
@@ -82,6 +83,7 @@ body {
   margin-left: 5%;
   color: #ffffff;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home .instagram_link a:visited {
   color: #ffffff;
@@ -102,6 +104,7 @@ body {
 #home .curatorial_link {
   font-size: 3.6vw;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home .curatorial_link a:visited {
   color: #ffffff;

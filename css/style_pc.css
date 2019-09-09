@@ -51,9 +51,10 @@ img.title {
   margin-bottom: 2.8vw;
 }
 #statement .link a {
-  font-size: 1.8vw;
+  font-size: 2vw;
   color: #ffffff;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #statement .link a:visited {
   color: #ffffff;
@@ -114,7 +115,7 @@ img.title {
   z-index: 1;
   position: absolute;
   background-color: #abd5af;
-  transition: 500ms;
+  transition: 1s;
 }
 #menulist.show {
   display: block;
@@ -129,8 +130,9 @@ img.title {
   padding-left: 2vw;
 }
 #menulist li a {
-  font-size: 1.4vw;
+  font-size: 2vw;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #work .main {
   position: absolute;
