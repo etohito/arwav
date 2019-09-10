@@ -15,7 +15,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0002",
@@ -34,7 +34,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0003",
@@ -53,7 +53,7 @@
   "description":  {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0004",
@@ -72,7 +72,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0005",
@@ -91,7 +91,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0006",
@@ -110,7 +110,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0007",
@@ -129,7 +129,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0008",
@@ -148,7 +148,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0009",
@@ -167,7 +167,7 @@
   "description":{
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0010",
@@ -186,7 +186,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0011",
@@ -205,7 +205,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0012",
@@ -223,7 +223,7 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 },
 {
   "id":           "0013",
@@ -241,5 +241,5 @@
   "description": {
     "en":         "Description ...",
     "jp":         "作品詳細 ..."
-  }  
+  }
 }]
