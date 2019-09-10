@@ -237,9 +237,3 @@ body {
   left: 51vw;
   width: 25vw;
 }
-.shadow {
-  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.4));
-}
-.focus {
-  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.7));
-}

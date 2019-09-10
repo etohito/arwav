@@ -133,7 +133,6 @@ img.title {
   width: 62.5vw;
   height: 95vh;
   text-align: center;
-  filter: drop-shadow(2vw 2vw 2vw rgba(0,0,0,0.6));
 }
 #work .main img,
 #work .main video,
@@ -217,6 +216,7 @@ img.title {
   max-width: 14vw;
   max-height: 14vw;
 }
+
 .top {
   vertical-align: top;
 }
@@ -234,10 +234,4 @@ img.title {
 }
 .h_center{
   text-align: center;
-}
-.shadow {
-  filter: drop-shadow(0.7vw 0.7vw 0.7vw rgba(0,0,0,0.4));
-}
-.focus {
-  filter: drop-shadow(0.7vw 0.7vw 0.7vw rgba(0,0,0,0.7));
 }

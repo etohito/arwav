@@ -26,22 +26,12 @@ define([
       return this;
     },
     addListener: function() {
-      this.$el.on('pointerover', this.hover.bind(this));
-      this.$el.on('pointerout', this.out.bind(this));
       this.$el.on('click', this.close.bind(this));
       this.$el.find('.arrow').on('click', this.close.bind(this));
     },
     removeListener: function() {
-      this.$el.off('pointerover');
-      this.$el.off('pointerout');
       this.$el.off('click');
       this.$el.find('.arrow').off('click');
-    },
-    hover: function() {
-      this.$el.find('.thumb').addClass('focus');
-    },
-    out: function() {
-      this.$el.find('.thumb').removeClass('focus');
     },
     close: function() {
       this.trigger('close', "#work/" + this.model.get('id'));
