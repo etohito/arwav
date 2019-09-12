@@ -205,25 +205,21 @@ body {
   margin-left: 5vw;
   font-size: 3vw;
 }
-#footer {
-  position: fixed;
-  top: 82vh;
-}
 #footer .left {
   position: absolute;
   left: 4.5vw;
   width: 10vw;
-  padding-top: 9vh;
+  bottom: 3vh;
 }
 #footer .right {
   position: absolute;
   left: 85vw;
   width: 10vw;
-  padding-top: 9vh;
+  bottom: 3vh;
 }
 #footer .menu {
   position: absolute;
-  margin-top: 6vh;
+  bottom: 3vh;
   width: 25vw;
 }
 #work .menu {
@@ -235,7 +231,7 @@ body {
 }
 #footer .back {
   position: absolute;
-  margin-top: 5.4vh;
+  bottom: 3vh;
   left: 51vw;
   width: 25vw;
 }
