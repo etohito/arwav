@@ -35,7 +35,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home {
-  height: 810vw;
+  height: 900vw;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../svg/home_mobile.svg");
@@ -93,6 +93,7 @@ body {
   top: 140vw;
   margin-left: 5%;
   color: #ffffff;
+  line-height:1.7;
 }
 #home .curatorial_link {
   font-size: 3.5vw;
@@ -105,15 +106,16 @@ body {
 #home .aboutus {
   position: absolute;
   width: 100vw;
-  top: 674vw;
+  top: 730vw;
   color: rgb(171, 213, 175);
 }
 #home .aboutus_text {
   position: absolute;
   width: 90%;
-  top: 700vw;
+  top: 756vw;
   margin-left: 5%;
   color: #ffffff;
+  line-height:1.7;
 }
 #works {
   top: 3.8vw;

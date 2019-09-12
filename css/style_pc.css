@@ -49,6 +49,7 @@ img.title {
 #statement .description {
   font-size: 1.6vw;
   margin-bottom: 2.8vw;
+  line-height: 1.7;
 }
 #statement .link a {
   font-size: 2vw;
