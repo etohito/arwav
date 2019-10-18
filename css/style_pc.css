@@ -134,6 +134,7 @@ img.title {
   width: 62.5vw;
   height: 95vh;
   text-align: center;
+  overflow: scroll;
 }
 #work .main img,
 #work .main video,
@@ -145,12 +146,12 @@ img.title {
   margin-top: 11.7vw;
   width: 100%;
 }
-#work .main p {
-  text-align: center;
-  font-size: 1.6vw;
-}
-#work .main p span {
+#work .main .title {
   font-size: 2vw;
+}
+#work .main .description {
+  font-size: 1.6vw;
+  text-align: left;
 }
 #work .prev {
   position: absolute;

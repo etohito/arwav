@@ -78,6 +78,7 @@ define([
         el: this.$el.find('svg'),
         model: new HoverModel(color)
       });
+      hoverView.out();
       this.items.push(hoverView);
       this.listenTo(hoverView, 'hover', this.hover);
       this.listenTo(hoverView, 'out', this.out);
@@ -197,26 +198,21 @@ define([
       }, this);
 
       var columnIndex, minHeight, itemHeight = 0;
-      var repeatCount = 3; // @todo Please delete if there are enough items to scroll.
+      var repeatCount = 1; // @todo Please delete if there are enough items to scroll.
       var model;
-      var i = 0;
-      for (var cnt = 0; cnt < repeatCount;) {
-        for (var j = 0; j < this.items.length; j++) {
-          if (this.collection.length <= i) {
-            cnt++;
-            i = 0;
-          }
-          this.items[j].add(this.collection.at(i++));
+      for (var i = j = 0; i < this.collection.length; i++, j++) {
+        if (this.items.length <= j) {
+          j = 0;
         }
+        this.items[j].add(this.collection.at(i));
       }
 
-      // @todo improve
       if (this.autoScroll) {
         this.scrollTimerId = setTimeout(function() {
           _.each(this.items, function(item) {
             item.setScroll();
           });
-        }.bind(this), 1500);
+        }.bind(this), 2000);
       }
     },
     close: function(hash) {
