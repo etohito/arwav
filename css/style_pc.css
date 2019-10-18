@@ -43,13 +43,13 @@ img.title {
 }
 #statement .title {
   font-size: 2.4vw;
-  font-weight: bold;
+  font-weight: 800;
 }
 #statement .summary,
 #statement .description {
   font-size: 1.6vw;
   margin-bottom: 2.8vw;
-  line-height: 1.7;
+  line-height: 2;
 }
 #statement .link a {
   font-size: 2vw;

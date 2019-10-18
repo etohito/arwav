@@ -3,56 +3,77 @@
   "type":         "image",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title1",
-    "jp":         "タイトル1"
+    "en":         "Atelophobia",
+    "jp":         "Atelophobia"
   },
   "author": {
-    "en":         "Author1",
-    "jp":         "作者1"
+    "en":         "Lisa Carletta",
+    "jp":         "リサ　カーレッタ"
   },
   "resource":     "./resources/0001/img.png",
   "thumbnail":    "./resources/0001/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "",
+    "jp":         ""
   }
 },
 {
   "id":           "0002",
-  "type":         "image",
+  "type":         "video",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title2",
-    "jp":         "タイトル2"
+    "en":         "Flat Shell",
+    "jp":         "Flat Shell"
   },
   "author": {
-    "en":         "Author2",
-    "jp":         "作者2"
+    "en":         "Emilia Pennanen",
+    "jp":         "エミリア　ペンナネン"
   },
   "resource":     "./resources/0002/img.png",
   "thumbnail":    "./resources/0002/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "",
+    "jp":         ""
   }
 },
 {
   "id":           "0003",
-  "type":         "image",
+  "type":         "text",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title3",
-    "jp":         "タイトル3"
+    "en":         "Since the Universe is Prudent",
+    "jp":         "宇宙は聡明なので"
   },
   "author": {
-    "en":         "Author3",
-    "jp":         "作者3"
+    "en":         "Yukifune Ema",
+    "jp":         "雪舟　えま"
   },
   "resource":     "./resources/0003/img.png",
   "thumbnail":    "./resources/0003/img.png",
   "description":  {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "BL Selected Classics: Taketori Monogatari Ise Monogatari (The Tale of the Bamboo Cutter and the Tale of the Ise) [1] published by Sayūsha in this October was the project to translate Japanese classic literature into modern Japanese and also to transform into BL [2]. I found fascinating about the fact that those classics did not feel outdated. They capture the human nature that is still relevant today. Rather than originals, translated versions and references published in the Showa period (1926 – 1989) felt old fashioned. For example, the main character princess Kaguya is taken back to the Capital of the Moon at the ending, and references written 30 years ago interpret this as a tragedy with no doubt. In my work, I left a room to question if it is a tragedy. Maybe princess Kaguya might find joy in the Capital of the Moon even it is beyond the imagination of people on the earth. We tend to have a fear or anxiety about the new environment, but we all know an unknown place may bring pleasant surprises today. <br><br>
+
+In my BL versions of The Tale of the Bomboo Cutter, princess Kaguya turns into Prince Kaguya-hiko. During the project, Kguya-hiko and Ariwara no Narihira, the idealised male character from the Tale of the Ise started talking in modern Japanese naturally for me. This made me happy and I had a pleasant time translating the stories. I was instinctively describing Ariwara no Narihira based on the original text and the character has become a frivolous player with a sensitive mind. Apparently the characters from the classic stories are like them when they go through the pipe of Yukufune Ema.<br><br>
+
+The modern translation of the classics could be divided into two types: one is true to the original and the other is spiced up as an entertainment reflecting translator’s style and taste. The latter shows the translator’s intention to reinvent the classics clearly. The former, the textbook type is also constantly renewed because it has to react to the endless language change. It has its own value and I think it is interesting.<br><br>
+
+If you try to make or do exactly the same thing, you cannot manage it. This also can be applied to clones. In November, I will publish the young adult fiction, Nanyukutachi no Seiza (The Constellation of Nanyukus)[3] which is a story about clone boys who are made to carry out jobs that humans no longer do. Even they look like each other, they all have unique minds. Boys live peacefully since they naturally understand they all different. They know they do not need to appeal their uniqueness.<br><br>
+
+Today, clone humans are fictional yet. However, I think as long as more than two substances or matters cannot exist in the same place and time in the real world, it is impossible to perfectly repeat the same thing. In this sense, even mass produced machine reproductions are different each other. <br><br>
+
+Since the universe is prudent, it does not need the same experience twice. Even the most perfect copy is given its unique interpretation and provided different destiny. Without a special effort, we are fairly special. All we have to do is just relax and exist. Two books I worked on reminded me of this fact.<br><br>
+
+[1]Ema Yukifune, BL Koten Selection1 Taketorimonogatari Isemonogatari (Tokyo: Sayūsha, 2018).<br>
+[2]BL or Bōis Labu (Boys Love) is the literature and manga genre developed in Japan, which focuses on a homosexual relationship among men or boys. The most of BL authors, editors and readers are female so generally the category is distinguished from the contents for gay men. Yet the concept of BL is not established so it is impossible to make a clear distinction between BL and other genres in general. Including both professionals and armatures, BL market is quite big in Japan today.<br>
+[3]Ema Yukifune, Nanyutachi no Seiza (Tokyo: Alicekan, 2018).
+,",
+
+    "jp":         "10月に刊行した『BL古典セレクション1 竹取物語 伊勢物語』（左右社）は、日本の古典文学を現代語訳、かつ、作品内の恋愛関係をＢＬに翻案するという企画でした。訳していて面白かったのは、もとの「竹取物語」「伊勢物語」じたいにはそれほど古さを感じないな、ということでした。時を経ても変わらない、人間のベースの部分が描かれているということですね。むしろ時代を感じたのは、参考にした昭和期の現代語訳や解説文でした。たとえば竹取物語後半の、月の都の人びとにかぐや姫が連れていかれる場面について、三十年まえの本の解説ではこれをためらいなく「悲劇」と解釈していましたが、私は、そこは「悲劇かどうかわからないぞ」と保留にしておきたいと思いました。地上の人には理解できないだけで、月には月のよろこびがあるだろう。かぐや姫はそんなひどい場所にいったのではないはずだ、と。私たちは知らない世界に不安や警戒心を抱きがちですが、じっさいに飛びこんでみたらなんとかなるもので、新たな風景や出会いに感動する――なんていう経験は、だれにも覚えがあるのではないでしょうか。<br><br>
+　今回の「ＢＬ訳」では、かぐや姫が男性化した「かぐや彦」や天下のプレイボーイ在原業平が、現在の言葉でとても自然に語りだしてくれました。それがとてもうれしく、夢中で翻訳作業がすすみました。原文から感じるままに描写していくと、業平はとてもチャラい、感情豊かな個性になりました。彼らキャラクターが雪舟えまというパイプを通って生まれなおすと、こんな感じになるようです。<br><br>
+　古典の現代語訳には、原文に忠実になされているのと、訳者が訳者自身の世界観を大いに反映させたり趣味性・娯楽性を加味したりするのと、だいたいふたつの方向があります。後者の、古典を新しく生まれ変わらせる意図というのはすぐにわかることですが、前者の、教科書に載るような「原文に忠実」タイプのほうも、日本語そのものの変化などによってじわじわと新しくなり、ならざるを得ず、だからこそ価値があり、おもしろいなと思います。<br><br>
+　同じものを作ろう、同じことをしようとしても、どうしてもちがってしまう、という意味では、クローンもそうだと思います。11月に『ナニュークたちの星座』（アリス館）というヤングアダルトの本を刊行しますが、それはクローン少年たちの物語です。人間がやらなくなった仕事をするために作られたクローンたちですが、似たような顔や背格好をしていても心はまるでちがっていて、そのことをナチュラルに理解している彼らは、自分の特別さを誇示する必要がなく、じつにのんびりと暮らしています。<br>
+　クローン人間などを身近に感じる時代はまだまだ先かもしれませんが、工業製品など大量生産の品物であっても、この現実ではまったく同時刻・同じ場所に複数の物質が重なって存在できない以上、完全に同じものはありえないことになります。<br><br>
+　宇宙は聡明なので、同じ経験をふたつ必要としないのだと思います。どれだけ精巧に複製しても、作りだされたものは無数に異なる解釈を与えられ、異なる運命が用意されます。私たちはなにも努力をしなくても平等に特別で、ただリラックスしてここに在ればよいのだと、この二作品の執筆を通じてあらためて思いました。"
   }
 },
 {
@@ -60,18 +81,18 @@
   "type":         "image",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title4",
-    "jp":         "タイトル4"
+    "en":         "Untitled",
+    "jp":         "無題"
   },
   "author": {
-    "en":         "Author4",
-    "jp":         "作者4"
+    "en":         "Watanabe Yuki",
+    "jp":         "渡邊有紀"
   },
   "resource":     "./resources/0004/img.png",
   "thumbnail":    "./resources/0004/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "",
+    "jp":         ""
   }
 },
 {
@@ -79,37 +100,148 @@
   "type":         "image",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title5",
-    "jp":         "タイトル5"
+    "en":         "Contact",
+    "jp":         "コンタクト"
   },
   "author": {
-    "en":         "Author5",
-    "jp":         "作者5"
+    "en":         "Minagawa Yoko",
+    "jp":         "皆川陽子"
   },
   "resource":     "./resources/0005/img.png",
   "thumbnail":    "./resources/0005/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "",
+    "jp":         ""
   }
 },
 {
   "id":           "0006",
-  "type":         "image",
+  "type":         "text",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title6",
-    "jp":         "タイトル6"
+    "en":         "The Originality of Haiku:thoughts on Kogo",
+    "jp":         "俳句のオリジナリティ：季語を考える"
   },
   "author": {
-    "en":         "Author6",
-    "jp":         "作者6"
+    "en":         "Gompei Ryoko",
+    "jp":         "権瓶　玲子"
   },
   "resource":     "./resources/0006/img.png",
   "thumbnail":    "./resources/0006/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "Making an Original out of a Copy | 複製からオリジナルを is inspired by Walter Benjamin’s aura and the analysis of Boris Groys. According to Groys, the difference between an original and a copy is contextual rather than material. We consider this discussion helps us to understand Haiku. Haiku is the world shortest poetry and haiku poets exmploy a seasonal word called ‘kigo’. The collection of kigo is documented in a book called Saijiki and most of words are succeeded from the Edo period. The poets explore the originality using kigo so they do not invent a new kigo for the sake of uniqueness. In Benjamin’s sense, kigo is reproduction without the aura and it does not have a unique connection to time and place. Considering making haiku poetry as a gesture of re/deterritorialising the context of kigo, this article explores the originality of haiku. <br><br>
+
+Benjamin’s Aura and Groys’ analysis <br>
+
+
+In The Work of Art in the Age of Mechanical Reproduction, Benjamin says an original artwork is an ‘unique existence at the place where it happens to be’ using the term ‘aura’. Benjamin predicts technological advance allows reproductions to exist multiple places simultaneously and the traditional value of authenticity that requires viewers to pay a visit to an original artwork will be obsolete. According to Boris Groys, the aura is merely material but contextual matter. Even a perfect copy visually identical to an original is different from an original in terms of uniqueness in the context of ‘here’ and ‘now’. While an original is tied to a specific place and time, copies reach to larger audience. It is impossible to valorize a copy in relation to art history in a traditional way, since it does not have a particular territory in time and space. In other words, making a copy is to ‘detteritorialise’ the original and unique context of artwork. If the authenticity is a contextual matter, Groys suggests, it is possible to make an original out of a copy by ‘retteritotialising’ a copy.  <br> <br>
+
+
+Haiku and Kigo as a Copy <br>
+
+
+Haiku is Japanese poetry consists of 17 morae and it stems from Haikai which became popular in the Edo period (1603-1867). Haikai is the collaborative linked verses and Haiku was originally the first verse of Haikai. Later in the Meiji period (1686-1912), Haiku became an established form of poetry. Haiku follows the rule that you have to contain at least one kigo (季語) or a seasonal word from Haiku Saijiki (俳句歳時記). Haiku Saijiki consists of 5 volumes: new year, spring, summer, autumn and winter, and each volume has 7 sections such as the season, the sky, the earth, humanity, observances, animals and plants. The origin is Keiso Saijiki imported from China in the Asuka period (592-710), which is a book documenting the observances of the Chinese court. The present Haiku saijiki follows a solar calendar that was shipped in Japan in the 19th century but movements to organise kigo vocabulary had emerged in the Edo period. In the Edo period, the vocabulary of kigo expanded since Haikai became so popular that it spreads to the ordinary people. Words relating to ordinary life began considered as kigo so kigo plays a role to connect poets and readers as common knowledge.<br><br>
+
+In the sense of Benjamin’s aura, kigo itself is reproduction without the aura. Across the time, kigo has described the sense of season and it is not a unique existence in time and space. Haiku poets often gather up to present and discuss their works that is called a Kukai (句会) and in a Kukai, it is not rare that poets select the same kigo. Also in the geographical sense, kigo is not confined to a certain place. You could use the kigo, ‘snow’, for example, anywhere in the winter time, even in a place does not have the snow. Kigo does not have its specific territory in the history of haiku. The originality of haiku is brought by the reterritorialisation of kigo. A haiku poet deterritorialises one kigo and gives a new place in the historical context of haiku. Like contemporary artists after the death of new visual expressions, Haiku poets make an original out of a copy by questioning the tradition. While the collections of powerful galleries define the tradition in the art world, Haiku saijiki functions as an archive of Haiku history. In Haiku Saijiki, not only the origin and meanings of each kigo, but also example works of historical haiku poets are shown. The contents are varied in an edition but contemporary haiku poets can learn how each kigo have been used. When a haiku poet updates the interpretation of a kigo so that it is uniquely relevant to ‘here’ and ‘now’, the poet successfully makes a new work.<br><br>
+
+Karigane (Wild Geese)<br>
+How does a haiku poet retrritorialise a kigo? Using a kigo ‘karigane’ as an example, we investigate the transition of the interpretation of a kigo. Karigane is wild geese come to Japan in October and stay till March and it is categorised as an animal of autumn. Karigane is a classic motif which already appears in the Manyoshu, the oldest existing collection of Japanese poetry from AD 700s. In Kojiki (712), the oldest existing chronicle of Japan, karigane is the symbol of the good omen. People believed karigane is the bird from the land of eternal life that carries the soul. The bird was also a metaphor of sadness in the 900s, which is based on a Chinese legend about the soldier, Su Wu who put a letter to his family on a leg of a wild goose from the prison. Those classic connotations are seen in the work of Matsuo Basho in the Edo period.<br><br>
+
+病雁の夜さむに落ちて旅寝かな<br>
+A sick wild goose returns<br>
+in the cold night<br>
+I am sick and sleeping away from home<br><br>
+
+Matsuo Basho (1644-1694) was a pioneer in Haikai. He was born in Iga, Mie prefecture, and he became a haikaishi or a professional haikai poet when he was 30. In the Edo period, shi-no-ko-sho or the four classes of warriors, farmers, craftsmen and tradesmen were strictly provided and haikai poets are an outsider. They manage the life by teaching people under the patronage of warriors but Basho gradually noticed this system keeps him from pursuing his creativity. Inspired by the poet Saigyo (1118-1190), Basho left Edo and travelled all over Japan at the age of 37. His travel journal, Oku no hosomichi (The Narrow Road to the Interior) written in the form of prose and verse is one of the important texts of Japanese literature.<br><br>
+
+The work of a sick wild goose is one of his latest works. As previsouly mentioned, Karigane is the bird across the sea to stay in Japan and it is considered as a supernatural existence in the legends. A sick goose is a symbol of Basho himself who are old and sick, yet passionate about travelling and making haiku. Also, Karigane reflects autumn suggesting the subtle sense of death, which corresponds to the sadness stems from Chinese legend. Haikai tends to be casual and playful in opposition to the established poet, renka at the time. Challenging this tendency, Basho created lyrical and serious Haikai. He laid a foundation of Haiku. <br><br>
+
+After 100 years, Kobayashi Issa created the haiku with karigane in 1807.<br><br>
+
+雁鳴くや窓に蓋する片山家<br>
+Wild gooses are so loud<br>
+I shut the windows of this small house<br>
+in the middle of nowhere<br>
+
+Kobayashi Issa was born a farmer’s son in 1762 in Shinano, Nagano prefecture. He was sent to Edo to serve a rich family at the age 15 and after 5 years he started leaning Hakai. Unfortunately, he could not manage his life as a professional poet, so he roamed over Japan until he turned 50. While his travel, he kept making haikai with locals and poets he met. At that time, a pastoral style became popular among Haikai poets in Edo who got bored with sophisticated and lyrical manner. Issa is famous for his colloquial style but his work is different from ones of his contemporaries. He saw farmers suffered from poverty in rural areas first hand and also he experienced the nomadic life which was quite uncommon at that time. His haiku reflects reality rather than romanticised life in a rural area. <br><br>
+
+The haikai with karigane clearly presents Issa’s realistic attitude. Wild geese coming back to the shore from the sky must have been very noisy. There is not lyrical and mystical karigane that is expressed in Basho’s work. Here, there are a group of migratory birds and Issa who leads a simple and ordinary life. The contrast between vigorous wild geese and unhappy Issa can be seen, but also this realistic and almost cynical work is very strong. It challenged the elegance and lyricism of Basho who had many patrons and pupils who supported his travels. Basho’s symbolic and poetic karigane is redefined by Issa from a realistic point of view.<br><br>
+
+In Meiji period, the classes structure was abolished and haikaishi became obsolete. Haiku poets started building a circle called Kessha and published magazines where they present new works. Haiku became an established literary genre. In the early Showa period when World War ll broke out, there is karigane expressed in the wartime.<br><br>
+
+雁や残るもの皆美しき<br>
+Oh Karigane<br>
+All that I will leave behind is beautiful<br>
+
+The haiku is created by Ishida Hakyo in 1943. Hakyo left his note on this haiku. ‘Showa 18, the 23rd of September. I got a draft card. Karigane looked the same as last night and the sunset was also beautiful as yesterday evening. All of sudden, everything looked stunning. I had to leave all of them behind.’<br><br>
+
+Hakyo was born in 1913 in Ehime prefecture. He joined the kessha called Ashibi when he was 17. Talented Hakyo published the magazine Tsuru in 1937 and he started educating young poets. His career as a haiku poet seemed to be promised and then he was drafted into the army. This work draws the line between home and the battleground or ‘here’ and ‘there’. Karigane is a symbol of the home where is eternally peaceful in opposition to the battleground as the site of violence and death. The phrase ‘All that I leave behind’ could also sound ‘All that remains’ in Japanese, which implies he predicted his death. Hakyo dismisses Issa’s karigane as uninvited guests in the ordinary life. Here Karigane is part of sweet home where Hakyo sensed he would never be back. Considering the work is full of the sense of grief, one could see the traditional interpretation of Karigane revived. Based on his note and the historical background, however, karigane is less symbolic since this haiku could be a snapshot of home rather than a creative work maneuvered. Hakyo got sent back to home from China due to illness in 1944 and he led the postwar Haiku with his contemporaries.<br><br>
+
+At last, there is a contemporary haiku employing karigane about home. <br><br>
+
+この浜の奥に原発雁渡る<br>
+At the far back of this shore<br>
+The nuclear power plant there<br>
+Karigane fly across the sky<br>
+
+On 11 March 2011, the earthquake and tsunami triggered the Fukushima Daiichi Nuclear Power Plant disaster including the nuclear meltdowns and the release of radioactive material. The evacuation zone was expanded to the area 20 km from the plant in April 2011 and approximately 150,000 people were evacuated. Komakine Junko grew up and raised her son in Futabacho where is one of the closest towns to the Fukushima Daiichi. In 2013, she visited Fukushima and created this haiku. It was said the seawater around the plant was also contaminated. Unlike other three haiku poets previously mentioned, Komakine presents karigane have no connection with the human system. They fly towards the evacuation zone, which almost   our anxiety about the invisible radioactive leaking. It recalls the ancient connotation of karigane as a carrier of soul or a supernatural existence. At the same time, the scenery of karigane flying across the sea evokes the memories of home for Komakine, and in this sense, Komakine’s karigane follows the historical interpretation too. Based on the traditional interpretation, Komakine describes the complex feelings about her hometown is contaminated by the invisible radioactive through one kigo, karigane. Futabacho is still a restricted area today. Karigane here is given unique connection with ‘here’ and ‘now’, it claims an original territory in the context of haiku. <br><br>
+
+
+In an artistic and literary world, original and reproduction are often considered as binary opposites as ‘the good authentic’ and ‘the bad fake’. However, when we look at the kigo karigane, it is clear that haiku poets have constantly reinterpreted the kigo, which allows the word stay alive. Karigane never gets old as a motif even though the number of geese decreased and our lifestyle is also changed today. It is because haiku poets deterritorialise/reterritorialise the connotation of karigane in the context of haiku. Or in other words, haiku poets create a unique connection between a kigo and time and place that they live. This system support haiku as a literary genre to be relevant to the contemporaneity. 
+",
+    "jp":         "「Making an Original out of a Copy | 複製からオリジナルを」では、ウォルター・ベンヤミンのアウラの議論と美術評論家のボリス・グロイズのその分析がインスピレーションになっているが、複製品とオリジナルの差異を文脈的な観点で捉えるグロイズの分析は、俳句の世界にも通ずる部分がある。今日、俳句を詠むうえで重要な季語は歳時記という書物にまとめられており、俳人たちは俳句のオリジナリティを高めるために、季語そのものを創り出すようなことはしない。彼らは、江戸時代から繰り返し用いられてきた季語、言い換えれば、既製の言葉を踏襲し、現代の出来事を詠む。よって、季語そのものは特定の時代や地域との結びつきを持たない。つまり、季語とはアウラを持たない複製品なのだ。俳句を詠むということは、この複製品にその都度、アウラを吹き込むことではないだろうか。世界最短の詩である俳句のオリジナリティについて考察してみようと思う。<br><br>
+
+ベンヤミンのアウラとグロイズの論考<br>
+ベンヤミンは「複製技術時代の芸術作品」（1936）[1]のなかで、オリジナルの芸術作品は時間と場所に根ざす一回性のものであると議論した。その一回性をあらわす言葉として「アウラ」（オーラ）を用いた。ベンヤミンは、複製技術の発展に伴って、あらゆる場所に同時多発的に存在する複製美術品が主流になれば、観客が自ら足を運んで作品の前に立たなければ鑑賞できないというオリジナルだけが持つ価値観が消失すると考えた。「アウラの喪失」と呼ばれる議論である。グロイズは、ベンヤミンの議論において、アウラは物質的な問題ではなく、文脈的な問題であると指摘している。視覚的にオリジナルと寸分違わぬ複製品は物質的にはオリジナルとの差異がなくとも、あらゆる場所に同時多発的に流通し、「いま」と「ここ」という観点で唯一無二の存在ではないという一点において区別される。言い換えれば複製品は美術史と全く無関係であり、アートの文脈において複製品をマッピングすることは不可能である。そういった複製品に、もう一度時間と場所との結びつきを与えれば、物質的な変化はなくとも美術史に影響を及ぼす作品となるかもしれない。言い換えれば、複製品の歴史的、地理的な文脈を問い、あらたな位置付けをすれば、美術家は複製品を用いてオリジナルの作品を作ることが可能であるというわけだ。 <br><br>
+
+俳句と複製品としての季語<br>
+さて、ここからこのアウラの議論をもとに俳句を考察していくわけだが、その前に俳句の成り立ちについて少し触れておきたいと思う。俳句は5・7・5の17音からなる世界で最短の定型詩といわれており、江戸時代に流行した連句形式の俳諧に端を発する。俳諧の発端の句が独立したものが俳句で、文学ジャンルとして確立したのは明治時代に入ってからである。俳句の大きな特徴は、17音のなかに俳句歳時記という書物によって定められた季語を最低ひとついれる決まりがあることだ。俳句歳時記は、新年、春、夏、秋、冬の5巻からなり、各巻において季節の景物が時候・天文・地理・生活・行事・動物・植物に分類されている。その起源は中国の宮廷の年間行事が記された荊楚歳時記（けいそさいじき）で日本に入ってきたのは飛鳥時代（592-710年）のことだが、19世紀に輸入された太陽暦にそった俳句歳時記の原型が成立したのは20世紀に入ってからである。俳句歳時記として季語が体系化されるきっかけとなったのは、江戸時代に季語の語彙が爆発的に増えたことである。当時、階級を超えて俳諧が流行し、市井の暮らしにまつわる言葉も季語として考えられるようになっていった。季語は、共通理解として作者と幅広い読者を媒介する役割を担ってきたのである。<br><br>
+
+ベンヤミンのアウラの観点から考えると、季語そのものはアウラをもたない複製品である。時代を超えて、季節の情感を表す季語は時間との固有の結びつきを持たない。また、句会（数人があつまって自作の句を出し合い、お互いを批評する会）において、複数の俳人が偶発的に同じ季語を用いることは珍しくはないし、あらゆる土地で同じ季語が用いられることを考えると、すべての季語が特定の場所と一回性の結びつきを持つわけでもない。たとえば「雪」という季語は、雪が降る土地であれば世界各国どこでも詠むことが可能であるし、もっといえば雪が降らない土地でも「雪」を詠むことはできる。俳句のオリジナリティは、作者が季語の歴史的な解釈を踏まえながら、自らが立つ場所と時間に一回性の結びつきを与えることで初めて生まれる。要するに、すべての俳人がマルセル・デュシャン以降のアーティスト同様、同時多発的にそこかしこに存在する複製品を用いて、その文脈を問おうとしている。その証拠に俳句歳時記には各季語の成り立ちや意味とともに、歴代の俳人の作品が「例句」として収録されている。収録される例句は、編纂者によって変わることもあるが、少なくとも「名句」と呼ばれるものは必ず含まれており、俳人たちは各季語の背景にある歴史や政治的な文脈を学ぶことができる。歳時記はアートの世界でいうところの美術館、つまり、歴史的なアーカイブを保管、共有する役割を果たしている。アーカイブされた季語の意味、解釈を刷新するとき、その俳句は俳句史に残る作品となるのだ。<br><br>
+
+雁（かりがね）<br>
+季語の解釈の変遷とはいかなるものか、実際に読まれた句をあげながら分析したい。今回は、雁（かりがね）を詠んだ俳句を選んだ。雁は、１０月初旬に北方からやって来て翌春の３月まで日本にとどまる渡り鳥で、俳句歳時記では秋の動物に分類されている。万葉集の時代(７４６～７５９年)から上空を鳴き過ぎる声を「雁音(かりがね)」と呼び、最初に渡って来た雁を「初雁(はつかり)」と呼び愛でてきた。日本最古の歴史書『古事記』(７１２年)に吉兆を告げる鳥として記録されており、雁は常世国(とこよのくに：海の彼方にある不老不死の仙境）に棲み、魂の運搬者であると考えられていた。また、９００年ころには中国の武人、蘇武が獄中から故郷へ向けた手紙を雁の脚に結びつけたという故事から、雁は哀感の比喩としても用いられた。[2] まずは江戸時代に俳諧の礎をきづいた松尾芭蕉の句を見てみる。<br><br>
+
+病雁の夜さむに落ちて旅寝かな　　　松尾芭蕉 [3] <br><br>
+
+訳：夜空を雁が鳴きながら渡ってくるが、耳を澄ませて聴いていると夜の寒さに耐えきれず舞い降りてくる一羽がいるようである。おそらく病気の一羽なのであろう。病みながら旅寝をしている自分にとってこの雁から伝わってくる気配はひとしお哀れである。<br>
+
+松尾芭蕉(１６４４～１６９４)は、言語遊戯としての俳諧に一石を投じ、抒情的で芸術性の高い句を詠んだ。うまれは伊賀の国上野市（現在の三重県伊賀市）、30歳で誹諧を詠むことを生業とする俳諧師になる。士農工商の身分制度が定められていた江戸時代において、誹諧師は極めてアウトローな存在で、門人の授業料とパトロンの援助によって生計を立てるのが常であった。しかしそのしがらみを嫌うようになった芭蕉は、歌人の西行（1118-1190）の生き方に影響をうけ、37歳で江戸を離れて全国を行脚しながら句を詠むようになる。芭蕉の生涯最後の旅を俳句とともに綴った紀行文『おくのほそ道』は日本古典文学における重要な作品のひとつである。<br><br>
+
+病雁の句は最晩年の作品である。前述のとおり、雁は海を越える渡り鳥であり、また魂を運ぶ霊的な存在である。「病雁」は年老いて病みながらも旅に情熱を燃やした芭蕉自身の象徴で、そこにすべてが枯れゆく秋の情感が加わり切実な嘆きに満ちている。この世界観からは、中国の故事において哀感の比喩だった雁を読み取ることもできる。誹諧は伝統的な連歌に対立するものとして可笑し味をこめて作られる傾向があった当時、非常にシリアスで情感にあふれる俳諧を詠むことで、芭蕉は俳諧を芸術作品へ昇華しようとした。これが後の俳句の発展の礎となった。それからおよそ１００年、西暦１８０７年に小林一茶が独自の解釈で雁を詠んでいる。<br><br>
+
+雁鳴くや窓に蓋する片山家　　小林一茶　[4] <br><br>
+
+訳：雁がよく響く声で鳴いていることだ。雁の塒に近い辺境な土地の小さな家のいると、雁の声の趣きを感じる暇もない。ただただうるさいので窓をしめよう。<br><br>
+
+小林一茶は１７６２年に農民の子として信濃の国(長野県)に生まれた。１５歳の時に江戸へ奉公に出され、２０歳で俳句を学びはじめる。残念ながら俳諧師として身を立てることができず、帰郷定着する５０歳まで、放浪生活をつづけながら各地で俳句を作り続けた。俗語調の俳句を作ることで有名だった一茶だが、当時、都会風の俳諧に飽きた俳諧師のあいだで流行した田舎体（あえて田舎趣味を取り入れるスタイル）の俳句とは一線を画した。農村の窮乏と都市の流民生活のつらさを知っている一茶の俳句には、花鳥趣味的な田舎への幻想はみられず、むしろ農民の暮らしを正面から捉えていた。
+雁の句にも、一茶の思想がよく現れている。上空から寝場所を求めて水辺に降りてくる雁の群れの鳴き声の大きさは相当だったのだろう。芭蕉が詠んだような風雅な伝統にのっとった「雁」はここに存在しない。あるのは、野生の渡り鳥としての「雁」と、貧しくも日常生活を営む人間としての一茶である。同じ世に生きている「雁」の旺盛な生命力と自分の境遇を対比しているともとれるが、シニカルで現実主義的な句は、江戸を離れてもパトロンの保護のもとで門下生を引き連れて旅をした芭蕉のリリシズムを一蹴するような力強さがある。芭風の詩的でシンボリックな「雁」は、一茶によって現実的な農民の視点から捉え直され、書き換えられた。<br><br>
+
+明治時代に入り身分制度が撤廃されると、誹諧師という職業は消えていった。俳人たちは志を同じくする仲間と結社を作り、同人雑誌を出版し、そこを発表の場とするようになる。さらに時計は進み、第二次世界大戦中に詠まれた「雁」がある。<br><br>
+
+雁や残るもの皆美しき	石田波郷　(１９４３年)<br><br>
+自句自解：「昭和１８年９月２３日召集令状来。雁のきのふの夕とわかちなし、夕映えが昨日のごとく美しかった。何もかも急に美しく眺められた。それら悉くを残してゆかねばならぬのであった」[6]<br><br>
+
+石田波郷は１９１３年愛媛県に生まれる。17歳で俳句結社「馬酔木(あしび)」に入会すると、すぐに頭角を表す。１９３７年に俳誌『鶴』を創刊し、指導者としても活躍していたころに第二次世界大戦が勃発。家族を残し、美しい故郷の風景を残し、文芸の志なかばで出征しなければならなかった無念の思いが溢れる句をつくっている。この句は、戦地と故郷を外と内で線文化し、破壊と暴力の現場である「あちら」の土地に対して、不変の「こちら」である故郷の象徴として「雁」を用いている。平穏な田舎の生活において招かれざる客だった一茶の「雁」は、一転して、愛すべき故郷の風景となった。ある意味で、古典に忠実な哀感の表象としての「雁」がここで復活しているともとれるが、歴史的背景を鑑みると、故郷の一風景として切り取られたと読むほうが妥当かもしれない。なお、波郷は病により終戦の1年前に中国から送還され、戦後の混迷のなか現代俳句の礎を築いた。<br><br>
+
+さて「故郷」が必ずしも懐かしい姿をとどめなくなった現代において、「雁」をいかに詠むか。<br><br>
+
+この浜の奥に原発雁渡る　　　駒木根淳子[7]<br><br>
+
+2011年3月11日に起きた東日本大震災の影響で、津波に襲われた福島第一原子力発電所の三つの原子炉がメルトダウンを起こした。国際原子力事象評価尺度最悪のレベル７の事故である。発電所周辺は避難指示区域となり、住人たちは非難を余儀なくされた。2013年にこの句を詠んだ駒木根淳子は、避難指示が出された双葉町でかつて子育てをしていた。自身も福島で育った彼女は、近隣の浜に立ち、原発の方向へ雁が渡ってゆくのを見ているのだ。原発近くの海も放射能汚染されているといわれた。前述の3つの俳句と大きく異なる点は、ここに登場する「雁」が人間の営みに一切の関わりのない他者として、しかも放射能漏れの恐怖を煽るように原発へ向かっていく、不穏な存在として詠まれていることである。ここには、人間を超越する魂の運搬者という古事記の解釈が命を吹き返したようにとれる。しかし同時に、浜の向こうに雁が飛んで行くさまは、詠み人にとっては懐かしい光景であり、先人たちが「雁」を通じて詠んできた故郷の感覚が生きている。<br><br>
+
+駒木根は、「雁」の歴史的な解釈を踏まえ、故郷が目に見えない放射能によって汚染されていくことへの複雑な感情を「雁」という季語で表現した。双葉町は現在も避難指定が解除されておらず、この句の「雁」はまさに「いま」と「ここ」に特別な結びつきを得て、生きているといえるだろう。<br><br>
+
+おわりに<br>
+芸術の世界において、オリジナルと複製品は正義と悪という安易な二項対立として捉えられることがある。しかし、改めて「雁」の意味の変遷をみていくと、俳人によって再解釈が続けられることで、季語が言葉として生き存えていることが見て取れる。再解釈とは言い換えれば、普遍的な季語を詠み手の生きる時間と場所に結びつける行為である。季語、時間、場所の三つが代用のきかない、引き離すことのできない、固有の結びつきを持ったときに俳句のオリジナリティが生まれる。これは挨拶句のようなごく私的なものであっても、広く同時代性をもつものであっても変わらない。文学ジャンルとしての俳句が廃れることなく今日にあるのは、季語を再解釈していくという構造が、作句の土台に組み込まれているからではないだろうか。<br><br><br>
+[1]Boris Groys, Art Power (MIT Press, 2008).<br>
+[2]『日本大歳時記』講談社１９９６年<br>
+[3]『芭蕉全句集』角川ソフィア文庫　２０１０年 <br>
+[4]『一茶句集』角川ソフィア文庫　２０１３年<br>
+[5]『俳文学大辞典』角川学芸出版<br>
+[6]『石川波郷読本』角川書店　２００４年<br>
+[7]『夜の森』角川書店<br>
+"
   }
 },
 {
@@ -121,71 +253,253 @@
     "jp":         "タイトル7"
   },
   "author": {
-    "en":         "Author7",
-    "jp":         "作者7"
+    "en":         "Ramona Güntert",
+    "jp":         "ラモーナ　グンテルト"
   },
   "resource":     "./resources/0007/img.png",
   "thumbnail":    "./resources/0007/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "",
+    "jp":         ""
   }
 },
 {
   "id":           "0008",
-  "type":         "image",
+  "type":         "video",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title8",
-    "jp":         "タイトル8"
+    "en":         "A procissão das portas muradas (Procession of the Sealed Doors)",
+    "jp":         "A procissão das portas muradas" (閉ざされたドアの行進)"
   },
   "author": {
-    "en":         "Author8",
-    "jp":         "作者8"
+    "en":         "Lise Bardou",
+    "jp":         "リーズ　バルドー"
   },
   "resource":     "./resources/0008/img.png",
   "thumbnail":    "./resources/0008/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "I arrived in Lisbon in 2015, for six months, and discovered a city with of a great beauty. A lot of buildings in the town center were abandoned, the vegetation was taking over every empty space. Former individual gardens become wild were open to everyone, had become public area. These were the consequences of the economic crisis, but I believe it is these spaces that taught me to appreciate emptiness, ruins and loneliness. They became mine and started to resonate with my artistic practice. Anyone passing by could feel free to invest these places with its own imagination and creativity.<br><br>
+ 
+I was going from coffee shops to tascas, from tascas (typical portuguese restaurant) to abandoned building, from abandoned building to Miradouro (viewpoint), and from this urban wandering I created my own itinerary. My walk always has more than one stop, like a procession.<br><br>
+ 
+In 2017, I was back for an artistic residency that enabled me to explore further the idea of roaming, stages and contemplation stops. From April for the Holy week until June, Lisbon is full of religious processions.The procession of Nossa Senhora da Saude dedicated to the patron saint of health crossed the trajectory of my walk. Departing from the church of Nossa Senhora da Saude, ritualistic and religious, the parade walks around the historic neighbourhood and comes back to the church. I was more inspired, however, by the Procession of Candles, which happened the night before the procession of Nossa Senhora da Saude. For the Procession of Candles, people gather in the church of Nossa Senhora da Saude at night and walk to the church of São Domingos holding a candle, praying, singing and accomplishing devotional services.From this observation, I was questioning myself, not only about its trajectory but also about the importance of its stops, the importance of “passing through the Holy door”. The question of the threshold: What mystical, spiritual, subterranean or celestial world are they entering by passing the door of a church?<br><br>
+ 
+I have been living in Lisbon since 2018. The city quickly changed, the streets and the churches are now full of tourists and the empty spaces suddenly disappeared. The doors of abandoned houses, formerly private, are now closed with concrete, bricks or wooden panels. The stops of my walks have become simple patterns, whose drawn contour is almost deleted. Most of these buildings are now in reconstruction to become Airbnb, luxury hotels or souvenir shops. These doors hastily turned into walls while the temporary occupants such as associations fighting against property speculation and homeless people...were away, for the sole purpose of «blocking» the access. Those spaces are now in transition. These “wall doors” are the present of this city, its contemporaneity, frozen spaces, waiting…<br><br>
+ 
+Step by step, the soul of Lisbon, its past, its “aura” is disappearing at the surface, leaving space for the homogeneity and cleanliness of new houses, all replicas of the same model, quickly renovated, probably without any historical or geological consciousness and with the same purpose: attracting tourists, that are following the latest fashionable destination.<br><br>
+ 
+In reaction, and in tribute to the most beautiful city I knew, I started the “Wall doors parade” project or “A procissão das portas muradas”. The video presented for the online installation “Making an original out of a copy”, is the first step of a three stages project: A video, a performance and an installation. The core idea would be to organize a performance in form of a procession, going from one wall door to another, and dedicated to the Roman god Janus.<br><br>
+ 
+The Romans attributed to Janus a vital role in the creation of the world. According to Ovide, his first name was ”chaos”, at the time when, air, water, fire and earth were part of the same entity. Janus is the origin, the first cause of the world as we know it. In this world, he is the guardian, the celestial doorkeeper that opens and closes the sky, that masters the days. Because of his double face, he is able to see simultaneously the orient and the occident. His two faces seem to be a symbolic image of time : this god looked both at the past, which he had the knowledge of, and the future, which he could predict. At the same time, his two faces are reminding us his function of guardian, protector of thresholds, and they allow him to keep an eye on the inside and the outside of houses, just as the entrances and the exits of public  space?<br><br>
+ 
+Janus echoes to the concept of “initial passage”. With his double face, he holds the attributes of the key and the stick: the opener and the traveler. God of every threshold, every passage, of every door, initially public ones, then privates, he is the god of apertures by which the light gets into the houses, but also the divinity of departures and returns…<br><br>
+ 
+I finally explored the myth and character of Janus to make mine these empty spaces of Lisbon.  If crossing the threshold of abandoned houses in Lisbon is no longer physically possible, then it has to be another way.
+“A procissão das portas muradas (Procession of the Sealed Doors)” is a video that introduces the project of performance by tracing the trajectory of the walk in eight stages. Eight “wall doors” chosen in the historical center of Lisbon. While the trajectory is progressing, the double faces of Janus that reveal the eight stops become more visible. The stops draw a new constellation and open to other worlds.<br><br>
+
+Rua da Mouraria, 38, 1100-246 Lisboa<br>
+Escadinhas de São Cristovão, 8, 1100-001 Lisboa<br>
+Costa do Castelo, 14, 1100-006 Lisboa<br>
+Largo de Santa Cruz do Castelo, 16, 1100-129 Lisboa<br>
+Rua do Recolhimento, 47, 1100-129 Lisboa<br>
+Pátio de Dom Fradique ou Pátio Julio Bernardino de Oliveira, 4, ...<br>
+Rua de Santa Marinha, 13, 1100-005 Lisboa<br>
+Calçada de Santo André, 57, 1100-022 Lisboa<br>
+
+",
+    "jp":         "短期留学のためリスボンにやってきたのは2015年のことだった。わたしは美しい街の虜になった。当時、中心街の建物の多くは廃屋となり、そこかしこに雑草が生い茂っていた。かつて私有地だった庭は荒れ果てて、いつのまにかその門戸を街に開き、公共の場と化していた。それは不況がもたらした光景であったが、同時に空虚、荒廃、孤独といったものの美しさを教えてくれた。そしてそれらは徐々にわたしの制作活動と共鳴をはじめた。そこを行き交う誰もが、自分自身の想像力やクリエイティビティをもって、廃屋や荒れ果てた庭を自由に理解し、使用することが許されていた。<br><br>
+
+ある日、カフェからタスカス（伝統的なポルトガルの食堂）、タスカスから廃屋のひとつへ、廃屋からミラデューロ（見晴らし台）へ散歩した時に、ふと思い立って、辿ったルートを記録してみた。リスボンでの散歩はいつでも、複数の場所をめぐるもので、まるで、後述する礼拝行進のようだった。<br><br>
+
+2017年、わたしは再びリスボンの地を踏んだ。前回のリスボンで考えていた、放浪、場、思考の着地点といったコンセプトを深めるため、アーティスト・イン・レジデンスに滞在することにしたのだ。4月から6月にかけて、リスボンでは礼拝行進があちこちで行われる。ノッサ・セニョーラ・ダ・サウジの行進（Procissão de Nossa Senhora da Saúde: 1570年にペストが大流行した際、リスボンの首長がこの聖母礼拝堂で祈祷をしたのがはじまりと言われている）は健康を司る聖母マリアへ祈りを捧げる行進で、それがちょうど私の滞在中に行われた。宗教儀式であるこのパレードは、ミサのあとセニョーラ・ダ・サウジ教会を出発し、ムラリア、バイシャ地区を練り歩き、最後にまた教会へ戻ってくる。教会に入ると参加者は祈りと賛美歌を捧げる。行進を観察しながら、わたしはそのルートのみならず、行進が止まる場所、教会の「聖なるドアを抜けること」の重要性について思いを巡らせていた。ようするに閾（しきい）、または境界の存在を実感したのだ――行進の参加者たちは教会の閾をまたいだあと、いかなる世界へ入場するのだろうか。神秘的な世界か、スピリチュアルな世界か。それとも地下に広がる世界か、はたまた天空の世界か。その夏のおわりにわたしは故郷へ帰った。<br><br>
+
+2018年、わたしは三度リスボンの地を踏む。ついに移住したのだ。ここ3年で、街の様相はがらりと変わってしまった。街も教会も観光客でいっぱいになり、かつて私を魅了した空虚はすっかり姿を消していた。3年前に廃屋だった建物は、今ではコンクリートとレンガと木の板によって閉鎖されしまった。入り組んでいたはずの私の散歩ルートは、非常にシンプルなものになってしまい、かつて地図の上で自分が立ち寄った場所を結ぶと現れた複雑な形は、いまやほぼ描けなくなった。いま、あらゆる場所で工事が始まっている。工事が終わればそこはエアビーアンドビーや高級ホテル、みやげ屋になるのだろう。廃屋には、不動産投機に反対する地元団体やホームレスたちが一時的に居を構えていたが、彼らがいなくなった隙に、街に開かれていたそのドアは侵入を阻む壁へと姿を変えてしまった。そして、壁の向こうの空間は変遷する。これらの「壁ドア」がこの街の現在である。あらゆる空間が凍結し、ただ待っている。<br><br>
+
+ひとつひとつ段階を踏みながら、リスボンの魂―――その過去、その「アウラ」―――は街の表層から消えてゆく。均質でクリーンな新しい家々にその空間をゆずりながら。量産性のモデルをもとに凄まじい速さでリノベーションを施された物件にはきっと歴史的、地理的な配慮などないだろう。（訳者注：リスボンの建築は日本のようなビルドアンドスクラップよりもリノベーションが主流だという）こういったリノベーションはたったひとつの目的のために遂行されるのだ。それは、最新のファッショナブルな土地を好む観光客を引きつけること。<br><br>
+
+美しいリスボンへの贈り物として、わたしはウォール・ドア・パレード（「壁ドア」パレード）をしようと思った。それがいま取り組んでいるプロジェクト、A procissão das portas muradasである。オンライン・インスタレーションの「Making an Original out of a Copy|複製からオリジナルを」で展示される映像作品は、このプロジェクトの第一段階である。プロジェクトは三段階に分ける予定で、映像のつぎにパフォーマンス、インスタレーションと続く。プロジェクトの核となるアイデアは、閉鎖された廃屋の「壁ドア」から「壁ドア」へ行進するパフォーマンスだ。それから、ローマ神話のヤーヌスからも着想を得ている。<br><br>
+
+古代ローマ人はヤーヌスに万物創造における重要な役割を与えた。古代ローマ時代の詩人オウィディウスによると、空気、水、火、土がひとつの物質だと考えられていた頃、ヤーヌスの最初の名は「カオス」（混沌）だったという。ヤーヌスは万物の始まりの神だ。彼は守護神であり、天空の門番として1日の始まりと終わりを司った。前と後ろに顔を二つ持つヤヌスは、東西を同時に眺めることができたわけだが、それ以外にも一つの顔で過去を見つめ、もう片方で未来を予見できるとして時間の象徴でもあった。また、閾を守る門番とも考えられており、閾の内側と外側を同時に見る存在とされていた。<br><br>
+
+ヤーヌスは「最初の旅」というコンセプトにこだまする。ヤーヌスの特徴は二つの顔のほかに鍵と杖を握っていることだが、これはドアを開ける者と旅する者を意味する。すべての閾の神であり、すべての旅の神であり、そしてすべてのドアの神なのだ。公共の土地を分ける閾とプライベートな空間へつながるドア。彼は家々を照らす太陽をもたらす始まりの神であり、出発と帰還の神であるのだ。<br><br>
+
+ながらく神話について考えていたが、ようやくわたしがリスボンで体験した空虚とヤーヌスを結び付けられた気がする。もうあの懐かしい廃屋の敷居をまたぐことができないのであれば、他の方法を探さねばならない。<br><br>
+
+A procissão das portas muradas #1は、パフォーマンス・プロジェクトの導入である。パフォーマンスではリスボンの旧市街にある8つの「壁ドア」をめぐるもので（住所は下記参照のこと）、このビデオではその道筋を示した。行進が進むごとに、ヤーヌスの顔が現れる。8つの「壁ドア」は、星座のように新しい形を描きながら、その扉を開ける。<br><br>
+
+
+Rua da Mouraria, 38, 1100-246 Lisboa<br>
+Escadinhas de São Cristovão, 8, 1100-001 Lisboa<br>
+Costa do Castelo, 14, 1100-006 Lisboa<br>
+Largo de Santa Cruz do Castelo, 16, 1100-129 Lisboa<br>
+Rua do Recolhimento, 47, 1100-129 Lisboa<br>
+Pátio de Dom Fradique ou Pátio Julio Bernardino de Oliveira, 4, ...<br>
+Rua de Santa Marinha, 13, 1100-005 Lisboa<br>
+Calçada de Santo André, 57, 1100-022 Lisboa<br>
+
+
+
+"
   }
 },
 {
   "id":           "0009",
-  "type":         "image",
+  "type":         "text",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title9",
-    "jp":         "タイトル9"
+    "en":         "It is a Body, it is a Multitude",
+    "jp":         "ひとつのかたまりであり、多種多様であるもの"
   },
   "author": {
-    "en":         "Author9",
-    "jp":         "作者9"
+    "en":         "Gabi Lardies",
+    "jp":         "ギャビ　ラーディーズ"
   },
   "resource":     "./resources/0009/img.png",
   "thumbnail":    "./resources/0009/img.png",
   "description":{
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "Think of the haystack in the sunshine - a body of parts, think of society - a body of parts, of yourself - as a part. And everything moving, either with deliberation or with the tides, with the way things are. I stand still, I listen, I try to learn, and I try to spread - ways of being: against the imperialist, ableist, heteronormative, patriarchal, white-supremacist, capitalist machine. Maybe I open a window and let the smell of the ocean into the factory.<br><br>
+
+The ability to envisage change and a different world requires an understanding of how the present was constructed. Walter Benjamin sees the public as occupying an "empty time," with the dominant elite creating a narrative of both progress and homogenisation of the present. [1] Similarly, Debord writes about the "eternal present" created by the media overload of the spectacle society.[2] The present and future are seen as an inevitable continuation of the status quo. Without actively remembering, we cannot understand our society in relation to, and as a product of history and change.[3] Howard Zinn writes, "We forget how often we have been astonished by the sudden crumbling of institutions, by extraordinary changes in people’s thoughts, by unexpected eruptions of rebellion against tyrannies, by the quick collapse of systems of power that seemed invincible."[4] Without history, we forget change is possible and our own power to create it - we move as a compliant body, the direction our oppressors have chosen for us (for themselves).<br><br>
+
+Archives and academia safely store and create information, but their content is seen mostly, or only, by "those already motivated to access them and aware of how to do so."[5] Žižek's notion of interpassivity, as the opposite to interactivity, states that through our relationships with objects, we can relieve ourselves of action and responsibility. Žižek's example of storing films on VCR, "the VCR is in a way watching them for me" can be translated to historical archives.[6] The archive becomes a way to outsource remembering, to delegate care and knowledge to a repository where it becomes passive. A body of knowledge, stays still, stored, forgotten, words quiet. A body so powerful.<br><br>
+
+The gallery, or an artwork, can be used as a site of storage and transmission of information. Archival artists hold the impulse to "make historical information, often lost or misplaced, physically present."[7] This impulse is mirrored in the activist strategy of "documenting and leaking" to make injustice and oppression visible.[8] Through the spreading of information, extracted from archives, or research, an engaged artist can "unveil non or less visible truth about pre-existing, hegemonic narratives."[9] However, an artwork hoping to move engagement away from passivity may require "human interpretation, not machinic reprocessing" of the archival material.[10] One cannot simply recreate the archive, but give people a way into it. Bring the body to life.<br><br>
+
+An artist can further this function by using distributable media as a medium. Multiples act as a communicative action to many, that can physically pass through networks of people, through the parts of the body. Like art can relieve historical information from the archive, a distributable work can relieve art from the gallery, taking its content further. The form of the work embodies its desire to communicate and disseminate information by allowing its own dispersal. The intention to spread knowledge and ideas is given form in the distributable multiple. Blood pumps - veins fill the body - circulating - the skin reddens -  <br><br>
+
+In The Work of Art in the Age of Mechanical Reproduction, Walter Benjamin saw methods of reproduction and photography as freeing art from outmoded concepts of genius, ritual and mystery but also depreciating the work's presence.[11] To Benjamin, an original artwork holds an "aura" and authenticity which is devalued by mechanical reproduction. This is because the "aura" is determined by "its presence in time and space, its unique existence at the place where it happens to be."[12] Benjamin sees the uniqueness of a work's existence to hold its "aura," and this is removed when reproduced.<br><br>
+
+I disagree. <br><br>
+
+A collection of reproductions rather than a unique piece have an alternative aura. They too have presence in time and space, but rather than being singular and unique, it is multitudinous. A body of multiples is intended to be disseminated, focusing on dispersion rather than a singular place and moment of experience.<br><br> 
+
+The blood of the body, cannot be still, cannot be held in the heart. <br><br>
+
+Works leave the gallery and follow unknown and unpredictable paths, they will be seen by many, in different places and at other times. Rather than making a singular statement, multiples echo amongst the people they come across, scattering a conversation. Multiples will be folded, creased, marked and taken to other places and yet more hands, or tucked away somewhere, to be found years later, dusty. A multiple then, holds an aura of being a part of this, the feeling of knowing that what is held in your hands, is also held by many others. <br><br>
+
+In 2002, artist Seth Price self-published the essay Dispersion, available online as a free downloadable PDF and in print. Dispersion questions the place of art and systems it works within, placing emphasis on distribution and culture. Price critiques public art's "Utopian promise of... collective public experience."[13] He sees the monumental model of public art as outdated, since audiences are no longer interested in direct communal experiences.[14] He states, "We should recognise that collective experience is now based on simultaneous private experiences."[15] Through reproduction and dispersal, content is consumed privately en mass, allowing people to have a personal engagement within a collective experience. The public and private are intermingled as the personal and political are. Through an accessible, reproduced form, collected from a greater body, the reader can recognise they have become a participant, part of a ripple effect. Their hand has taken part already, in the simplest action of picking up, feeling the weight and texture, and disseminating the work.<br><br>
+
+Even in forms which may exit the gallery, we must recognise the frameworks and discourses in which art resides. Many in the visual arts have attempted to keep philosophical ambiguities of art practices away from concrete social issues.[16] However, many artists are compelled to use art as a political tool, perhaps to justify their own practice during times when there are pressing issues. There is a danger of instrumentalising art when we look for it to have a measurable effect, to avoid this we need to acknowledge qualities of art. The power of art is not measurable like the stock market index, not strong like an army, not decisive like a policy change. We must use "its subtle power to reveal and re-envisage the world, to develop the viewer's consciousness of the conditions of that world."[17] Although art can be used as a political tool, one must understand the tool in order to use it well.<br><br>
+
+Think of a megaphone, either a machine to amplify the voice of one, or many using their voices together in unison. <br><br>
+
+We are a body, we are a multitude.<br><br>
+
+[1] Walter Benjamin, "On the Concept of History," trans. Dennis Redmond, accessed October 20, 2017, https://www.marxists.org/reference/archive/benjamin/1940/history.htm<br>
+[2] Guy Debord, The Society of the Spectacle (Zone Books: New York, 1994)<br>
+[3] Andrew Dean, Ruth, Roger and Me: debts and legacies (Wellington: BWB Texts, 2015). <br>
+[4] Zinn, " The Optimism of Uncertainty" <br>
+[5] Robert Bailey, "Unknown Knowns: Jenny Holzer's Redaction Paintings and the History of the War on Terror" October (Fall 2012): 154, doi:10.1162/octo_a_00112.<br>
+[6] ibid: 158<br>
+[7] Hal Foster, "An Archival Impulse," October issue 110 (Fall 2004): 4, doi:10.1162/0162287042379847<br>
+[8] Steirischer Herbst, ed, Truth is Concrete : a handbook for artistic strategies in real politics (Berlin: Sternberg, 2014), 7<br>
+[9] Steirischer, Truth is Concrete : a handbook for artistic strategies in real politics, 6-7<br>
+[10] Foster, "An Archival Impulse," 5<br>
+[11] Walter Benjamin, "The Work of Art in the Age of Mechanical Reproduction," in Illuminations, ed Hannah Arendt. (New York : Schocken Books, 2007), 223<br>
+[12] ibid, 220 <br>
+[13] Seth Price, "Dispersion" in Social Medium : artists writing, 2000-2015, ed. Jennifer Liese (New York: 38th Street Publishers, 2008), 140<br>
+[14] ibid, 134<br>
+[15] ibid, 135<br>
+[16] Michael Auping, Jenny Holzer (New York: Universe, 1992)<br>
+[17] Daniel Jewesbury, "Can Art Make a Better World?" in Now What? Artists Write!, ed. Mark Kremer et al (Utrecht : BAK ; Frankfurt am Main : Revolver, 2004) 92 <br>
+
+
+
+",
+    "jp":         "日だまりのなかにある干草の山を思い浮かべてほしい。無数の干し草からなるひとつのかたまり。社会について思い浮かべてほしい。無数の人間からなるひとつのかたまり。そしてその人間のなかのひとりが、かたまりの構成員のひとりがあなたである。慎重に計画されていようがいまいが、この世の全ては動いている。私はじっと立ち、聞き耳をたて、学び、そして広めようとしている。わたしのあり方を。帝国主義的、障害者差別的、ホモフォビック、家父長制主義的、白人優位主義的、資本主義的な機械に対峙する、わたしのあり方を。（注：筆者はかたまりをbody（ボディ）と呼ぶ。ここでいう機械は身体という意味でのボディと対をなすと考えられる）たとえば、窓を開けて、機械が立ち並ぶ工場に潮風の匂いを漂わせてもいいかもしれない。<br><br>
+
+変化や異なる世界を想像するためには、まず、現在がどのようにつくられたのか理解することが必要だ。ヴァルター・ベンヤミンは、進歩を語り、現在を均質化するナラティブを作り出す支配的なエリートで「空白の時間」を埋める存在が大衆であるとしていた。[1]　同じように、ドゥボールもスペクタクルな社会を過剰に背負ったメディアが「永遠の現在」を作り出すと述べている。[2]現在と未来は、必然的に現状の延長に存在する。積極的に覚えていようとしなければ、私たちは、社会が歴史と変化の産物であることを、理解することはできない。[3]ハワード・ジンは次のように書いている。「私たちは、社会制度の唐突な弱体化、思想の劇的な変化、暴政に対する予期せぬ反乱、無敵と思われた権力構造の急速な崩壊に、度々驚かせられてきたことを忘れてしまう」。[4]　歴史がなければ、わたしたちは変化をもたらすことが可能であるという事実や、変化を起こす自身の力を忘れてしまう。そして、従順なかたまりとして、わたしたちを抑圧する支配者たちが、わたしたちのために（彼ら自身のために）選んだ方向へ進むようになる。<br><br>
+
+アーカイブやアカデミアは情報を安全に保管し、作り出すわけだが、その中身は、情報の内容を知りたいと願い、かつ、そこへアクセスする方法を知っている人間だけに公開される。[5]スラヴォイ・ジジェクの唱えるインターパッシビティーはインタラクティビティ（相互作用）の対をなす概念で、オブジェクトとの関係を通じて、わたしたちは自分の行動と責任から自らを解放することができる、としている。ジジェクはVCRに映像を撮りため、「多かれ少なかれVCRが撮影の対象物を自分の代わりに見てくれる」と述べているが、彼のVCRは歴史的アーカイブと呼ぶことができる。[6]アーカイブは、記憶することを他者に委託し、知識を貯蔵庫に預け、その世話を他者に任せる手段なのだ。貯蔵庫に預けられた知識は受動的なものになる。知識のかたまりは微動だにせず、蓄えられ、忘れられ、黙っている。そのかたまりは、とても強大である。<br><br>
+
+ギャラリーやアート作品は、情報の保存と伝達の場として使うことが可能だ。アーカイヴアーティストは、「度々失われたり、間違われるような歴史の情報を物理的に存在させようとする衝動をもつ。」[7]この衝動は、活動家が不平等と圧制をあきらかにするために用いる「記録と漏洩」という戦略のなかに見いだすことができる。[8]アーカイブや研究から抜粋した情報の拡散を通して、熱心なアーティストは、既存のヘゲモニックなナラティブにおける目に見えない、あるいは見えにくい真実を明らかにすることができる。[9]しかしながら、受け身の態勢からの脱却を試みるアートは、アーカイブされた情報の機械的な再生ではなく、生身の人間の解釈を必要とする。[10]アーカイブを作り直すことはできないが、アーカイブの内容を提供することはできる。知のかたまりを市井の生活に持ち込まなくてはならない。<br><br>
+
+アーティストは、分配可能なメディアを支持体に使用することによって、この機能をさらに強化することができる。たくさんの人（マス）に向けてコミュニケーションをとる多様な行為は、多くの体を通して人々のネットワークを物理的に通過することが可能だ。アーカイブから歴史的な情報を取り除くことができるアートのように、分配可能な作品はギャラリーからアートを解放して、その内容をさらに引き出す。分配可能な作品形態は、作品があらゆる場所に散らばることで鑑賞者と交わり、情報を普及させたいという欲望がつまっている。知識とアイデアを広めようとする意図は分散可能なマルティプルのなかで、形になる。血液が送り込まれ、静脈が体を循環し、皮膚が赤らむ。<br><br>
+
+複製時代の芸術の作品において、ヴァルター・ベンヤミンは複製と写真の技術は、アートから時代遅れの概念、たとえば天才、儀式、魔法めいたもの、から解放すると同時に、作品の存在を軽くすると述べている。[11]ベンヤミンにとって、オジリナルの芸術作品が携えるアウラと真正性は、機械的な複製によって壊れてしまうものだった。なぜなら、アウラとは、「いま」「ここ」にのみ存在すること、つまり、たったひとつの場所にしか存在しない唯一無二のものが備えるものだからである。[12]ベンヤミンは、このアウラこそが芸術作品の価値であると考え、また、アウラは複製されたときに消えてしまうとした。<br><br>
+
+私はそうは思わない。<br><br>
+
+唯一無二の作品より、むしろ複製品の集合体にこそオルタナティブなアウラがある。オリジナル同様、複製品も時間と空間に存在するが、その存在は唯一無二ではなく、多種多様であり、多数なのだ。多種多様なもののかたまり、言い換えればマルティプルのかたまりは、単一の場所や鑑賞者が体験する限られた時間ではなく、分散を目的として、広く普及するよう意図されている。<br><br>
+
+かたまりをめぐる血液は止まることができないし、心臓に留まることもできない。<br><br>
+
+マルティプルのかたまりは散り散りにギャラリーを離れ、未知で予測不能の道をたどり、あらゆる場所で異なったタイミングにおいて、多くの人間に鑑賞される。単一のステートメントを発するのではなく、マルティプルは、鑑賞者のあいだにこだまし、会話をそこかしこに撒き散らす。マルティプルは折られたり、シワがよったり、マークをつけられたり、他の場所に運ばれ、さらに多くの手に渡ったり、はたまた、どこかに仕舞われて何年も後になってほこりをかぶったところを発見されたりする。そして、マルティプルはかたまりの一部としてのアウラ保ち続ける。自分の手にある作品が、他の多くの人たちの手のなかにもあることを知っている感覚がマルティプルのアウラなのだ。<br><br>
+
+2002年にアーティストであるセス・プライスが、Dispersion (『分散』)という論文を発表した。論文はオンラインで無料ダウンロードできるPDFとプリントの二種類の形態がある。Dispersionは、流通と文化という観点から、アートの所在とそのシステムに疑問を投げかける。プライスはパブリック・アートが示す「市民という共同体としての経験というユートピア的な約束」に批判的である。[13]彼は記念碑としてのパブリック・アートは時代遅れであるとし、その理由として、観衆が直接的な共同の経験に興味を失っていることをあげている。[14]彼は「今日における集団的な経験というのは、同時多発的に起こるプライベートな体験に基づくことを、私たちは認識すべきだ」と述べている。[15]複製と分散を通して、コンテンツは個人的にまとめて消費され、その集団的な経験の中で、各々がコンテントと個人的な関わりを持つことができる。個人と政治が混ざり合うように、公共性とプライベートが混ざり合うのだ。簡単に入手できる複製品としての論文は、それが構成するかたまりの中から収集されたものであり、読者は自分が参加者として、連鎖反応を及ぼす当事者となっていることに気がつくのだ。作品を拾い上げ、重さやテクチャを感じ、そしてそれを広めるという単純な行為によって、彼らはすでに作品に参加しているのだ。<br><br>
+
+たとえ、アートワークがギャラリーの外へ持ち出し可能な形態だったとしても、その作品が拠り所にしている枠組みやディスコースを認識しなければならない。広い意味でヴィジュアル・アートの世界で活動する人間の多くは、具体的な社会問題と、自身の制作に活動の軸である哲学的な曖昧さを区別し、交わらないようにする。[16]しかしながら、アーティストはアートを政治的な道具として使うことを強いられる。それはきっと、差し迫った社会問題が紛糾する只中で、アーティストとして活動し制作することを正当化するためだろう。大きな影響力を求めてアートを手段としてしようすることは危険である。これを避けるために、アートの質を認知するする必要がある。アートの力は株価指数のように測定できないし、軍隊のように強いわけでも、政策変更のような決定的なものではない。わたしたちは、世界がどんなものか明らかにしたり、あらたに想像しなおすために、また、世界情勢に対する鑑賞者の意識を養うために、アートが持つ繊細な力を使わなくてはならない。[17]アートは政治的ツールとして使うことができるが、うまく使用するためにはツールそのものを理解しなければならない。<br><br>
+
+メガホンを思い浮かべてほしい。たったひとりの人間の声をより大きくするための機械とするのか、それとも大勢の人間が同じ言葉をユニゾンで発するための機械とするのか。<br><br>
+
+わたしたちはひとつのかたまりであり、わたしたちは多種多様なのだ。<br><br><br>
+
+
+[1] Walter Benjamin, "On the Concept of History," trans. Dennis Redmond, accessed October 20, 2017, https://www.marxists.org/reference/archive/benjamin/1940/history.htm<br>
+[2] Guy Debord, The Society of the Spectacle (Zone Books: New York, 1994)<br>
+[3] Andrew Dean, Ruth, Roger and Me: debts and legacies (Wellington: BWB Texts, 2015). <br>
+[4] Zinn, " The Optimism of Uncertainty" <br>
+[5] Robert Bailey, "Unknown Knowns: Jenny Holzer's Redaction Paintings and the History of the War on Terror" October (Fall 2012): 154, doi:10.1162/octo_a_00112.<br>
+[6] ibid: 158<br>
+[7] Hal Foster, "An Archival Impulse," October issue 110 (Fall 2004): 4, doi:10.1162/0162287042379847<br>
+[8] Steirischer Herbst, ed, Truth is Concrete : a handbook for artistic strategies in real politics (Berlin: Sternberg, 2014), 7<br>
+[9] Steirischer, Truth is Concrete : a handbook for artistic strategies in real politics, 6-7<br>
+[10] Foster, "An Archival Impulse," 5<br>
+[11] Walter Benjamin, "The Work of Art in the Age of Mechanical Reproduction," in Illuminations, ed Hannah Arendt. (New York : Schocken Books, 2007), 223<br>
+[12] ibid, 220 <br>
+[13] Seth Price, "Dispersion" in Social Medium : artists writing, 2000-2015, ed. Jennifer Liese (New York: 38th Street Publishers, 2008), 140<br>
+[14] ibid, 134<br>
+[15] ibid, 135<br>
+[16] Michael Auping, Jenny Holzer (New York: Universe, 1992)<br>
+[17] Daniel Jewesbury, "Can Art Make a Better World?" in Now What? Artists Write!, ed. Mark Kremer et al (Utrecht : BAK ; Frankfurt am Main : Revolver, 2004) 92 <br>
+
+"
   }
 },
 {
   "id":           "0010",
-  "type":         "image",
+  "type":         "text",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title10",
-    "jp":         "タイトル10"
+    "en":         "Where Art Objects Are: On Making an Original out of a Copy",
+    "jp":         "アートの居場所：「複製からオリジナルを」によせて"
   },
   "author": {
-    "en":         "Author10",
-    "jp":         "作者10"
+    "en":         "Chihiro Gompei",
+    "jp":         "権瓶　千尋"
   },
   "resource":     "./resources/0010/img.png",
   "thumbnail":    "./resources/0010/img.png",
   "description": {
     "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "jp":         "アートの居場所：「Making an Original out of a copy | 複製からオリジナルを」によせて
+
+
+〔本来それがあるべき〕場とその独自の伝統の外にあるためにその芸術固有の歴史の外部にとろまっている、いわゆる「素朴派」の画家と同様、「素朴な」鑑賞者は、芸術的伝統の独自の歴史を参照することによってしか意味をもたないような芸術作品については、しかるべき特定の知覚に到達することができない。<br>
+
+ピエール・ブルデュー　『ディスタンクシオン：社会的判断力批判』<br><br>
+
+
+昨年、ドクメンタを見るために滞在していた、ドイツのカッセルで面白い光景をみた。街のカバン屋のショーウィンドウで、セール品のバッグとともに、日用品でつくられた「バッグのようなもの」が一緒に飾られていた。緑色のホースが取っ手になっており、袋の部分は同じ色のビニールで、細く切り込みを入れた白い紙と茶色い毛糸の束がセロテープでグルグルと巻き付けられている。どうやらアート作品らしい。営業時間後の店先で、夜間照明に照らされ緑のビニールと商品のフェイクレザーがテカテカと光っていた。このウィンドウディスプレイをきっかけに、「アートはどこにあるのか？」という疑問を持つようになった。<br><br>
+
+「バッグのようなもの」がだれかの作品であるとわかったのは、値札のかわりに作品詳細が書かれたラベルが添えてあったからだ。タイトル、アーティスト名、メディア、作品サイズに制作年、価格は記されていない。まるで絵画のように丁寧にパネルに設置されていた。タイトルはTasche、ドイツ語でバッグだ。でも、どう考えても実用性はない。物を入れたらセロテープでとめられたホースの取っ手が外れるだろう。ようするに、この作品は、バッグそのものというよりバッグの形態模写だ。商品として流通しているバッグのコピーともいえる。しかし、隣に飾られている商品のバッグがTascheの原型かといわれるとそうでもない。どうみても、形はエルメスのバーキンのようで、フェイクレザーにグッチやロエベ風のモノグラムが施されている。こちらもデザイン的には複製である。<br><br>
+
+真正（Authenticity）とはそもそもなんだろうか。ウォルター・ベンヤミンは「複製技術時代の芸術」における有名なアウラの議論のなかで、たとえオリジナルと見分けがつかない完璧な複製品でも、「時間」と「空間」において「一回限りの存在」ではないという事実によって、オリジナルとは区別されると述べている。[1] 美術評論家のボリス・グロイズによれば、ベンヤミンのアウラは、物質的な問題ではなく文脈的な問題である。複製品とは、そのアイデンティティが美術史に刻み込まれることのない、アートの文脈–––––––「時間」（歴史）と「空間」（地理）のなかの根無し草的な存在なのだ。グロイズは「生政治時代の芸術」で、芸術作品をアートの文脈から引き剥がすことが複製品を作ることだとすれば、その複製品に新しい文脈的なテリトリーを付与することで、複製からオリジナルを生み出すことが可能であるとしている。[2]<br><br>
+
+グロイズのコピーとオリジナルの差異に関する議論は、現代アートにおける「オリジナリティ」の可能性を示唆するものであると同時に、芸術作品の価値を定めるシステムについて考えさせられる。アートを「文化的な記憶」としてアーカイブに値するか否かを決めるのは美術館である。[3]アーカイブは同じものを二つ必要としないので、美術館に所蔵されるのは決まってオリジナル一つだけである。外見は全く異なっていても、既存の作品の概念的な挑戦を再現するような作品は、複製同様にアーカイブから外される。アートの文脈を織りなす、このエリート主義的なアーカイブとそのシステムを問うことがアーティストの仕事のひとつだとすれば、グロイズが言う通り、本人がなんと言おうがアーティストの最終的なゴールは、自身の作品が美術館に所蔵されることになるだろう。アーティストも美術館も、文化的アーカイブの中に存在しない芸術を模索しているという点では同じだからだ。しかし一度美術館に拠点を移した芸術作品は死んでいく。美術史にはそのアイデンティティが永遠に刻み込まれるが、ナマの生活からは完全に切り離される。そしてやがて「いま」「ここ」という時間と空間から完全に乖離するとき、オリジナルもまた、アウラを喪失する。[4]<br><br>
+
+もし私が見た「バッグのようなもの」がそっくりそのまま美術館に設置されていたら、きっと鑑賞者のなかにまじって、コンテンポラリーアートとして理解を試みたかもしれない。しかし、それは静的で味気ない作業でもある。私が『Tache』に引き寄せられたのは、その不確定さゆえである。観光客と地元民が行き交う商店街の一角の、店の中でも外でもないショーウィンドウ。閉店後もライトアップされ、24時間だれでもアクセス可能なそれは美術館の展示品とは対極にある。ドクメンタでも公共施設や商業スペースが会場になっていたが、どの空間も「ドクメンタ会場」のラベルが貼られることで、一時的にアートの文脈に取り込まれていた。入場ゲートを越えた来場者は鑑賞者となり、監視員が見守る中、なんの疑いもなく美術史的な観点から展示品を批評できる。しかし、このディスプレイは違う。「文化的アーカイブ」と「その他諸々のモノ」の狭間で、鑑賞と消費の狭間で、美しさと醜さの狭間で、テイストとテイストの狭間で、どこにも根ざさず漂っている。そういう曖昧なモノは、それを見つめる人間の身の置き所を問う。鑑賞者となるのか、消費者となるのか、それとも無視して立ち去るのか。自分という存在の在り処が、そのウィンドウディスプレイと同じくらい不確定であるということが突きつけられる。正体を突き止められないものは完全なる＜他者＞である。この＜他者＞は「わたしの居場所」を脅かし、わたしに緊張と混乱をもたらすものだ。このジリジリと迫ってくる何かこそが、アートが生きている証拠なのかもしれない。そして、その迫ってくる何かを肌で感じ取ることで、私自身も自分の生存を確認するのかもしれない。<br><br>
+
+Tascheの作家はクリスタ・プフォルという名前で、過去にアウトサイダーアートの展覧会に出展したことがあるようだ。アウトサイダーアートは、欧米では美術の高等教育を受けていないものの総称として用いられることがある。ヨーロッパ中心主義的なネーミングに居心地の悪さを感じるが、いずれにせよ「アウトサイダー」の定義はつねに議論の対象となり、アートの文脈の中での位置にも一貫性がない。作家にかんする情報が少なすぎて、確かなことがわからなかったが、ただ一つ言えることは、大文字のアートの歴史をもとに鑑賞することは見当はずれであるということだ。たとえ、この作品がアートの文脈の外（アウトサイド）にマッピングされたとしても、あのバッグを見た時に伝わってくる、テープを迷いなく巻きつけるダイナミックなジェスチャーや気ままな色使いは、ブルデュー的な「悪趣味」を意図的に作りだすアートにはない清々しさと強さがあった。<br><br>
+
+オリジナリティの本質は、「いま」「ここ」で息をしているアートどこにあるのか？そして、そもそも「いま」「ここ」とはいつ何処なのか？というトポロジカルな問いにある。生きているということ自体が、そして「いま」という時間と「ここ」という空間そのものが、とても不確定であるように、アートもまたホワイトキューブの外の曖昧な空間にこそ息づくのかもしれない。それとも、建築家の小林恵吾がいうように、公共空間における「しがらみと暗黙のルール」が多すぎる日本では、美術館こそがアートと人間が息を吸える場となりうるかもしれない。[5] いずれにせよ、オリジナルとコピーのトポロジーは流動的で、「いま」も「ここ」もこの瞬間に形を変えて指からすり抜けてゆく。だからわたしは、街に出ればいつでもあのウィンドウディスプレイのような混乱と緊張の塊をさがしてしまうのだ。<br><br>
+
+[1]Walter Benjamin, ‘The Work of Art in the Age of Mechanical Reproduction’ 1935 <br>
+[2]Boris Groys ‘The work of Art in the Age of biopolitics’ in Art Power. 2016 <br>
+[3]Boris Groys, On the New (Verso Books, 2014).<br>
+[4]Boris Groys, Art Power (MIT Press, 2008).<br>
+[5]Kenjin Miwa and Keigo Kowayashi, ‘Museum as the Site of Mutation’, in Gordon Matta-Clark: Mutaion in Space, ed. by The National Museum of Modern Art Tokyo and Sakurai Hiroshi (Tokyo: The National Museum of Modern Art, 2018).<br>
+"
   }
 },
 {
@@ -193,53 +507,226 @@
   "type":         "image",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title11",
-    "jp":         "タイトル11"
+    "en":         "Floor Talks",
+    "jp":         "フロア・トークス"
   },
   "author": {
-    "en":         "Author11",
-    "jp":         "作者11"
+    "en":         "Jesse Hogan",
+    "jp":         "ジェシー　ホーガン"
   },
   "resource":     "./resources/0011/img.png",
   "thumbnail":    "./resources/0011/img.png",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":       "Titles(from top to bottom):<br>
+1. Installs - Tanaka Koki, EVERYTHING IS EVERYTHING, 2006, Eight‑channel DVDs, color, sound and materials in everyday use, dimension variable, installed at Taipei Biennial 2006 in Taipei Fine Arts Museum. All images in this article are courtesy the artist, Aoyama Meguro, Tokyo, and Vitamin Creative Space, Guangzhou.<br>
+http://artasiapacific.com/Magazine/84/OutOfTheOrdinaryKokiTanaka<br>
+Oil on Canvas, 130cm x 90cm x 3cm, 2014<br><br>
+2.Installs - Sub-divide and Concrete: James Deutscher and Christopher L G Hill Joint Hassles Melbourne 28 September _ 13 October 2007
+http://whitehotmagazine.com/articles/in-black-white-deutsher-hill/958<br>
+Oil on Canvas, 92cm x 65/70cm x 3cm, 2013<br>
+3.Floor Talks - Sean Kerr, Roller coaster rampage, 2010, Artspace, Auckland, New Zealand<br>
+http://www.dowse.org.nz/en/exhibitions/Past-Exhibitions/Sean-Kerr-Bruce-Danced-if-Victoria-Sang-and-Victoria-Sang-so-Bruce-Danced/<br>
+Oil on Canvas, Perspex, 95cm x 65cm x 5cm, 2012<br>
+4.Floor Talks – “Bruce Nauman: Topological Gardens.” If you’re feeling generous, the work of Bruce Nauman can be described as “challenging” or “controversial.” “Hostile,” if you’re feeling less so. Or, as the artist himself once put it in the pages of this magazine, it’s like getting hit in the face with a baseball bat.” By Alix Browneny Times Published: April 24, 2009.<br>
+http://www.southwillard.cam/page/62?keepthis=true&TB_iframe=true/<br>
+Oil on Canvas, Perspex, 175cm x 125cm x 7cm, 2012<br>
+<br><br>
+
+Floor Talks & Installs <br>
+Painting in the Expanded Field - Referencing & Reproduction <br>
+Jesse Hogan (2010 – 2016)<br>
+
+My practice occupies a kind of post-painting territory, which challenges the function of painting in relation to conceptual art and the way in which painting can maintain relevance to other media via language constructs and conceptual frameworks. The ‘Floor Talk’ paintings form a dialogue with conceptual art by referencing popular almost ‘obligatory’ contemporary activities like ‘Floor Talks’ and in space gallery ‘performances’ back into the painterly surface. This strategy also questions authorship as we ask, who now owns this image? The installation artist, the artist ‘Talking’ or ‘Performing’, the ‘Photographer’ who has photographed the exhibition, or the ‘Painter’ of the art object. Furthermore, the nature of our current engagement with contemporary art is in question via the internet. The photo documentation as simulated copies of first hand interaction deconstructs authorship towards ubiquitous identities.<br><br>
+
+
+(http://Ubiquitous Authorship. net. reality, Briggs.N, WeirdHeavy Issue 01, 2012.)<br><br>
+
+Not only are these works a deconstruction in terms of the form and values of (a) painting or an object, it is also a deconstruction of the authorship of (writers and artists) and structures of power (institutions, museums and galleries), which are responsible for directing theoretical ideas about aesthetics, commodity and conceptual values.<br><br>
+ 
+Several textual references are integral to the issues present in this series: <br><br>
+
+Firstly, the critique of Installation and the exhibition form as articulated by Rosalind Krauss in her essays, The Post Medium Condition (1999) and The Expanded Field (1979). In Krauss’s text, we find her critical rational delineating the formal and spatial values that denotes ‘site’ and ‘Non-site’, ‘architecture’ and ‘Not-architecture’, ‘sculpture’ and ‘Not-sculpture’. In ‘The Expanded Field’, the artworks value is not only determined by its medium but more its conceptual relation to the context and process of the site & the exhibition. The artwork is also determined by what it is ‘Not’. In these paintings, we question, painting and ‘Not painting’, ‘Installation’ and ‘Not-Installation’. Krauss further explains that artists are no longer restricted to the laws of a specific medium (particularly painting). In effect the artwork expands beyond the limits of its medium - defined framework and enters the active territory of other mediums in the artists physical, linguistic and social space. <br><br>
+
+In Jan Verwoert’s text ‘Why Are Conceptual Artists Painting Again?’, 2005, we find the dichotomy between medium specificity and the term ‘Position- specific’, which denotes the strategic model offered by Yves Alain Bois (Painting as Model), 1990. In this critic of painting, the artwork is not defined by its technical historicity, but by its function as a ‘conceptual gesture’. What counts is – “The Artists Conceptual Project” – how it critics its own relationship and position in a critical history of artistic acts.<br><br>
+
+In each instance, the formulation of a question raised by the work of art within a historically determined frame-work. In ‘Floor Talks’ - time, space and locality are referenced in a non-linier pattern, the selections are discursive as are the subjects and concepts with in each installation. I am aiming to place different artworks, artists and art spaces into relational points of contemporary historicity. They all share historical re-entry points into the current art time frame, through my curatorial and contextual framing. ‘Meaning is confused spatiality framed’, states Mike Kelly in his Minor Histories. <br><br>
+
+Finally, in relation to Hal Fosters take on minimalism, photography and painting in his ‘THE RETURN OF THE REAL - The Avant-Garde at the End of the Century, (1996)’, this series occupies a number of problematic territories. In thesis, painting is torn between form and content, in which a counter opposition between minimalism, photography and the persistent practices of Photo-Realist painting is established. Repetition, Reality and Seriality connect these processes however, Foster questions photography’s role in the dissolution of painting contra its insistent continuation. Like Krauss, Foster defines each form by what it is not. That painting is ‘Not’ photography and photography is ‘Not’ object, creates a dynamic negative relationship between the mediums. <br><br>
+
+Critically Incorrect<br><br>
+
+Between painting, video and sculpture, the question persists, that of the function of linguistic qualities in works, within the context of the language structure built up and surrounding the social interactions denoting the engagement of art through inter-disciplinary studio practices that cue from the highly technological and image saturated cultural climates of internet reality. Our views of installation practice and the art object come photographically packaged against the commodified institutional sheen of the white cube. <br><br>
+
+Throughout this series the installation image is referenced as a trope of contemporary practice, the post medium condition, and a strategic model of conceptual aesthetics. Working from the idea of the Simulacra and Simulation, the 1981 philosophical treatise by Jean Baudrillard, the installation itself becomes reduced to documentation and the photographic archive. In the current cultural climate viewing installation means engaging with a photographic language presenting reduced forms and decontextualized spaces - the copy comes from a copy which no longer has an original, apart from the time and place that the work was physically installed.<br><br>
+ 
+Why retrieve the image? The image was retrieved through online documentation of the work. The process of selection consists of a number of factors both logical and circumstantial. In the case of this series, there were various links to the artists’ practices, made on the basis of mutual social relations, similarities in aesthetics and concept, materiality and connected art histories. In some cases, the selection occurred more like that of Marcel Duchamp’s selection of ready-mades, like his ‘The Rendezvous’ with the object, but in this case, it is with the image. <br><br>
+
+Furthermore, the series came about from the continuous perception and alteration of installation photography that has been occurring through the documentation and uploading of art on the internet. Through contemporary art culture and its application of the internet or in turn, the internets role in the culture of contemporary art. The language of Installation Photography, the exhibition as medium and ubiquitous authorship has found its critical dialogue in the age of access. <br><br>
+
+The painting of the installation image comes back full cycle to a re-mediated original, which once again shared online becomes a series of digital copies.<br><br> 
+─<br>
+See text references –<br>
+Text References / 参考文献<br><br>
+
+MAGAZINE OCT. 30, 2014<br>
+THE PERILS OF POST-INTERNET ART <br>
+by Brian Droitcour<br>
+http://www.artinamericamagazine.com/news-features/magazine/the-perils-of-post-internet-art/<br>
+─<br>
+“A VOYAGE ON THE NORTH SEA”<br>
+ART IN THE AGE OF THE POST/MEDIUM <br>
+CONDITION - ROSALIND KRAUSS, 1999<br>
+http://isites.harvard.edu/fs/docs/icb.topic837293.files/Krauss_Voyage%20on%20the%20North%20Sea.pdf<br>
+─<br>
+Sculpture in the Expanded Field <br>
+- Rosalind Krauss<br>
+October, Vol. 8. (Spring, 1979), pp. 30-44.<br>
+http://www.onedaysculpture.org.nz/assets/images/reading/Krauss.pdf<br>
+October is currently published <br>
+by The MIT Press.<br>
+─<br>
+THE RETURN OF THE REAL <br>
+- The Avant-Garde at the End of the Century - <br>
+HAL FOSTER<br>
+An OCTOBER Book - The MIT Press (1996) <br>
+Massachusetts Institute of Technology<br>
+http://isites.harvard.edu/fs/docs/icb.topic496136.files/Foster_Return_of_the_Real.pdf<br>
+─<br>
+Why Are Conceptual Artists Painting Again?<br>
+Because They Think It’s a Good Idea<br>
+Jan Verwoert, 2005<br>
+http://www.afterall.org/journal/issue.12/why.are.conceptual.artists.painting.again.because.<br>
+─<br>
+Brian O’Doherty, Inside the White Cube, <br>
+San Francisco: Lapis Press, 1986<br>
+─<br>
+Yve-Alain Bois, Painting as Model, <br>
+Cambridge: MIT Press, 1990<br>
+October, Vol. 37 (Summer, 1986), pp. 125-137<br>
+─<br>
+Painting is a Critical Form - HELEN JOHNSON<br>
+3-ply, Muckleford, <br>
+in association with Minerva, Sydney, 2015<br>
+Monash University Art, Design <br>
+& Architecture in 2014<br>
+─<br>
+Simulacra and Simulation, 1981 <br>
+philosophical treatise by Jean Baudrillard<br>
+Éditions Galilée (French) & University of Michigan Press (English)1994<br>
+",
+    "jp":         "作品タイトル（上から）<br>
+1. Installs - Tanaka Koki, EVERYTHING IS EVERYTHING, 2006, Eight‑channel DVDs, color, sound and materials in everyday use, dimension variable, installed at Taipei Biennial 2006 in Taipei Fine Arts Museum. All images in this article are courtesy the artist, Aoyama Meguro, Tokyo, and Vitamin Creative Space, Guangzhou.<br>
+http://artasiapacific.com/Magazine/84/OutOfTheOrdinaryKokiTanaka<br>
+Oil on Canvas, 130cm x 90cm x 3cm, 2014<br><br>
+2.Installs - Sub-divide and Concrete: James Deutscher and Christopher L G Hill Joint Hassles Melbourne 28 September _ 13 October 2007
+http://whitehotmagazine.com/articles/in-black-white-deutsher-hill/958<br>
+Oil on Canvas, 92cm x 65/70cm x 3cm, 2013<br>
+3.Floor Talks - Sean Kerr, Roller coaster rampage, 2010, Artspace, Auckland, New Zealand<br>
+http://www.dowse.org.nz/en/exhibitions/Past-Exhibitions/Sean-Kerr-Bruce-Danced-if-Victoria-Sang-and-Victoria-Sang-so-Bruce-Danced/<br>
+Oil on Canvas, Perspex, 95cm x 65cm x 5cm, 2012<br>
+4.Floor Talks – “Bruce Nauman: Topological Gardens.” If you’re feeling generous, the work of Bruce Nauman can be described as “challenging” or “controversial.” “Hostile,” if you’re feeling less so. Or, as the artist himself once put it in the pages of this magazine, it’s like getting hit in the face with a baseball bat.” By Alix Browneny Times Published: April 24, 2009.<br>
+http://www.southwillard.cam/page/62?keepthis=true&TB_iframe=true/<br>
+Oil on Canvas, Perspex, 175cm x 125cm x 7cm, 2012<br><br><br>
+
+フロアトークス & インストール<br>
+
+
+
+この実践はポスト・ペインティングの領域に位置し、コンセプチュアル・アートに関連する機能や、絵画が言語構造や概念的構成を経由して他のメディアとの関連性を維持し続けられるような方法を問うものである。「フロアトーク」のペインティングは、「フロアトークス」のようなポピュラーでほとんど「義務的」な現代の活動を参照し、展示空間における「パフォーマンス」を絵画的外観へと戻すことによって、コンセプチュアル・アートとの対話を形成する。そしてこの戦略は、作家性についても問いかける。「今、このイメージを所有しているのは誰か？」と。それはインスタレーションの作者か、「トーク」や「パフォーマンス」のアーティストか、展覧会を撮影した「フォトグラファー」か、それともこのアート作品を絵に描いた「画家」なのか。さらに、現代アートと私たちの現在の関係性は、インターネットを通じて問題を投げかけている。実際に作品を目の前にしたときの相互作用に似せた模倣としての写真記録が、作家性を偏在的なアイデンティティへと解体するのだ。<br><br>
+
+（http://Ubiquitous Authorship. net. reality, Briggs.N, WeirdHeavy Issue 01, 2012.）<br><br>
+
+本作品は、（ある）絵画や物体の形状や価値といった観点での脱構築というだけでなく、（著述家やアーティスト）の作家性と、審美的、有用的、概念的価値観の理論的思想を方向づける責務を負う権力の構造（学会や美術館、ギャラリー）の脱構築でもある。<br><br>
+
+各参考文献は、本シリーズの論考に不可欠なものである。<br><br>
+
+最初に、インスタレーション及び展示の様式についての批評は、ロザリンド・クラウスによって『ポストメディウム的状況』（1999）と『展開された場』（1979）において明示された。クラウスは、「場所」と「非-場所」、「建築」と「非-建築」、「彫刻」と「非-彫刻」の項で示す形式的・空間的価値について鋭く合理的に論じ上げた。『展開された場』において、美術作品の価値はそのメディアだけでなく、その場所と展示の背景あるいはプロセスとの概念的な関係性によってさらに決定されるとクラウスは述べている。そして、美術作品は、本質では「ない」ことによっても決定される。このペインティングにおいて、我々は「絵画」と「非-絵画」、「インスタレーション」と「非-インスタレーション」について問いかける。さらにクラウスは、アーティストはもはや特定のメディア（とりわけ絵画）には縛られていないと論じる。事実、美術作品はそのメディアの制限、つまり定義された枠組を超えて拡大し、アーティストの身体的、言語的、そして社会的空間の他のメディアの有効範囲へと入り込んでいるのだ。<br><br>
+
+ジャン・ヴァーワートは『なぜコンセプチュアル・アーティストたちは再び絵を描くのか？』（2005）において、メディウム・スペシフィシティとポジション・スペシフィックという語の両分を論じたが、これはイヴ・アラン・ボイスが『モデルとしての絵画』（1990）において提示した戦略的モデルを示したものである。絵画へ向けたこの批評において、作品はその技術的歴史性ではなく、「概念的行為」としての機能によって定義される。重要なのは、『アーティストの概念的プロジェクト』、つまり芸術的行為への批判の歴史における自らの関係や立場をどのように批判するかということである。<br><br>
+
+各例において、問題の定式化は歴史的に決定された枠組内のアート作品によって生じている。「フロアトークス」では、時間、空間、そして位置関係が非線形のパターンのもと言及されているが、選び出された作品は、それぞれのインスタレーションにおける主題やコンセプトと同様に曖昧なものである。私の狙いは、異なる作品やアーティスト、アートスペースを現代の歴史性の相関点に位置づけることである。そして、それらは全て、私のキュレーション的・文脈的フレーミングを通して現在のアートの時流の枠内への歴史的再入を共有している。「意味とはフレームされた、混乱した空間性である。」マイク・ケリーは『マイナーヒストリー』においてこう述べている。<br><br>
+
+最後に、ハル・フォスターが『リアルなものの回帰 - 世紀末の前衛』（1996）で論じたミニマリスムや写真、絵画に関して述べる。このシリーズは多くの問題を含む領域から成っているが、彼によると、絵画は形式と内容に引き裂かれており、そこにミニマリスムや写真、そしてフォト・リアリストの絵画の根気強い試みの間の対立項が打ち立てられているという。繰り返すが、リアリティと連続性はこれらのプロセスを繋ぐものだ。しかしフォスターはその執拗な存続に対する絵画の分解という場面における写真の役割を問う。クラウスと同様に、フォスターもまた本質でないことによって各形式を定義しているのである。絵画は写真「ではなく」、写真は対象「ではない」。これらはメディア間の動的な否定的関係性を生じさせている。<br><br>
+批評的不正確さ<br><br>
+
+絵画、映像、彫刻の間には、確立された言語構造のコンテクストの内部において、作品の言語的質の問題や、ハイテクやインターネット・リアリティの文化的風土に満ちたイメージを手掛かりとする、多分野にまたがるスタジオ実践を通じたアートの関係性を示す社会的相互作用を取り巻く問題が残っている。インスタレーションの実践と芸術的対象に対する我々の視界は、ホワイトキューブという統一された制度的な光景を背景に、写真的にパッケージ化されているのだ。<br><br>
+
+本シリーズ全体にわたって、インスタレーションのイメージは、現代的な実践の比喩やポストメディウム的状況、あるいは概念的美学の戦略的モデルとして参照されている。1981年に発表されたジャン・ボードレールの哲学的論文『シミュラークルとシミュレーション』の思想を実践すると、インスタレーションそのものはドキュメンテーションと写真アーカイブへと縮小される。インスタレーションをめぐる現在の文化的風土は、縮小された形式や脱文脈化された空間にある写真的言語と連動していることを意味している。つまり、コピーはもはやオリジナルではないコピーに由来し、作品が物理的に設置された時間や場所から隔絶されているのだ。<br><br>
+
+なぜイメージを回収するのか？イメージは作品のオンライン上の記録を通して回収した。選出のプロセスは、論理的・付随的、両者の要素を含む多くの要因から成るが、本シリーズの場合、社会的相互関係の原則や、美学と概念、あるいは実質性と連続した美術史との類似点に基づくアーティストの実践との様々な関連がある。場合によっては、この選択はむしろマルセル・デュシャンの『ランデブー』のようなレディメイドの選択に近いが、本作品の場合はイメージが伴うものである。<br><br>
+
+さらに、本シリーズは、インターネットを用いたアート作品の記録とアップロードや、現代のアートカルチャーとそのインターネットへの適用、もしくは同様に現代アートにおけるインターネットの役割を通して起きているインスタレーション写真の連続的な知覚と交代によって生じたものである。<br><br>
+
+インスタレーションのイメージのペインティングは、再設定されたオリジナルへと回帰するが、これはオンライン上で一度シェアされたものが一連のデジタル・コピーとなったものである。<br><br>
+
+See text references –<br>
+Text References / 参考文献<br><br>
+
+MAGAZINE OCT. 30, 2014<br>
+THE PERILS OF POST-INTERNET ART <br>
+by Brian Droitcour<br>
+http://www.artinamericamagazine.com/news-features/magazine/the-perils-of-post-internet-art/<br>
+─<br>
+“A VOYAGE ON THE NORTH SEA”<br>
+ART IN THE AGE OF THE POST/MEDIUM <br>
+CONDITION - ROSALIND KRAUSS, 1999<br>
+http://isites.harvard.edu/fs/docs/icb.topic837293.files/Krauss_Voyage%20on%20the%20North%20Sea.pdf<br>
+─<br>
+Sculpture in the Expanded Field <br>
+- Rosalind Krauss<br>
+October, Vol. 8. (Spring, 1979), pp. 30-44.<br>
+http://www.onedaysculpture.org.nz/assets/images/reading/Krauss.pdf<br>
+October is currently published <br>
+by The MIT Press.<br>
+─<br>
+THE RETURN OF THE REAL <br>
+- The Avant-Garde at the End of the Century - <br>
+HAL FOSTER<br>
+An OCTOBER Book - The MIT Press (1996) <br>
+Massachusetts Institute of Technology<br>
+http://isites.harvard.edu/fs/docs/icb.topic496136.files/Foster_Return_of_the_Real.pdf<br>
+─<br>
+Why Are Conceptual Artists Painting Again?<br>
+Because They Think It’s a Good Idea<br>
+Jan Verwoert, 2005<br>
+http://www.afterall.org/journal/issue.12/why.are.conceptual.artists.painting.again.because.<br>
+─<br>
+Brian O’Doherty, Inside the White Cube, <br>
+San Francisco: Lapis Press, 1986<br>
+─<br>
+Yve-Alain Bois, Painting as Model, <br>
+Cambridge: MIT Press, 1990<br>
+October, Vol. 37 (Summer, 1986), pp. 125-137<br>
+─<br>
+Painting is a Critical Form - HELEN JOHNSON<br>
+3-ply, Muckleford, <br>
+in association with Minerva, Sydney, 2015<br>
+Monash University Art, Design <br>
+& Architecture in 2014<br>
+─<br>
+Simulacra and Simulation, 1981 <br>
+philosophical treatise by Jean Baudrillard<br>
+Éditions Galilée (French) & University of Michigan Press (English)1994<br>
+
+─ Translation: Yoko Saito
+"
   }
 },
 {
   "id":           "0012",
-  "type":         "audio",
+  "type":         "image",
   "date":         "2018/12/21",
   "title": {
-    "en":         "Title12",
-    "jp":         "タイトル12"
+    "en":         "On Female Gaze",
+    "jp":         "女性のまなざし"
   },
   "author": {
-    "en":         "Author12",
-    "jp":         "作者12"
+    "en":         "Bronwyn Stemp",
+    "jp":         "ブロンウィン　ステンプ"
   },
   "resource":     "./resources/0012/audio.mp3",
   "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
-  }
-},
-{
-  "id":           "0013",
-  "type":         "video",
-  "date":         "2018/12/22",
-  "title": {
-    "en":         "Title13",
-    "jp":         "タイトル13"
-  },
-  "author": {
-    "en":         "Author13",
-    "jp":         "作者13"
-  },
-  "resource":     "./resources/0013/video.mp4",
-  "description": {
-    "en":         "Description ...",
-    "jp":         "作品詳細 ..."
+    "en":         "styling Bronwyn Stemp, Photogtaphy Marta Marinotti",
+    "jp":         "スタイリング　ブロンウィン・ステンプ　フォトグラファー　マルタ・マリノッティ"
   }
 }]
