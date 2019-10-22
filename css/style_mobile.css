@@ -218,7 +218,7 @@ body {
   bottom: 3vh;
 }
 #footer .menu {
-  position: absolute;
+  position: fixed;
   bottom: 3vh;
   width: 25vw;
 }
