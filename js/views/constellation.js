@@ -198,7 +198,6 @@ define([
       }, this);
 
       var columnIndex, minHeight, itemHeight = 0;
-      var repeatCount = 1; // @todo Please delete if there are enough items to scroll.
       var model;
       for (var i = j = 0; i < this.collection.length; i++, j++) {
         if (this.items.length <= j) {
