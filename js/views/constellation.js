@@ -211,7 +211,7 @@ define([
           _.each(this.items, function(item) {
             item.setScroll();
           });
-        }.bind(this), 2000);
+        }.bind(this), 3000);
       }
     },
     close: function(hash) {
