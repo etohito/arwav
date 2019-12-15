@@ -17,6 +17,7 @@ define([
   // Previous or next item
   var PrevNextItem = Backbone.View.extend({
     initialize: function(options) {
+      this.author = options.author;
       this.template = _.template($(options.selector).html());
       this.render();
       this.addListener();

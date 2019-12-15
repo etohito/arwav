@@ -1,32 +1,123 @@
 [
-    {"id": "0000"},
-    {"id": "0001"},
-    {"id": "0002"},
-    {"id": "0003"},
-    {"id": "0004"},
-    {"id": "0010"},
-    {"id": "0020"},
-    {"id": "0030"},
-    {"id": "0040"},
-    {"id": "0041"},
-    {"id": "0042"},
-    {"id": "0043"},
-    {"id": "0050"},
-    {"id": "0060"},
-    {"id": "0061"},
-    {"id": "0062"},
-    {"id": "0063"},
-    {"id": "0070"},
-    {"id": "0080"},
-    {"id": "0090"},
-    {"id": "0100"},
-    {"id": "0101"},
-    {"id": "0102"},
-    {"id": "0110"},
-    {"id": "0111"},
-    {"id": "0112"},
-    {"id": "0113"},
-    {"id": "0114"},
-    {"id": "0115"},
-    {"id": "0116"}
+{
+  "author": {
+    "en":         "Lise Bardou",
+    "jp":         "リーズ　バルドー"
+  },
+  "introduction": {
+    "en":         "./resources/LiseBardou/introduction_en.txt",
+    "jp":         "./resources/LiseBardou/introduction_jp.txt"
+  },
+  "workIds": ["0070"]
+},{
+  "author": {
+    "en":         "Minagawa Yoko",
+    "jp":         "皆川陽子"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0040","0041","0042","0043"]
+},{
+ "author": {
+   "en":         "Bronwyn Stemp",
+   "jp":         "ブロンウィン　ステンプ"
+ },
+  "introduction": {
+    "en":         "./resources/BronwynStemp/introduction_en.txt",
+    "jp":         "./resources/BronwynStemp/introduction_jp.txt"
+  },
+  "workIds": ["0110","0111","0112","0113","0114","0115","0116"]
+},{
+  "author": {
+    "en":         "Gabi Lardies",
+    "jp":         "ギャビ　ラーディーズ"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0080"]
+},{
+  "author": {
+    "en":         "Yukifune Ema",
+    "jp":         "雪舟　えま"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0020"]
+},{
+  "author": {
+    "en":         "Watanabe Yuki",
+    "jp":         "渡邊有紀"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0030"]
+},{
+  "author": {
+    "en":         "Gompei Ryoko",
+    "jp":         "権瓶　玲子"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0050"]
+},{
+  "author": {
+    "en":         "Emilia Pennanen",
+    "jp":         "エミリア　ペンナネン"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0010"]
+},{
+  "author": {
+    "en":         "Ramona Güntert",
+    "jp":         "ラモーナ　グンテルト"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0060","0061","0062","0063"]
+},{
+  "author": {
+    "en":         "Lisa Carletta",
+    "jp":         "リサ　カーレッタ"
+  },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0000","0001","0002","0003","0004"]
+},{
+ "author": {
+   "en":         "Chihiro Gompei",
+   "jp":         "権瓶　千尋"
+ },
+  "introduction": {
+    "en":         "",
+    "jp":         ""
+  },
+  "workIds": ["0090"]
+},{
+ "author": {
+   "en":         "Jesse Hogan",
+   "jp":         "ジェシー　ホーガン"
+ },
+  "introduction": {
+    "en":         "./resources/JesseHogan/introduction_en.txt",
+    "jp":         "./resources/JesseHogan/introduction_jp.txt"
+  },
+  "workIds": ["0100","0101","0102"]
+}
 ]

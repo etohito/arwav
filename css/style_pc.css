@@ -93,7 +93,10 @@ img.title {
 #works .column ul{
   padding-left: 10%;
   padding-right: 5%;
-  padding-top: 30%;
+  padding-top: 60%;
+}
+#works .column li {
+  padding-bottom: 20%;
 }
 #works img,
 #works svg {
@@ -209,10 +212,10 @@ img.title {
 }
 #archives td.text {
   text-align: left;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
 }
 #archives td.text span {
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 #archives td img {
   max-width: 14vw;

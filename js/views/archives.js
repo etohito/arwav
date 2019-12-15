@@ -1,12 +1,14 @@
 define([
   'backbone',
   'util/color',
+  'util/util',
   'models/hover',
   'views/hover',
   'views/menu',
 ], function(
   Backbone,
   Color,
+  Util,
   HoverModel,
   HoverView,
   MenuView
@@ -16,6 +18,8 @@ define([
   var TextItem = Backbone.View.extend({
     initialize: function(options) {
       TextItem.__super__.initialize.call(this, options);
+      this.author = options.author;
+      this.columnNum = options.columnNum;
       var style = '';
       if (options.randomPos) {
         style = ' align=' + options.align + ' valign=' + options.valign + ' class="text"';
@@ -26,7 +30,14 @@ define([
     },
     render: function() {
       var template= _.template($('#text_template').html());
-      this.$el.append(template(this.model.toJSON()));
+      var titleMaxLen = 30;
+      if (this.columnNum == 1) {
+        titleMaxLen = 22;
+      }
+      this.$el.append(template({
+        author: Util.substring(this.author, 28),
+        title: Util.substring(this.model.toJSON().title, titleMaxLen)
+      }));
       return this;
     },
     createItems: function() {
@@ -72,6 +83,7 @@ define([
     initialize: function(options) {
       SvgItem.__super__.initialize.call(this, options);
       this.themeColor = options.themeColor
+      this.author = options.author;
       var style = '';
       if (options.randomPos) {
         style = ' align=' + options.align + ' valign=' + options.valign;
@@ -80,7 +92,10 @@ define([
     },
     render: function() {
       var template = _.template($('#svg_template').html());
-      this.$el.append(template(this.model.toJSON()));
+      this.$el.append(template({
+        author: Util.substring(this.author, 18),
+        title: Util.substring(this.model.toJSON().title, 14)
+      }));
       return this;
     },
     createItems: function() {
@@ -126,28 +141,30 @@ define([
       for (var i = 0; i < this.collection.length;) {
         $tr = $('<tr></tr>');
         for (var j = 0; j < this.columnNum; j++) {
-          model = this.collection.at(i);
-          if (!model) {
+          authorModel = this.collection.at(i);
+          if (!authorModel) {
             break;
           }
+          var workModel = authorModel.get('works').first();
           // Add title
           style = {randomPos: this.randomPos, align: aligns[1],
                   valign: valigns[(i + 1) % valigns.length]};
-          item = new TextItem(_.extend({model: model}, style));
+          item = new TextItem(_.extend({model: workModel,
+              author: authorModel.toJSON().author, columnNum: this.columnNum}, style));
           this.items.push(item);
           $tr.append(item.render().$el);
 
           // Add thumbnail or svg
           style = {randomPos: this.randomPos, align: aligns[i % valigns.length],
                   valign: valigns[i % valigns.length]};
-          if (model.get('thumbnail')) {
-            item = new ThumbnailItem(_.extend({model: model}, style));
+          if (workModel.get('thumbnail')){
+            item = new ThumbnailItem(_.extend({model: workModel}, style));
           } else {
             // Set svg color depeneds on its id
             var colors = [Color.SKY, Color.PINK, Color.LIME, Color.CREAM]
-            var colorIndex = parseInt(model.get('id'), 10) % colors.length;
-            item = new SvgItem(_.extend({
-              model: model, themeColor: colors[colorIndex]}, style));
+            var colorIndex = parseInt(workModel.get('id'), 10) % colors.length;
+            item = new SvgItem(_.extend({model: workModel,
+                author: authorModel.toJSON().author, themeColor: colors[colorIndex]}, style));
           }
           this.items.push(item);
           this.listenTo(item, 'close', this.close);

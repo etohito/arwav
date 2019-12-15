@@ -1,29 +1,27 @@
 define(['backbone'], function(Backbone) {
-  var WorkModel = Backbone.Model.extend({
+  var AuthorModel = Backbone.Model.extend({
     defaults: function() {
       return {
-        id:       null,
-        type:     null,
-        title: {
+        author: {
           en:     null,
           jp:     null
         },
-        thumbnail:null,
-        work: {
+        introduction: {
           en:     null,
           jp:     null
-        }
+        },
+        works: null
       };
     },
     parse: function(response, options) {
       return JSON.parse(response);
     },
     toJSON: function() {
-      var json = WorkModel.__super__.toJSON.call(this);
-      json.title = json.title[dic.NAME];
-      json.work = json.work[dic.NAME];
+      var json = AuthorModel.__super__.toJSON.call(this);
+      json.author = json.author[dic.NAME];
+      json.introduction = json.introduction[dic.NAME];
       return json;
     }
   });
-  return WorkModel;
+  return AuthorModel;
 });

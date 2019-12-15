@@ -1,6 +1,7 @@
 define([
   'backbone',
   'util/color',
+  'util/util',
   'models/hover',
   'views/hover',
   'views/escape',
@@ -8,6 +9,7 @@ define([
 ], function(
   Backbone,
   Color,
+  Util,
   HoverModel,
   HoverView,
   EscapeView,
@@ -59,11 +61,15 @@ define([
     initialize: function(options) {
       SvgItem.__super__.initialize.call(this, options);
       this.themeColor = options.themeColor;
+      this.author = options.author;
       this.$el = $('<li></li>');
     },
     render: function() {
       var template = _.template($('#svg_template').html());
-      this.$el.html(template(this.model.toJSON()));
+      this.$el.html(template({
+        author: Util.substring(this.author, 18),
+        title: Util.substring(this.model.toJSON().title, 14)
+      }));
       return this;
     },
     createItems: function() {
@@ -111,15 +117,17 @@ define([
       this.parentHeight = options.parentHeight;
       this.$el.css(options.style);
     },
-    add: function(model) {
+    add: function(authorModel) {
       var item;
-      if (model.get('thumbnail')) {
-        item = new ThumbnailItem({model: model});
+      var workModel = authorModel.get('works').first();
+      if (workModel.get('thumbnail')){
+        item = new ThumbnailItem({model: workModel});
       } else {
-        // Set svg color depeneds on its id
+        // Set svg color depeneds on the id
         var colors = [Color.SKY, Color.PINK, Color.LIME, Color.CREAM]
-        var colorIndex = parseInt(model.get('id'), 10) % colors.length;
-        item = new SvgItem({model: model, themeColor: colors[colorIndex]});
+        var colorIndex = parseInt(workModel.get('id'), 10) % colors.length;
+        item = new SvgItem({model: workModel,
+            author: authorModel.toJSON().author, themeColor: colors[colorIndex]});
       }
       this.items.push(item);
       this.listenTo(item, 'hover', this.pause);
@@ -148,6 +156,10 @@ define([
     setScroll: function() {
       var baseSpeed = 80; // speed = px / sec
       var scrollHeight = parseFloat(this.$el.css('height'), 10) - this.parentHeight;
+      if (scrollHeight < 0) {
+        // No  need to scroll
+        return; 
+      }
       this.$el.animate(
         {top: -scrollHeight + 'px'},
         Math.round(scrollHeight / baseSpeed + this.random(10)) * 1000,
@@ -197,8 +209,6 @@ define([
         this.listenTo(this.items[index], 'close', this.close);
       }, this);
 
-      var columnIndex, minHeight, itemHeight = 0;
-      var model;
       for (var i = j = 0; i < this.collection.length; i++, j++) {
         if (this.items.length <= j) {
           j = 0;

@@ -119,9 +119,10 @@ body {
 }
 #works {
   top: 3.8vw;
-  height: 43vw;
+  height: 68vh;
   width: 80vw;
   padding-left: 10vw;
+  overflow: scroll;
 }
 #works .column {
   float: left;
@@ -154,11 +155,14 @@ body {
 }
 #archives table {
   position: absolute;
-  top: 35vw;
+  top: 40vw;
   left: 5vw;
   width: 90vw;
+  height: 70vh;
   position: absolute;
   table-layout: fixed;
+  overflow: scroll;
+  display: block;
 }
 #archives tr {
   width: 100%;
@@ -167,6 +171,7 @@ body {
 #archives td.text {
   text-align: left;
   font-size: 4vw;
+  padding-right: 6vw;
 }
 #archives td.text span {
   font-size: 5vw;

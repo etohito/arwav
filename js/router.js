@@ -6,6 +6,8 @@ define([
   'views/archives',
   'views/statement',
   'views/constellation',
+  'models/author',
+  'collections/authors',
   'collections/works'
 ], function(
   Jp,
@@ -15,6 +17,8 @@ define([
   ArchivesView,
   StatementView,
   ConstellationView,
+  AuthorModel,
+  AuthorCollection,
   WorkCollection
 ) {
   var Router = Backbone.Router.extend({
@@ -124,14 +128,25 @@ define([
       $.when(
         $.getJSON('resources/constellation.json'),
         $.get(html)).done(function(json, html) {
-          var list = [];
-          _.each(json[0], function(workId, index) {
-            list.push(_.findWhere(this.workList, workId));
+          var collection = new AuthorCollection();
+
+          _.each(json[0], function(data) {
+            var list = [];
+            _.each(data.workIds, function(workId) {
+              var work = _.findWhere(this.workList, {id: workId});
+              if (work) { list.push(work); }
+            }, this);
+            var model = new AuthorModel({
+              author: data.author,
+              introduction: data.introduction,
+              works: new WorkCollection(list)
+            })
+            collection.add(model);
           }, this);
 
           this.$content.hide().html(html[0]);
           new ConstellationView(
-              _.extend(options, {collection: new WorkCollection(list)}))
+              _.extend(options, {collection: collection}))
               .render().createItems();
           this.$content.fadeIn(this.FADE_MS);
         }.bind(this));
@@ -147,15 +162,26 @@ define([
       $.when(
         $.getJSON('resources/archives.json'),
         $.get(html)).done(function(json, html) {
-          var list = [];
-          _.each(json[0], function(archive) {
-            list.push(_.findWhere(this.workList, archive));
+          var collection = new AuthorCollection();
+
+          _.each(json[0], function(data) {
+            var list = [];
+            _.each(data.workIds, function(workId) {
+              var work = _.findWhere(this.workList, {id: workId});
+              if (work) { list.push(work); }
+            }, this);
+            var model = new AuthorModel({
+              author: data.author,
+              introduction: data.introduction,
+              works: new WorkCollection(list)
+            })
+            collection.add(model);
           }, this);
 
           this.$content.hide().html(html[0]);
-          new ArchivesView(_.extend(options, {
-            collection: new WorkCollection(list)
-          })).render().createItems();
+          new ArchivesView(
+              _.extend(options, {collection: collection}))
+              .render().createItems();
           this.$content.fadeIn(this.FADE_MS);
         }.bind(this));
     },
