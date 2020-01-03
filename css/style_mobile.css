@@ -1,5 +1,5 @@
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 ul {
   list-style-type: none;
@@ -32,7 +32,6 @@ body {
 #menulist li a {
   font-size: 5vw;
   text-decoration: none;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home {
   height: 900vw;
@@ -76,7 +75,6 @@ body {
   margin-left: 5%;
   color: #ffffff;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home .instagram_link a:visited {
   color: #ffffff;
@@ -98,7 +96,6 @@ body {
 #home .curatorial_link {
   font-size: 3.5vw;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #home .curatorial_link a:visited {
   color: #ffffff;
@@ -120,8 +117,8 @@ body {
 #works {
   top: 3.8vw;
   height: 68vh;
-  width: 80vw;
-  padding-left: 10vw;
+  width: 90vw;
+  padding-left: 5vw;
   overflow: scroll;
 }
 #works .column {
@@ -170,11 +167,12 @@ body {
 }
 #archives td.text {
   text-align: left;
-  font-size: 4vw;
-  padding-right: 6vw;
+  font-size: 3vw;
+  padding-right: 5%;
+  width: 50%;
 }
 #archives td.text span {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 #archives tr img {
   max-width: 90%;
@@ -182,32 +180,37 @@ body {
   padding: 5%;
 }
 #work .main {
-  height: 82vh;
+  height: 85vh;
   overflow: auto;
+  padding: 0;
+}
+#work .main li {
+  padding-bottom: 8%;
+  text-align: center;
+}
+#work .main p {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+#work .main .title {
+  font-size: 4vw;
+  text-align: center;
+}
+#work .main .title span {
+  font-weight: bold;
 }
 #work .main video,
 #work .main audio,
 #work .main img {
   object-fit: contain;
-  width: 100vw;
-  max-height: 80vh;
+  max-width: 100vw;
+  max-height: 85vh;
 }
 #work .main audio {
   margin-top: 10vh;
 }
-#work .main p{
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-#work .title {
-  font-size: 5vw;
-}
-#work .author {
-  font-size: 4vw;
-}
 #work p {
-  width: 90vw;
-  margin-left: 5vw;
   font-size: 3vw;
 }
 #footer .left {

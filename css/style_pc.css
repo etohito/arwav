@@ -1,5 +1,5 @@
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 ul {
   list-style-type: none;
@@ -30,7 +30,6 @@ img.title {
   left: 0vw;
   width: 100%;
   min-height: 100%;
-  display: none;
 }
 #statement .text_area {
   overflow: auto;
@@ -54,8 +53,6 @@ img.title {
 #statement .link a {
   font-size: 2vw;
   color: #ffffff;
-  text-decoration: none;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #statement .link a:visited {
   color: #ffffff;
@@ -81,7 +78,7 @@ img.title {
 }
 #works {
   position: absolute;
-  left: 3vw;
+  left: 5vw;
   height: 100vh;
   width: 80vw;
   margin: 0;
@@ -90,10 +87,25 @@ img.title {
 #works .column {
   position: absolute;
 }
-#works .column ul{
+#works .column ul {
   padding-left: 10%;
   padding-right: 5%;
   padding-top: 60%;
+}
+#works .column:nth-child(1) {
+  margin-top: 3vh;
+}
+#works .column:nth-child(2) {
+  margin-top: 10vh;
+}
+#works .column:nth-child(3) {
+  margin-top: 15vh;
+}
+#works .column:nth-child(4) {
+  margin-top: 0vh;
+}
+#works .column:nth-child(5) {
+  margin-top: 7vh;
 }
 #works .column li {
   padding-bottom: 20%;
@@ -128,49 +140,54 @@ img.title {
 #menulist li a {
   font-size: 1.6vw;
   text-decoration: none;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 #work .main {
   position: absolute;
   top: 5vh;
-  left: 18.7vw;
-  width: 62.5vw;
-  height: 95vh;
+  left: 18vw;
+  width: 58vw;
+  height: 91vh;
   text-align: center;
   overflow: scroll;
+}
+#work .main li {
+  padding-bottom: 10%;
 }
 #work .main img,
 #work .main video,
 #work .main audio {
   max-width: 100%;
-  max-height: 80%;
+  max-height: 90vh;
 }
 #work .main audio {
   margin-top: 11.7vw;
   width: 100%;
 }
 #work .main .title {
-  font-size: 2vw;
+  font-size: 1.6vw;
+}
+#work .main .title span {
+  font-weight: bold;
 }
 #work .main .description {
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   text-align: left;
 }
 #work .prev {
   position: absolute;
-  bottom: 0;
-  left: 7.8vw;
+  bottom: 1vh;
+  left: 5vw;
 }
 #work .next {
   position: absolute;
-  bottom: 0;
-  left: 84.4vw;
+  bottom: 1vh;
+  left: 87vw;
 }
 #work .prev div,
 #work .next div {
   position: relative;
-  width: 7.8vw;
-  height: 10.3vw;
+  width: 8vw;
+  height: 10vw;
 }
 #work .thumb,
 #work .thumb {
@@ -181,15 +198,15 @@ img.title {
   max-height: 10.3vw;
 }
 #work .arrow {
-  width: 3.1vw;
-  margin-top: 0.78vw;
+  width: 1.6vw;
+  margin-top: 0.5vw;
   display: block;
 }
 #work .right {
-  margin-left: 5.5vw;
+  margin-left: 6vw;
 }
 #work .left{
-  margin-left: 0.8vw;
+  margin-left: 0vw;
 }
 #archives .table_container {
   top: 5vh;
@@ -212,10 +229,11 @@ img.title {
 }
 #archives td.text {
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
 }
 #archives td.text span {
-  font-size: 1.7vw;
+  font-size: 1.6vw;
+  font-weight: bold;
 }
 #archives td img {
   max-width: 14vw;

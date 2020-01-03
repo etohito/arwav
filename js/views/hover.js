@@ -3,7 +3,10 @@ define([
 ], function(
   Backbone,
 ) {
+  // Common SVG hover view
   var HoverView = Backbone.View.extend({
+
+    // Initialization
     initialize: function(options) {
       HoverView.__super__.initialize.call(this, options);
       this.$el.css({pointerEvents: 'none'})
@@ -12,16 +15,22 @@ define([
       this.$text = this.$el.find('tspan');
       this.addListener();
     },
+
+    // Register listners to eventes
     addListener: function() {
       this.$path.on('pointerover', this.hover.bind(this));
       this.$path.on('pointerout', this.out.bind(this));
       this.$path.on('pointerdown', this.select.bind(this));
     },
+
+    // Clear listners
     removeListener: function() {
       this.$path.off('pointerover');
       this.$path.off('pointerout');
       this.$path.off('pointerdown');
     },
+
+    // Function called on hover the view
     hover: function() {
       this.$path.css({
         fill:   this.model.get('hover').path.fill,
@@ -33,6 +42,8 @@ define([
       });
       this.trigger('hover');
     },
+
+    // Function called on hover out the view
     out: function() {
       this.$path.css({
         fill:   this.model.get('out').path.fill,
@@ -44,9 +55,13 @@ define([
       });
       this.trigger('out');
     },
+
+    // Function called on selected the view
     select: function() {
       this.trigger('close');
     },
+
+    // Function called to remove the view
     remove: function() {
       this.removeListener();
       HoverView.__super__.remove.call(this);

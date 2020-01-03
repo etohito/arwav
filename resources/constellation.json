@@ -1,5 +1,6 @@
 [
 {
+  "id":           "0001",
   "author": {
     "en":         "Lise Bardou",
     "jp":         "リーズ　バルドー"
@@ -8,8 +9,23 @@
     "en":         "./resources/LiseBardou/introduction_en.txt",
     "jp":         "./resources/LiseBardou/introduction_jp.txt"
   },
-  "workIds": ["0070"]
+  "thumbnail":"",
+  "works": [
+    {
+      "type":     "video",
+      "date":     "2019",
+      "title": {
+        "en":     "A procissão das portas muradas (Procession of the Sealed Doors)",
+        "jp":     "A procissão das portas muradas (閉ざされたドアの行進)"
+      },
+      "work": {
+        "en":     "./resources/LiseBardou/A_procissão_das_portas_muradas.mp4",
+        "jp":     "./resources/LiseBardou/A_procissão_das_portas_muradas.mp4"
+      }
+    }
+  ]
 },{
+  "id":           "0002",
   "author": {
     "en":         "Minagawa Yoko",
     "jp":         "皆川陽子"
@@ -18,18 +34,156 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0040","0041","0042","0043"]
+  "thumbnail":"./resources/MinagawaYoko/contact_pastamaker.jpg",
+  "works": [
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Contact",
+        "jp":     "コンタクト"
+      },
+      "work": {
+        "en":     "./resources/MinagawaYoko/contact_en.png",
+        "jp":     "./resources/MinagawaYoko/contact_en.png"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Contact",
+        "jp":     "コンタクト"
+      },
+      "work": {
+        "en":     "./resources/MinagawaYoko/contact_lithograph.jpg",
+        "jp":     "./resources/MinagawaYoko/contact_lithograph.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Contact",
+        "jp":     "コンタクト"
+      },
+      "work": {
+        "en":     "./resources/MinagawaYoko/contact_lithograph_wbg.jpg",
+        "jp":     "./resources/MinagawaYoko/contact_lithograph_wbg.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Contact",
+        "jp":     "コンタクト"
+      },
+      "work": {
+        "en":     "./resources/MinagawaYoko/contact_pastamaker.jpg",
+        "jp":     "./resources/MinagawaYoko/contact_pastamaker.jpg"
+      }
+    }
+  ]
 },{
- "author": {
-   "en":         "Bronwyn Stemp",
-   "jp":         "ブロンウィン　ステンプ"
- },
+  "id":           "0003",
+  "author": {
+    "en":         "Bronwyn Stemp",
+    "jp":         "ブロンウィン　ステンプ"
+  },
   "introduction": {
     "en":         "./resources/BronwynStemp/introduction_en.txt",
     "jp":         "./resources/BronwynStemp/introduction_jp.txt"
   },
-  "workIds": ["0110","0111","0112","0113","0114","0115","0116"]
+  "thumbnail":"./resources/BronwynStemp/2.jpg",
+  "works": [
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/1.jpg",
+        "jp":    "./resources/BronwynStemp/1.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/2.jpg",
+        "jp":    "./resources/BronwynStemp/2.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/3.jpg",
+        "jp":    "./resources/BronwynStemp/3.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/4.jpg",
+        "jp":    "./resources/BronwynStemp/4.jpg"
+      }
+    },
+    {
+     "type":     "image",
+      "date":     "2019",
+     "title": {
+       "en":     "On Female Gaze",
+       "jp":     "女性のまなざし"
+     },
+      "work": {
+        "en":    "./resources/BronwynStemp/5.jpg",
+        "jp":    "./resources/BronwynStemp/5.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/7.jpg",
+        "jp":    "./resources/BronwynStemp/7.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "On Female Gaze",
+        "jp":     "女性のまなざし"
+      },
+      "work": {
+        "en":    "./resources/BronwynStemp/30A_00099.jpg",
+        "jp":    "./resources/BronwynStemp/30A_00099.jpg"
+      }
+    }
+  ]
 },{
+  "id":           "0004",
   "author": {
     "en":         "Gabi Lardies",
     "jp":         "ギャビ　ラーディーズ"
@@ -38,8 +192,23 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0080"]
+  "thumbnail":"",
+  "works": [
+    {
+      "type":     "text",
+      "date":     "2019",
+      "title": {
+        "en":     "It is a Body, it is a Multitude",
+        "jp":     "ひとつのかたまりであり、多種多様であるもの"
+      },
+      "work": {
+        "en":     "./resources/GabiLardies/It_is_a_Body_it_is_a_Multitude_en.txt",
+        "jp":     "./resources/GabiLardies/It_is_a_Body_it_is_a_Multitude_jp.txt"
+      }
+    }
+  ]
 },{
+  "id":           "0005",
   "author": {
     "en":         "Yukifune Ema",
     "jp":         "雪舟　えま"
@@ -48,8 +217,23 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0020"]
+  "thumbnail":"",
+  "works": [
+    {
+      "type":     "text",
+      "date":     "2019",
+      "title": {
+        "en":     "Since the Universe is Prudent",
+        "jp":     "宇宙は聡明なので"
+      },
+      "work": {
+        "en":     "./resources/YukifuneEma/SinceTheUniverseIsPrudent_en.txt",
+        "jp":     "./resources/YukifuneEma/SinceTheUniverseIsPrudent_jp.txt"
+      }
+    }
+  ]
 },{
+  "id":           "0006",
   "author": {
     "en":         "Watanabe Yuki",
     "jp":         "渡邊有紀"
@@ -58,8 +242,23 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0030"]
+  "thumbnail":"./resources/WatanabeYuki/Untitled.jpg",
+  "works": [
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Untitled",
+        "jp":     "無題"
+      },
+      "work": {
+        "en":     "./resources/WatanabeYuki/Untitled.jpg",
+        "jp":     "./resources/WatanabeYuki/Untitled.jpg"
+      }
+    }
+  ]
 },{
+  "id":           "0007",
   "author": {
     "en":         "Gompei Ryoko",
     "jp":         "権瓶　玲子"
@@ -68,8 +267,23 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0050"]
+  "thumbnail":"",
+  "works": [
+    {
+      "type":     "text",
+      "date":     "2019",
+      "title": {
+        "en":     "The Originality of Haiku:thoughts on Kigo",
+        "jp":     "俳句のオリジナリティ：季語を考える"
+      },
+      "work": {
+        "en":     "./resources/GompeiRyoko/TheOriginalityOfHaiku_en.txt",
+        "jp":     "./resources/GompeiRyoko/TheOriginalityOfHaiku_jp.txt"
+      }
+    }
+  ]
 },{
+  "id":           "0008",
   "author": {
     "en":         "Emilia Pennanen",
     "jp":         "エミリア　ペンナネン"
@@ -78,8 +292,23 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0010"]
+  "thumbnail":"",
+  "works": [
+    {
+      "type":     "video",
+      "date":     "2019",
+      "title": {
+        "en":     "Flat Shell",
+        "jp":     "Flat Shell"
+      },
+      "work": {
+        "en":     "./resources/EmiliaPennanen/FlatShell.mp4",
+        "jp":     "./resources/EmiliaPennanen/FlatShell.mp4"
+      }
+    }
+  ]
 },{
+  "id":           "0009",
   "author": {
     "en":         "Ramona Güntert",
     "jp":         "ラモーナ　グンテルト"
@@ -88,8 +317,59 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0060","0061","0062","0063"]
+  "thumbnail":"./resources/RamonaGuntert/Ramona06.jpg",
+  "works": [
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "",
+        "jp":     ""
+      },
+      "work": {
+        "en":     "./resources/RamonaGuntert/Ramona06.jpg",
+        "jp":     "./resources/RamonaGuntert/Ramona06.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "",
+        "jp":     ""
+      },
+      "work": {
+        "en":     "./resources/RamonaGuntert/Ramona08.jpg",
+        "jp":     "./resources/RamonaGuntert/Ramona08.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "",
+        "jp":     ""
+      },
+      "work": {
+        "en":     "./resources/RamonaGuntert/E1A0945.jpg",
+        "jp":     "./resources/RamonaGuntert/E1A0945.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "",
+        "jp":     ""
+      },
+      "work": {
+        "en":     "./resources/RamonaGuntert/ramona_text.jpg",
+        "jp":     "./resources/RamonaGuntert/ramona_text.jpg"
+      }
+    }
+  ]
 },{
+  "id":           "0010",
   "author": {
     "en":         "Lisa Carletta",
     "jp":         "リサ　カーレッタ"
@@ -98,26 +378,154 @@
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0000","0001","0002","0003","0004"]
+  "thumbnail":"./resources/LisaCarletta/Atelophobia2.jpg",
+  "works": [
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Atelophobia",
+        "jp":     "Atelophobia"
+      },
+      "work": {
+        "en":     "./resources/LisaCarletta/Atelophobia1.jpg",
+        "jp":     "./resources/LisaCarletta/Atelophobia1.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Atelophobia",
+        "jp":     "Atelophobia"
+      },
+      "work": {
+        "en":     "./resources/LisaCarletta/Atelophobia2.jpg",
+        "jp":     "./resources/LisaCarletta/Atelophobia2.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Atelophobia",
+        "jp":     "Atelophobia"
+      },
+      "work": {
+        "en":     "./resources/LisaCarletta/Atelophobia3.jpg",
+        "jp":     "./resources/LisaCarletta/Atelophobia3.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Atelophobia",
+        "jp":     "Atelophobia"
+      },
+      "work": {
+        "en":     "./resources/LisaCarletta/Atelophobia4.jpg",
+        "jp":     "./resources/LisaCarletta/Atelophobia4.jpg"
+      }
+    },
+    {
+      "type":     "image",
+      "date":     "2019",
+      "title": {
+        "en":     "Atelophobia",
+        "jp":     "Atelophobia"
+      },
+      "work": {
+        "en":     "./resources/LisaCarletta/Atelophobia5.jpg",
+        "jp":     "./resources/LisaCarletta/Atelophobia5.jpg"
+      }
+    }
+  ]
 },{
- "author": {
-   "en":         "Chihiro Gompei",
-   "jp":         "権瓶　千尋"
- },
+  "id":           "0011",
+  "author": {
+    "en":         "Chihiro Gompei",
+    "jp":         "権瓶　千尋"
+  },
   "introduction": {
     "en":         "",
     "jp":         ""
   },
-  "workIds": ["0090"]
+  "thumbnail":"",
+  "works": [
+    {
+     "type":      "text",
+      "date":     "2019",
+     "title": {
+       "en":      "Where Art Objects Are: On Making an Original out of a Copy",
+       "jp":      "アートの居場所：「複製からオリジナルを」によせて"
+     },
+      "work": {
+        "en":     "./resources/GompeiChihiro/Where_Art_Objects_Are_en.txt",
+        "jp":     "./resources/GompeiChihiro/Where_Art_Objects_Are_jp.txt"
+      }
+    }
+  ]
 },{
- "author": {
-   "en":         "Jesse Hogan",
-   "jp":         "ジェシー　ホーガン"
- },
+  "id":           "0012",
+  "author": {
+    "en":         "Jesse Hogan",
+    "jp":         "ジェシー　ホーガン"
+  },
   "introduction": {
     "en":         "./resources/JesseHogan/introduction_en.txt",
     "jp":         "./resources/JesseHogan/introduction_jp.txt"
   },
-  "workIds": ["0100","0101","0102"]
+  "thumbnail":"./resources/JesseHogan/4.jpg",
+  "works": [
+    {
+     "type":     "image",
+      "date":     "2019",
+     "title": {
+       "en":     "Floor Talks",
+       "jp":     "フロア・トークス"
+     },
+      "work": {
+        "en":    "./resources/JesseHogan/1.jpg",
+        "jp":    "./resources/JesseHogan/1.jpg"
+      }
+    },
+    {
+     "type":     "image",
+      "date":     "2019",
+     "title": {
+       "en":     "Floor Talks",
+       "jp":     "フロア・トークス"
+     },
+      "work": {
+        "en":    "./resources/JesseHogan/2.jpg",
+        "jp":    "./resources/JesseHogan/2.jpg"
+      }
+    },
+    {
+     "type":     "image",
+      "date":     "2019",
+     "title": {
+       "en":     "Floor Talks",
+       "jp":     "フロア・トークス"
+     },
+      "work": {
+        "en":    "./resources/JesseHogan/3.jpg",
+        "jp":    "./resources/JesseHogan/3.jpg"
+      }
+    },
+    {
+     "type":     "image",
+      "date":     "2019",
+     "title": {
+       "en":     "Floor Talks",
+       "jp":     "フロア・トークス"
+     },
+      "work": {
+        "en":    "./resources/JesseHogan/4.jpg",
+        "jp":    "./resources/JesseHogan/4.jpg"
+      }
+    }
+  ]
 }
 ]

@@ -15,28 +15,62 @@
       <text x="-40.666168" y="82.308823" fill="#000000" font-size="4.6px" font-weight="bold" letter-spacing=".26458px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><%= CURATORIAL_SVG_TEXT %></text>
     </g>
   </svg>
-  <div class="main"></div>
+  <ul class="main"></ul>
   <div class="prev"></div>
   <div class="next"></div>
 </script>
 <script type="text/template" id="video_template">
-  <video src="<%= resource %>" controls />
-  <p class="title" ><%= title %></p>
-  <p class="description" ><%= description %></p>
+  <li>
+    <video src="<%= work %>" controls />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="audio_template">
-  <audio src="<%= resource %>" controls />
-  <p class="title" ><%= title %></p>
-  <p class="description" ><%= description %></p>
+  <li>
+    <audio src="<%= work %>" controls />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="image_template">
-  <img src="<%= resource %>" />
-  <p class="title" ><%= title %></p>
-  <p class="description" ><%= description %></p>
+  <li>
+    <img src="<%= work %>" />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="text_template">
-  <p class="title" ><%= title %></p>
-  <p class="description" ><%= description %></p>
+  <li>
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+    <p class="description" ><%= text %></p>
+  </li>
+</script>
+<script type="text/template" id="introduction_template">
+  <li>
+    <p class="description" ><%= text %></p>
+  </li>
 </script>
 <script type="text/template" id="prev_template">
   <div>
@@ -55,8 +89,9 @@
     <g transform="translate(-12.091 -91.721)">
       <path d="m46.264 96.276c4.0456 9.0182 1.2382 22.932-3.3496 22.579-11.901-0.91705-20.473 1.0669-24.153 0.0472-3.2723-0.90665-8.8324-16.028-5.2403-19.681 2.769-2.816 6.9149-0.46443 11.575-2.7199 11.924-5.771 18.493-6.1879 21.168-0.22435z" fill="none" stroke="#9ebcbe" stroke-width=".52917"/>
       <g fill="#000000" letter-spacing="0px" word-spacing="0px">
-        <text x="20" y="106" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1" xml:space="preserve"><tspan x="17" y="106" font-size="5px" style="line-height:5px"><%= title %></tspan></text>
-        <text x="20" y="112" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="18" y="112" font-size="4px" style="line-height:13px"><%= author %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="106" font-size="3.4px" style="text-anchor:middle;" font-weight="bold" text-align="center"><%= title1 %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="110" font-size="3.4px" style="text-anchor:middle;" font-weight="bold" text-align="center"><%= title2 %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="114" font-size="2.5px" style="text-anchor:middle;"text-align="center"><%= author %></tspan></text>
       </g>
     </g>
   </svg>
@@ -67,8 +102,9 @@
     <g transform="translate(-12.091 -91.721)">
       <path d="m46.264 96.276c4.0456 9.0182 1.2382 22.932-3.3496 22.579-11.901-0.91705-20.473 1.0669-24.153 0.0472-3.2723-0.90665-8.8324-16.028-5.2403-19.681 2.769-2.816 6.9149-0.46443 11.575-2.7199 11.924-5.771 18.493-6.1879 21.168-0.22435z" fill="none" stroke="#9ebcbe" stroke-width=".52917"/>
       <g fill="#000000" letter-spacing="0px" word-spacing="0px">
-        <text x="20" y="106" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1" xml:space="preserve"><tspan x="17" y="106" font-size="5px" style="line-height:5px"><%= title %></tspan></text>
-        <text x="20" y="112" font-size="10px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="18" y="112" font-size="4px" style="line-height:13px"><%= author %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="106" font-size="3.4px" style="text-anchor:middle;" font-weight="bold" text-align="center"><%= title1 %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="110" font-size="3.4px" style="text-anchor:middle;" font-weight="bold" text-align="center"><%= title2 %></tspan></text>
+        <text xml:space="preserve"><tspan x="30" y="114" font-size="2.5px" style="text-anchor:middle;"text-align="center"><%= author %></tspan></text>
       </g>
     </g>
   </svg>

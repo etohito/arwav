@@ -1,6 +1,6 @@
 <div id="work"></div>
 <script type="text/template" id="work_template">
-  <div class="main"></div>
+  <ul class="main"></ul>
   <div id="footer">
     <div class="prev"></div>
     <svg class="menu" width="112.02" height="58.631" version="1.1" viewBox="0 0 29.639722 15.512749" xmlns="http://www.w3.org/2000/svg">
@@ -21,53 +21,75 @@
   </div>
 </script>
 <script type="text/template" id="video_template">
-  <video src="<%= resource %>" controls />
-  <p>
-    <span class="title"><%= title %></br></span>
-    <span class="author"><%= author %>&ensp;<%= date %></span></br>
-    <%= description %>
-  </p>
+  <li>
+    <video src="<%= work %>" controls />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="audio_template">
-  <audio src="<%= resource %>" controls />
-  <p>
-    <span class="title"><%= title %></br></span>
-    <span class="author"><%= author %>&ensp;<%= date %></span></br>
-    <%= description %>
-  </p>
+  <li>
+    <audio src="<%= work %>" controls />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="image_template">
-  <img src="<%= resource %>" />
-  <p>
-    <span class="title"><%= title %></br></span>
-    <span class="author"><%= author %>&ensp;<%= date %></span></br>
-    <%= description %>
-  </p>
+  <li>
+    <img src="<%= work %>" />
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+  </li>
 </script>
 <script type="text/template" id="text_template">
-  <p>
-    <span class="title"><%= title %></br></span>
-    <span class="author"><%= author %>&ensp;<%= date %></span></br>
-    <%= description %>
-  </p>
+  <li>
+    <p class="title" >
+      <span><%= title %></span>
+      <% if(title && author) { %> - <% } %>
+      <%= author %>
+      <% if(author  && date) { %>, <% } %>
+      <%= date %>
+    </p>
+    <p class="description" ><%= text %></p>
+  </li>
+</script>
+<script type="text/template" id="introduction_template">
+  <li>
+    <p class="description" ><%= text %></p>
+  </li>
 </script>
 <script type="text/template" id="prev_template">
-  <a href="#work/<%= id %>">
+  <div class="arrow">
     <img class="left" src="./svg/arrow_left.svg" />
-  </a>
+  </div>
 </script>
 <script type="text/template" id="next_template">
-  <a href="#work/<%= id %>">
+  <div class="arrow">
     <img class="right" src="./svg/arrow_right.svg" />
-  </a>
+  </div>
 </script>
 <script type="text/template" id="svg_prev_template">
-  <a href="#work/<%= id %>">
+  <div class="arrow">
     <img class="left" src="./svg/arrow_left.svg" />
-  </a>
+  </div>
 </script>
 <script type="text/template" id="svg_next_template">
-  <a href="#work/<%= id %>">
+  <div class="arrow">
     <img class="right" src="./svg/arrow_right.svg" />
-  </a>
+  </div>
 </script>

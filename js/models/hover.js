@@ -1,5 +1,7 @@
 define(['backbone'], function(Backbone) {
+  // Common SVG hover model 
   var HoverModel = Backbone.Model.extend({
+
     defaults: function() {
       return {
         hover: {

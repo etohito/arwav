@@ -5,13 +5,15 @@ define([
   Backbone,
   AuthorModel,
 ) {
+  // Author data collection
   var AuthorCollection = Backbone.Collection.extend({
     model: AuthorModel,
+
+    // Initialization
     initialize: function(models, options) {
-      if (options && options.url) {
-        this.url = options.url;
-      }
     },
+
+    // Parse data
     parse: function(res, options) {
       return res;
     }

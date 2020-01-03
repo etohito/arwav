@@ -1,6 +1,7 @@
 define([
   'backbone',
   'util/color',
+  'util/util',
   'models/hover',
   'views/hover',
   'views/menu',
@@ -8,6 +9,7 @@ define([
  ], function(
   Backbone,
   Color,
+  Util,
   HoverModel,
   HoverView,
   MenuView,
@@ -16,27 +18,39 @@ define([
 
   // Previous or next item
   var PrevNextItem = Backbone.View.extend({
+
+    // Initialization
     initialize: function(options) {
-      this.author = options.author;
       this.template = _.template($(options.selector).html());
       this.render();
       this.addListener();
     },
+
+    // Rendering the view
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       return this;
     },
+
+    // Register listeners
     addListener: function() {
       this.$el.on('click', this.close.bind(this));
       this.$el.find('.arrow').on('click', this.close.bind(this));
     },
+
+    // Clear listeners
     removeListener: function() {
       this.$el.off('click');
       this.$el.find('.arrow').off('click');
     },
+
+    // Move to another screen
     close: function() {
-      this.trigger('close', "#work/" + this.model.get('id'));
+      var hash = location.hash.split('/')
+      this.trigger('close', hash[0] + '/' + hash[1] + '/' + this.model.get('id'));
     },
+
+    // Remove the view
     remove: function() {
       this.removeListener();
       PrevNextItem.__super__.remove.call(this);
@@ -46,73 +60,111 @@ define([
   // Previous or next item which does not have thumbnail
   var SvgPrevNextItem = Backbone.View.extend({
     items: [],
+
+    // Initialization
     initialize: function(options) {
       SvgPrevNextItem.__super__.initialize.call(this, options);
       this.template = _.template($(options.selector).html());
       this.render().createItems();
       this.addListener();
     },
+
+    // Rendering the view
     render: function() {
-      this.$el.append(this.template(this.model.toJSON()));
+      var title = this.model.get('works').first().toJSON().title;
+      var splitTitle = Util.split(title, 12, 2);
+      this.$el.html(this.template({
+        author: Util.substring(this.model.toJSON().author, 18),
+        title1: splitTitle[0],
+        title2: splitTitle[1]
+      }));
       return this;
     },
+
+    // Create child views
     createItems: function() {
       // Enable svg hover
-      var color = {
-        hover: {path: {fill: Color.SKY, stroke: Color.SKY}, text: {fill: Color.WHITE, stroke: 'none'}},
-        out:   {path: {fill: 'none', stroke: Color.SKY}, text: {fill:  Color.BLACK, stroke: 'none'}}
-      };
       var hoverView = new HoverView({
         el: this.$el.find('svg'),
-        model: new HoverModel(color)
+        model: new HoverModel({
+            hover: {path: {fill: Color.SKY, stroke: Color.SKY},
+            text: {fill: Color.WHITE, stroke: 'none'}
+          },
+          out: {
+            path: {fill: 'none', stroke: Color.SKY},
+            text: {fill:  Color.BLACK, stroke: 'none'}
+          }
+        })
       });
       hoverView.out();
       this.items.push(hoverView);
       this.listenTo(hoverView, 'close', this.close);
     },
+
+    // Register listeners
     addListener: function() {
       this.$el.find('.arrow').on('click', this.close.bind(this));
     },
+
+    // Clear listeners
     removeListener: function() {
       this.$el.find('.arrow').off('click');
     },
+
+    // Move to another screen
     close: function() {
-      this.trigger('close', "#work/" + this.model.get('id'));
+      var hash = location.hash.split('/')
+      this.trigger('close', hash[0] + '/' + hash[1] + '/' + this.model.get('id'));
     },
+
+    // Remove the view
     remove: function() {
       _.each(this.items, function(item) {
         item.remove();
       });
       this.items = [];
-      this.removeListener();
       SvgPrevNextItem.__super__.remove.call(this);
     }
   });
 
   // Work main item
   var MainItem = Backbone.View.extend({
+
+    // Initialization
     initialize: function(options) {
       MainItem.__super__.initialize.call(this, options);
-      this.render();
+      this.model.loadText().done(this.render.bind(this));
     },
+
+    // Rendering the view
     render: function() {
       var template;
-      switch (this.model.get('type')) {
-      case 'video':
-        template = _.template($('#video_template').html());
-        break;
-      case 'audio':
-        template = _.template($('#audio_template').html());
-        break;
-      case 'image':
-        template = _.template($('#image_template').html());
-        break;
-      case 'text':
-      default:
-        template = _.template($('#text_template').html());
-        break;
-      }
-      this.$el.html(template(this.model.toJSON()));
+      var author = this.model.toJSON().author;
+
+      this.model.get('works').each(function(model) {
+        switch (model.get('type')) {
+        case 'video':
+          template = _.template($('#video_template').html());
+          break;
+        case 'audio':
+          template = _.template($('#audio_template').html());
+          break;
+        case 'image':
+          template = _.template($('#image_template').html());
+          break;
+        case 'text':
+          template = _.template($('#text_template').html());
+          break;
+        default:
+          break;
+        }
+        // Show works
+        this.$el.append(template(_.extend({author: author}, model.toJSON())));
+      }, this);
+
+      // Show introduction
+      template = _.template($('#introduction_template').html());
+      this.$el.append(template(_.extend(this.model.toJSON())));
       return this;
     }
   });
@@ -121,14 +173,20 @@ define([
   var WorkView = Backbone.View.extend({
     el: '#work',
     items: [],
+
+    // Initialization
     initialize: function(options) {
       WorkView.__super__.initialize.call(this, options);
     },
+
+    // Rendering the view
     render: function() {
       var template = _.template($('#work_template').html());
       this.$el.html(template(dic));
       return this;
     },
+
+    // Create child views
     createItems: function() {
       var model, options, item;
 
@@ -167,8 +225,14 @@ define([
 
       // Menu link
       options = {
-        hover: {path: {fill: Color.WHITE, stroke: Color.LIME}, text: {fill: Color.LIME, stroke: 'none'}},
-        out:   {path: {fill: Color.LIME, stroke: Color.LIME}, text: {fill: Color.WHITE, stroke: 'none'}}
+        hover: {
+          path: {fill: Color.WHITE, stroke: Color.LIME},
+          text: {fill: Color.LIME, stroke: 'none'}
+        },
+        out: {
+          path: {fill: Color.LIME, stroke: Color.LIME},
+          text: {fill: Color.WHITE, stroke: 'none'}
+        }
       };
       var menuView = new MenuView(options);
       this.items.push(menuView);
@@ -179,8 +243,14 @@ define([
         options = {
           el: '.curatorial',
           color: {
-            hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
-            out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
+            hover: {
+              path: {fill: Color.GREEN, stroke: Color.GREEN},
+              text: {fill: Color.WHITE, stroke: 'none'}
+            },
+            out: {
+              path: {fill: 'none', stroke: Color.GREEN},
+              text: {fill: Color.BLACK, stroke: 'none'}
+            }
           }
         };
         var escapeView = new EscapeView(options);
@@ -194,8 +264,14 @@ define([
         options = {
           el: '.back',
           color: {
-            hover: {path: {fill: Color.GREEN, stroke: Color.GREEN}, text: {fill: Color.WHITE, stroke: 'none'}},
-            out:   {path: {fill: 'none', stroke: Color.GREEN}, text: {fill: Color.BLACK, stroke: 'none'}}
+            hover: {
+              path: {fill: Color.GREEN, stroke: Color.GREEN},
+              text: {fill: Color.WHITE, stroke: 'none'}
+            },
+            out: {
+              path: {fill: 'none', stroke: Color.GREEN},
+              text: {fill: Color.BLACK, stroke: 'none'}
+            }
           }
         };
         var escapeView = new EscapeView(options);
@@ -206,16 +282,21 @@ define([
         });
       }
     },
+
+    // Move to another screen
     close: function(hash) {
-      _.each(this.items, function(item) {
-        item.remove();
-      }, this);
-      this.$el.html('');
-      this.items = [];
-      this.stopListening();
       if (hash) {
         Backbone.history.navigate(hash, {trigger: true});
       }
+    },
+
+    // Remove the view
+    remove: function() {
+      _.each(this.items, function(item) {
+        item.remove();
+      });
+      this.items = [];
+      WorkView.__super__.remove.call(this);
     }
   });
   return WorkView;

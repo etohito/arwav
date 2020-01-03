@@ -1,6 +1,7 @@
 define([
   'dic/jp',
   'dic/en',
+  'util/color',
   'views/home',
   'views/work',
   'views/archives',
@@ -12,6 +13,7 @@ define([
 ], function(
   Jp,
   En,
+  Color,
   HomeView,
   WorkView,
   ArchivesView,
@@ -22,21 +24,29 @@ define([
   WorkCollection
 ) {
   var Router = Backbone.Router.extend({
-    FADE_MS: 1000,
+    FADE_MS: 700,
     device: null,
+    currentView: null,
+    currentCollection: null,
+    archiveCollection: null,
+
+    // Map of hash and functon
     routes: {
-      'home(/:focus)':  'home',
-      'language':       'language',
-      'archives':       'archives',
-      'work/:id':       'work',
-      'aboutus':        'aboutus',
-      'curatorial':     'curatorial',
-      'constellation':  'constellation',
-      '*path':          'home',
+      'home(/:focus)':     'home',
+      'language':          'language',
+      'archives':          'archives',
+      'work/current/:id':  'workCurrent',
+      'work/archive/:id':  'workArchive',
+      'aboutus':           'aboutus',
+      'curatorial':        'curatorial',
+      'constellation':     'constellation',
+      '*path':             'home',
     },
+
+    // Initialization
     initialize: function(options) {
-      // Load css
-      if (window.matchMedia('(max-width: 767px)').matches) {
+      // Load css depends on the device
+      if (window.matchMedia('(max-width: 600px)').matches) {
         this.device = 'mobile';
       } else {
         this.device = 'pc';
@@ -47,159 +57,162 @@ define([
         href: 'css/style_' + this.device + '.css'
       }).appendTo('head');
 
-      // Load dictionary and work list
+      // Load dictionary
       window.dic = Jp;
-      $.getJSON('resources/works.json', function(json) {
-        this.workList= json;
-        Backbone.history.start();
+
+      // Load work data
+      $.when(
+        $.getJSON('resources/constellation.json'),
+        $.getJSON('resources/archives.json')).done(function(constellation, archives) {
+          this.currentCollection = new AuthorCollection();
+          _.each(constellation[0], function(data) {
+            this.currentCollection.add(new AuthorModel(
+                _.extend(data, {works: new WorkCollection(data.works)})));
+          }, this);
+
+          this.archiveCollection = new AuthorCollection();
+          _.each(archives[0], function(data) {
+            this.archiveCollection.add(new AuthorModel(
+                _.extend(data, {works: new WorkCollection(data.works)})));
+          }, this);
+
+          // Start page navigation
+          this.$el = $('#content');
+          Backbone.history.start();
       }.bind(this));
-      this.$content = $('#content');
     },
+
+    // Home screen
     home: function(focus) {
       if (this.device == 'mobile') {
-        this.$content.hide().load('templates/mobile/home.html', function() {
+        this.$el.hide().load('templates/mobile/home.html', function() {
           var homeView = new HomeView().render();
-          this.$content.fadeIn(this.FADE_MS, function() {
-            homeView.scrollTop(focus);
+          this.$el.fadeIn(this.FADE_MS, function() {
+            homeView.scroll(focus);
           });
         }.bind(this));
       } else {
-        this.$content.hide().load('templates/pc/home_' + dic.NAME + '.html', function() {
-          new HomeView();
-          this.$content.fadeIn(this.FADE_MS);
+        this.loadPage('home_' + dic.NAME + '.html', function() {
+          return new HomeView();
         }.bind(this));
       }
     },
+
+    // Switch language
     language: function() {
       window.dic = (window.dic == Jp) ? En : Jp;
       history.back();
     },
+
+    // About us screen
     aboutus: function() {
       if (this.device == 'mobile') {
         Backbone.history.navigate('home/aboutus', {trigger: true, replace: true});
       } else {
         var options = {
           statement: {
-            title: dic.ABOUTUS_TITLE,
-            summary: dic.ABOUTUS_SUMMARY,
-            description: '',
-            href: '',
-            link: ''
+            title:      dic.ABOUTUS_TITLE,
+            summary:    dic.ABOUTUS_SUMMARY,
+            description:'',
+            href:       '',
+            link:       '' 
           },
-          themeColor: '#abd5af'
+          themeColor: Color.LIME
         };
-        $('#statement').load('templates/pc/statement.html', function() {
-          $('#content').html('');
-          new StatementView(options).render().createItems();
-          this.$content.fadeIn(this.FADE_MS);
+        this.loadPage('statement.html', function() {
+          return new StatementView(options).render().createItems();
         }.bind(this));
       }
     },
+
+    // Curatorial statement screen
     curatorial: function() {
       if (this.device == 'mobile') {
         Backbone.history.navigate('home/curatorial', {trigger: true, replace: true});
       } else {
         var options = {
           statement: {
-            title: dic.CURATORIAL_TITLE,
-            summary: dic.CURATORIAL_SUMMARY,
-            description: dic.CURATORIAL_DESCRIPTION,
-            href: '#constellation',
-            link: dic.CONSTELLATION_LINK
+            title:      dic.CURATORIAL_TITLE,
+            summary:    dic.CURATORIAL_SUMMARY,
+            description:dic.CURATORIAL_DESCRIPTION,
+            href:       '#constellation',
+            link:       dic.CONSTELLATION_LINK
           },
-          themeColor: '#f5dad5'
+          themeColor: Color.PINK 
         };
-        $('#statement').load('templates/pc/statement.html', function() {
-          $('#content').html('');
-          new StatementView(options).render().createItems();
-          this.$content.fadeIn(this.FADE_MS);
+        this.loadPage('statement.html', function() {
+          return new StatementView(options).render().createItems();
         }.bind(this));
       }
     },
+
+    // Constellation screen
     constellation: function() {
-      var html = 'templates/' + this.device + '/constellation.html';
       var options;
       if (this.device == 'mobile') {
         options = {autoScroll: false};
       } else {
         options = {autoScroll: true};
       }
-
-      $.when(
-        $.getJSON('resources/constellation.json'),
-        $.get(html)).done(function(json, html) {
-          var collection = new AuthorCollection();
-
-          _.each(json[0], function(data) {
-            var list = [];
-            _.each(data.workIds, function(workId) {
-              var work = _.findWhere(this.workList, {id: workId});
-              if (work) { list.push(work); }
-            }, this);
-            var model = new AuthorModel({
-              author: data.author,
-              introduction: data.introduction,
-              works: new WorkCollection(list)
-            })
-            collection.add(model);
-          }, this);
-
-          this.$content.hide().html(html[0]);
-          new ConstellationView(
-              _.extend(options, {collection: collection}))
-              .render().createItems();
-          this.$content.fadeIn(this.FADE_MS);
-        }.bind(this));
+      this.loadPage('constellation.html', function() {
+        return new ConstellationView(
+            _.extend(options, {collection: this.currentCollection}))
+            .render().createItems();
+      }.bind(this));
     },
+
+    // Arcihves screen
     archives: function(index) {
-      var html = 'templates/' + this.device + '/archives.html';
       var options;
       if (this.device == 'mobile') {
         options = {columnNum: 1, randomPos: false};
       } else {
         options = {columnNum: 2, randomPos: true};
       }
-      $.when(
-        $.getJSON('resources/archives.json'),
-        $.get(html)).done(function(json, html) {
-          var collection = new AuthorCollection();
-
-          _.each(json[0], function(data) {
-            var list = [];
-            _.each(data.workIds, function(workId) {
-              var work = _.findWhere(this.workList, {id: workId});
-              if (work) { list.push(work); }
-            }, this);
-            var model = new AuthorModel({
-              author: data.author,
-              introduction: data.introduction,
-              works: new WorkCollection(list)
-            })
-            collection.add(model);
-          }, this);
-
-          this.$content.hide().html(html[0]);
-          new ArchivesView(
-              _.extend(options, {collection: collection}))
-              .render().createItems();
-          this.$content.fadeIn(this.FADE_MS);
-        }.bind(this));
-    },
-    work: function(id) {
-      var html = 'templates/' + this.device + '/work.html';
-      var index = _.findIndex(this.workList, {id: id});
-      index = (index == -1) ? 0 : index;
-      var last = this.workList.length - 1;
-      var prev = (0 < index) ? (index - 1) : last;
-      var next = (index < last) ? (index + 1) : 0;
-
-      this.$content.hide().load(html, function() {
-        new WorkView({collection: new WorkCollection(
-          [this.workList[prev], this.workList[index], this.workList[next]]
-        )}).render().createItems();
-        this.$content.fadeIn(this.FADE_MS);
+      this.loadPage('archives.html', function() {
+        return new ArchivesView(
+            _.extend(options, {collection: this.archiveCollection}))
+            .render().createItems();
       }.bind(this));
     },
+
+    // Current work screen
+    workCurrent: function(id) {
+      this.work(id, this.currentCollection);
+    },
+
+    // Archive work screen
+    workArchive: function(id) {
+      this.work(id, this.archiveCollection);
+    },
+
+    // Common function to display work screen
+    work: function(id, collection) {
+      var index = collection.findIndex({id: id});
+      index = (index == -1) ? 0 : index;
+      var prev = (index == 0) ? (collection.length - 1) : (index - 1);
+      var next = (index == collection.length - 1) ? 0 : (index + 1);
+      
+      this.loadPage('work.html', function() {
+        return new WorkView({collection: new AuthorCollection([
+          collection.at(prev), collection.at(index), collection.at(next)
+        ])}).render().createItems();
+      }.bind(this));
+    },
+
+    // Common function loading page
+    loadPage: function(html, createView) {
+      var htmlPath = 'templates/' + this.device + '/' + html;
+      $.get(htmlPath).done(function(result) {
+        this.$el.fadeOut(this.FADE_MS, function() {
+          this.$el.html(result);
+          this.currentView && this.currentView.remove();
+          this.currentView = createView();
+          this.$el.fadeIn(this.FADE_MS);
+        }.bind(this));
+      }.bind(this));
+    },
+
   });
   return Router;
 });
