@@ -22,7 +22,7 @@ define([], function() {
     LANGUAGE: 'English/日本語',
     MENU: 'メニュー',
     NAME: 'jp',
-    OPEN_PAGE: 'インスタグラムを見る',
+    INSTAGRAM_LINK: 'インスタグラムを見る',
     PASSWORD: 'パスワード',
     PREVIOUS_CONSTELLATION: '過去の展示',
   };

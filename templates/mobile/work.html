@@ -20,15 +20,15 @@
     <div class="next"></div>
   </div>
 </script>
+<script type="text/template" id="author_template">
+  <li class="project"><span><%= project %></span></li>
+  <li class="author"><%= author %></li>
+</script>
 <script type="text/template" id="video_template">
   <li>
     <video src="<%= work %>" controls />
     <p class="title" >
       <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
     </p>
   </li>
 </script>
@@ -37,10 +37,6 @@
     <audio src="<%= work %>" controls />
     <p class="title" >
       <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
     </p>
   </li>
 </script>
@@ -49,23 +45,15 @@
     <img src="<%= work %>" />
     <p class="title" >
       <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
     </p>
   </li>
 </script>
 <script type="text/template" id="text_template">
   <li>
+    <p class="description" ><%= text %></p>
     <p class="title" >
       <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
     </p>
-    <p class="description" ><%= text %></p>
   </li>
 </script>
 <script type="text/template" id="introduction_template">

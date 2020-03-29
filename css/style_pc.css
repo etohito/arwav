@@ -153,6 +153,12 @@ img.title {
 #work .main li {
   padding-bottom: 10%;
 }
+#work .main li.project,
+#work .main li.author {
+  font-size: 1.6vw;
+  padding-bottom: 0;
+  text-align: left;
+}
 #work .main img,
 #work .main video,
 #work .main audio {
@@ -164,9 +170,10 @@ img.title {
   width: 100%;
 }
 #work .main .title {
-  font-size: 1.6vw;
+  font-size: 1.4vw;
 }
-#work .main .title span {
+#work .main li.project,
+#work .main span {
   font-weight: bold;
 }
 #work .main .description {

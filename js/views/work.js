@@ -71,8 +71,8 @@ define([
 
     // Rendering the view
     render: function() {
-      var title = this.model.get('works').first().toJSON().title;
-      var splitTitle = Util.split(title, 12, 2);
+      var project = this.model.toJSON().project;
+      var splitTitle = Util.split(project, 12, 2);
       this.$el.html(this.template({
         author: Util.substring(this.model.toJSON().author, 18),
         title1: splitTitle[0],
@@ -138,8 +138,9 @@ define([
 
     // Rendering the view
     render: function() {
-      var template;
-      var author = this.model.toJSON().author;
+      var html = '';
+      var template = _.template($('#author_template').html());
+      var html = template(this.model.toJSON());
 
       this.model.get('works').each(function(model) {
         switch (model.get('type')) {
@@ -158,13 +159,16 @@ define([
         default:
           break;
         }
-        // Show works
-        this.$el.append(template(_.extend({author: author}, model.toJSON())));
+        html += template(model.toJSON());
       }, this);
+      // Show works
+      this.$el.html(html);
 
       // Show introduction
-      template = _.template($('#introduction_template').html());
-      this.$el.append(template(_.extend(this.model.toJSON())));
+      if (this.model.toJSON().text) {
+        template = _.template($('#introduction_template').html());
+        this.$el.append(template(_.extend(this.model.toJSON())));
+      }
       return this;
     }
   });

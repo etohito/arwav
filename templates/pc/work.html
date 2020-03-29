@@ -19,52 +19,32 @@
   <div class="prev"></div>
   <div class="next"></div>
 </script>
+<script type="text/template" id="author_template">
+  <li class="project"><span><%= project %></span></li>
+  <li class="author"><%= author %></li>
+</script>
 <script type="text/template" id="video_template">
   <li>
     <video src="<%= work %>" controls />
-    <p class="title" >
-      <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
-    </p>
+    <% if(title) { %> <p class="title" ><span><%= title %></span></p> <% } %>
   </li>
 </script>
 <script type="text/template" id="audio_template">
   <li>
     <audio src="<%= work %>" controls />
-    <p class="title" >
-      <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
-    </p>
+    <% if(title) { %> <p class="title" ><span><%= title %></span></p> <% } %>
   </li>
 </script>
 <script type="text/template" id="image_template">
   <li>
     <img src="<%= work %>" />
-    <p class="title" >
-      <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
-    </p>
+    <% if(title) { %> <p class="title" ><span><%= title %></span></p> <% } %>
   </li>
 </script>
 <script type="text/template" id="text_template">
   <li>
-    <p class="title" >
-      <span><%= title %></span>
-      <% if(title && author) { %> - <% } %>
-      <%= author %>
-      <% if(author  && date) { %>, <% } %>
-      <%= date %>
-    </p>
     <p class="description" ><%= text %></p>
+    <% if(title) { %> <p class="title" ><span><%= title %></span></p> <% } %>
   </li>
 </script>
 <script type="text/template" id="introduction_template">

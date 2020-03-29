@@ -21,7 +21,7 @@ define([], function() {
     LANGUAGE: 'English/日本語',
     MENU: 'Menu',
     NAME: 'en',
-    OPEN_PAGE: 'Go to instagram',
+    INSTAGRAM_LINK: 'Go to instagram',
     PASSWORD: 'password',
     PREVIOUS_CONSTELLATION: 'Previous Constellation',
   };

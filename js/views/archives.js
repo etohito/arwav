@@ -36,7 +36,7 @@ define([
     render: function() {
       this.$el.append(this.template({
         author: this.model.toJSON().author,
-        title: this.model.get('works').first().toJSON().title
+        title: this.model.toJSON().project
       }));
       return this;
     },
@@ -111,8 +111,8 @@ define([
 
     // Rendering the view
     render: function() {
-      var title = this.model.get('works').first().toJSON().title;
-      var splitTitle = Util.split(title, 12, 2);
+      var project = this.model.toJSON().project;
+      var splitTitle = Util.split(project, 12, 2);
 
       this.$el.append(this.template({
         author: Util.substring(this.model.toJSON().author, 18),

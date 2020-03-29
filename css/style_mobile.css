@@ -183,10 +183,17 @@ body {
   height: 85vh;
   overflow: auto;
   padding: 0;
+  padding-top: 5%;
 }
 #work .main li {
   padding-bottom: 8%;
   text-align: center;
+}
+#work .main li.project,
+#work .main li.author {
+  padding-left: 5%;
+  text-align: left;
+  font-size: 4vw;
 }
 #work .main p {
   padding-left: 5%;
@@ -194,11 +201,13 @@ body {
   text-align: left;
 }
 #work .main .title {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
 }
+#work .main li.project,
 #work .main .title span {
   font-weight: bold;
+  padding-bottom: 0;
 }
 #work .main video,
 #work .main audio,

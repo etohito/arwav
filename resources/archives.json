@@ -9,14 +9,18 @@
     "en":         "./resources/LiseBardou/introduction_en.txt",
     "jp":         "./resources/LiseBardou/introduction_jp.txt"
   },
+  "project": {
+    "en":     "A procissão das portas muradas (Procession of the Sealed Doors)",
+    "jp":     "A procissão das portas muradas (閉ざされたドアの行進)"
+  },
   "thumbnail":"",
   "works": [
     {
       "type":     "video",
       "date":     "2019",
       "title": {
-        "en":     "A procissão das portas muradas (Procession of the Sealed Doors)",
-        "jp":     "A procissão das portas muradas (閉ざされたドアの行進)"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/LiseBardou/A_procissão_das_portas_muradas.mp4",
@@ -34,14 +38,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "Contact",
+    "jp":     "コンタクト"
+  },
   "thumbnail":"./resources/MinagawaYoko/contact_pastamaker.jpg",
   "works": [
     {
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Contact",
-        "jp":     "コンタクト"
+        "en":     "title1",
+        "jp":     "タイトル1"
       },
       "work": {
         "en":     "./resources/MinagawaYoko/contact_en.png",
@@ -52,8 +60,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Contact",
-        "jp":     "コンタクト"
+        "en":     "title2",
+        "jp":     "タイトル2"
       },
       "work": {
         "en":     "./resources/MinagawaYoko/contact_lithograph.jpg",
@@ -64,8 +72,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Contact",
-        "jp":     "コンタクト"
+        "en":     "title3",
+        "jp":     "タイトル3"
       },
       "work": {
         "en":     "./resources/MinagawaYoko/contact_lithograph_wbg.jpg",
@@ -76,8 +84,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Contact",
-        "jp":     "コンタクト"
+        "en":     "title4",
+        "jp":     "タイトル4"
       },
       "work": {
         "en":     "./resources/MinagawaYoko/contact_pastamaker.jpg",
@@ -95,14 +103,18 @@
     "en":         "./resources/BronwynStemp/introduction_en.txt",
     "jp":         "./resources/BronwynStemp/introduction_jp.txt"
   },
+  "project": {
+    "en":     "On Female Gaze",
+    "jp":     "女性のまなざし"
+  },
   "thumbnail":"./resources/BronwynStemp/2.jpg",
   "works": [
     {
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title1",
+        "jp":     "タイトル1"
       },
       "work": {
         "en":    "./resources/BronwynStemp/1.jpg",
@@ -113,8 +125,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title2",
+        "jp":     "タイトル2"
       },
       "work": {
         "en":    "./resources/BronwynStemp/2.jpg",
@@ -125,8 +137,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title3",
+        "jp":     "タイトル3"
       },
       "work": {
         "en":    "./resources/BronwynStemp/3.jpg",
@@ -137,8 +149,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title4",
+        "jp":     "タイトル4"
       },
       "work": {
         "en":    "./resources/BronwynStemp/4.jpg",
@@ -149,8 +161,8 @@
      "type":     "image",
       "date":     "2019",
      "title": {
-       "en":     "On Female Gaze",
-       "jp":     "女性のまなざし"
+        "en":     "title5",
+        "jp":     "タイトル5"
      },
       "work": {
         "en":    "./resources/BronwynStemp/5.jpg",
@@ -161,8 +173,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title6",
+        "jp":     "タイトル6"
       },
       "work": {
         "en":    "./resources/BronwynStemp/7.jpg",
@@ -173,8 +185,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "On Female Gaze",
-        "jp":     "女性のまなざし"
+        "en":     "title7",
+        "jp":     "タイトル7"
       },
       "work": {
         "en":    "./resources/BronwynStemp/30A_00099.jpg",
@@ -192,14 +204,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "It is a Body, it is a Multitude",
+    "jp":     "ひとつのかたまりであり、多種多様であるもの"
+  },
   "thumbnail":"",
   "works": [
     {
       "type":     "text",
       "date":     "2019",
       "title": {
-        "en":     "It is a Body, it is a Multitude",
-        "jp":     "ひとつのかたまりであり、多種多様であるもの"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/GabiLardies/It_is_a_Body_it_is_a_Multitude_en.txt",
@@ -217,14 +233,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "Since the Universe is Prudent",
+    "jp":     "宇宙は聡明なので"
+  },
   "thumbnail":"",
   "works": [
     {
       "type":     "text",
       "date":     "2019",
       "title": {
-        "en":     "Since the Universe is Prudent",
-        "jp":     "宇宙は聡明なので"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/YukifuneEma/SinceTheUniverseIsPrudent_en.txt",
@@ -242,14 +262,18 @@
     "en":         "",
     "jp":         ""
   },
+  "title": {
+    "en":     "Untitled",
+    "jp":     "無題"
+  },
   "thumbnail":"./resources/WatanabeYuki/Untitled.jpg",
   "works": [
     {
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Untitled",
-        "jp":     "無題"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/WatanabeYuki/Untitled.jpg",
@@ -267,14 +291,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "The Originality of Haiku:thoughts on Kigo",
+    "jp":     "俳句のオリジナリティ：季語を考える"
+  },
   "thumbnail":"",
   "works": [
     {
       "type":     "text",
       "date":     "2019",
       "title": {
-        "en":     "The Originality of Haiku:thoughts on Kigo",
-        "jp":     "俳句のオリジナリティ：季語を考える"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/GompeiRyoko/TheOriginalityOfHaiku_en.txt",
@@ -292,14 +320,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "Flat Shell",
+    "jp":     "Flat Shell"
+  },
   "thumbnail":"",
   "works": [
     {
       "type":     "video",
       "date":     "2019",
       "title": {
-        "en":     "Flat Shell",
-        "jp":     "Flat Shell"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/EmiliaPennanen/FlatShell.mp4",
@@ -317,14 +349,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "",
+    "jp":     ""
+  },
   "thumbnail":"./resources/RamonaGuntert/Ramona06.jpg",
   "works": [
     {
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "",
-        "jp":     ""
+        "en":     "title1",
+        "jp":     "タイトル1"
       },
       "work": {
         "en":     "./resources/RamonaGuntert/Ramona06.jpg",
@@ -335,8 +371,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "",
-        "jp":     ""
+        "en":     "title2",
+        "jp":     "タイトル2"
       },
       "work": {
         "en":     "./resources/RamonaGuntert/Ramona08.jpg",
@@ -347,8 +383,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "",
-        "jp":     ""
+        "en":     "title3",
+        "jp":     "タイトル3"
       },
       "work": {
         "en":     "./resources/RamonaGuntert/E1A0945.jpg",
@@ -359,8 +395,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "",
-        "jp":     ""
+        "en":     "title4",
+        "jp":     "タイトル4"
       },
       "work": {
         "en":     "./resources/RamonaGuntert/ramona_text.jpg",
@@ -378,14 +414,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":     "Atelophobia",
+    "jp":     "Atelophobia"
+  },
   "thumbnail":"./resources/LisaCarletta/Atelophobia2.jpg",
   "works": [
     {
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Atelophobia",
-        "jp":     "Atelophobia"
+        "en":     "title1",
+        "jp":     "タイトル1"
       },
       "work": {
         "en":     "./resources/LisaCarletta/Atelophobia1.jpg",
@@ -396,8 +436,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Atelophobia",
-        "jp":     "Atelophobia"
+        "en":     "title2",
+        "jp":     "タイトル2"
       },
       "work": {
         "en":     "./resources/LisaCarletta/Atelophobia2.jpg",
@@ -408,8 +448,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Atelophobia",
-        "jp":     "Atelophobia"
+        "en":     "title3",
+        "jp":     "タイトル3"
       },
       "work": {
         "en":     "./resources/LisaCarletta/Atelophobia3.jpg",
@@ -420,8 +460,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Atelophobia",
-        "jp":     "Atelophobia"
+        "en":     "title4",
+        "jp":     "タイトル4"
       },
       "work": {
         "en":     "./resources/LisaCarletta/Atelophobia4.jpg",
@@ -432,8 +472,8 @@
       "type":     "image",
       "date":     "2019",
       "title": {
-        "en":     "Atelophobia",
-        "jp":     "Atelophobia"
+        "en":     "",
+        "jp":     ""
       },
       "work": {
         "en":     "./resources/LisaCarletta/Atelophobia5.jpg",
@@ -451,14 +491,18 @@
     "en":         "",
     "jp":         ""
   },
+  "project": {
+    "en":      "Where Art Objects Are: On Making an Original out of a Copy",
+    "jp":      "アートの居場所：「複製からオリジナルを」によせて"
+  },
   "thumbnail":"",
   "works": [
     {
      "type":      "text",
       "date":     "2019",
      "title": {
-       "en":      "Where Art Objects Are: On Making an Original out of a Copy",
-       "jp":      "アートの居場所：「複製からオリジナルを」によせて"
+       "en":      "",
+       "jp":      ""
      },
       "work": {
         "en":     "./resources/GompeiChihiro/Where_Art_Objects_Are_en.txt",
@@ -476,14 +520,18 @@
     "en":         "./resources/JesseHogan/introduction_en.txt",
     "jp":         "./resources/JesseHogan/introduction_jp.txt"
   },
+  "project": {
+    "en":     "Floor Talks",
+    "jp":     "フロア・トークス"
+  },
   "thumbnail":"./resources/JesseHogan/4.jpg",
   "works": [
     {
      "type":     "image",
       "date":     "2019",
      "title": {
-       "en":     "Floor Talks",
-       "jp":     "フロア・トークス"
+        "en":     "title1",
+        "jp":     "タイトル1"
      },
       "work": {
         "en":    "./resources/JesseHogan/1.jpg",
@@ -494,8 +542,8 @@
      "type":     "image",
       "date":     "2019",
      "title": {
-       "en":     "Floor Talks",
-       "jp":     "フロア・トークス"
+        "en":     "title2",
+        "jp":     "タイトル2"
      },
       "work": {
         "en":    "./resources/JesseHogan/2.jpg",
@@ -506,8 +554,8 @@
      "type":     "image",
       "date":     "2019",
      "title": {
-       "en":     "Floor Talks",
-       "jp":     "フロア・トークス"
+        "en":     "title3",
+        "jp":     "タイトル3"
      },
       "work": {
         "en":    "./resources/JesseHogan/3.jpg",
@@ -518,8 +566,8 @@
      "type":     "image",
       "date":     "2019",
      "title": {
-       "en":     "Floor Talks",
-       "jp":     "フロア・トークス"
+        "en":     "title4",
+        "jp":     "タイトル4"
      },
       "work": {
         "en":    "./resources/JesseHogan/4.jpg",

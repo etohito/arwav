@@ -86,8 +86,8 @@ define([
 
     // Rendering the view
     render: function() {
-      var title = this.model.get('works').first().toJSON().title;
-      var splitTitle = Util.split(title, 12, 2);
+      var project = this.model.toJSON().project;
+      var splitTitle = Util.split(project, 12, 2);
 
       this.$el.html(this.template({
         author: Util.substring(this.model.toJSON().author, 18),

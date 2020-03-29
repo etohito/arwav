@@ -16,6 +16,10 @@ define(['backbone'], function(Backbone) {
           en:     null,
           jp:     null
         },
+        project: {
+          en:     null,
+          jp:     null
+        },
         thumbnail:null,
         works:    null
       };
@@ -53,6 +57,7 @@ define(['backbone'], function(Backbone) {
       json.author = json.author[dic.NAME];
       json.text = json.text[dic.NAME];
       json.introduction = json.introduction[dic.NAME];
+      json.project = json.project[dic.NAME];
       return json;
     }
   });
